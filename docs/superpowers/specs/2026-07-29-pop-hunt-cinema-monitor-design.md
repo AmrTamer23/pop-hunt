@@ -38,7 +38,9 @@ One render, two consumers. Adapters are written once and serve both features.
 **Definition — a bookable date:** a date counts only if the rendered page shows
 **at least one showtime** for it, not merely a date tab. This keeps movie-level
 targets correct when a movie has no showtimes on a day the cinema is otherwise
-open.
+open. Availability is deliberately *not* part of this test — a date whose
+showtimes are all sold out or already past still counts, because the day has
+opened, which is the event being detected.
 
 ## 3. Approach
 
@@ -64,13 +66,15 @@ All three currently show the same rolling window: Thu 30 Jul → Wed 5 Aug.
 
 | Site | `site` id | Rendering | Notes |
 |------|-----------|-----------|-------|
-| VOX Cinemas (`egy.voxcinemas.com`) | `vox` | Server HTML, Akamai bot manager | Cinema URL `…/showtimes?c=<cinema>`; movie URL adds `&m=<movie>`. Groups showtimes by experience (MAX, GOLD, 4DX, Standard) and flags 3D. |
-| Premiere (`premiere-cinemas.com`) | `premiere` | Next.js SPA + JSON API (`mifcentral-api…`), Cloudflare | Requires selecting a cinema before dates render; tracked location is **Cima Arkan**. Movie URL `…/movie-details/<id>/1`. |
-| Scene (`district5.scenecinemas.com`) | `scene` | Server HTML | Machine-readable dates (`30-07-2026`). Groups showtimes by experience (PREMIERE, STANDARD & DELUXE). Subdomain = location. |
+| VOX Cinemas (`egy.voxcinemas.com`) | `vox` | Server HTML, Akamai bot manager | Date strip is **links** carrying `?…&d=YYYYMMDD`, so each day is fetched by URL. Selected day renders as `Today`/`Tomorrow` with no date. Movies are `article.movie-compare`; showtimes grouped by `<strong>` experience (MAX, GOLD, 4DX, Standard), `unavailable` class when not bookable. |
+| Premiere (`premiere-cinemas.com`) | `premiere` | Next.js SPA, Cloudflare | Renders "Invalid Date" and a cinema chooser until a location is picked; chooser is `<button>`s identified only by text. Tracked location **Cima Arkan**. Clicking did not render showtimes during investigation; the booking window *is* present in the embedded page payload as ISO dates. |
+| Scene (`district5.scenecinemas.com`) | `scene` | Server HTML | Machine-readable dates (`30-07-2026`) in `li.calanderdays`; tabs call `LoadShowtimes('DD-MM-YYYY')`. Experience blocks `div.ex_vip_content` / `div.ex_stand_content`; `showtime_soldout` marks sold out. Subdomain = location. |
 
-Common UI pattern across all three: a **date tab strip**, with showtimes for the
-**selected** date below; switching dates is client-side. Adapters therefore
-select each date tab in turn and read the showtimes rendered for it.
+The sites share a **date tab strip + showtimes for the selected date** pattern,
+but differ in how a date is selected, so each adapter picks its own mechanism:
+VOX navigates by URL, Scene clicks the tab, Premiere selects a cinema first.
+Preferring a URL or a machine-readable date attribute over clicking is the rule
+wherever a site offers one.
 
 ## 5. Architecture
 
@@ -153,7 +157,9 @@ pop-hunt/
 class Showtime:
     time: str                  # as displayed, e.g. "10:45pm"
     experience: str | None     # "MAX" | "GOLD" | "4DX" | "Standard" | "PREMIERE" | ...
-    attributes: list[str]      # e.g. ["3D"]
+    attributes: tuple[str, ...]  # e.g. ("3D",)
+    available: bool            # False when sold out / past (VOX `unavailable`,
+                               # Scene `showtime_soldout`); rendered dimmed
 
 @dataclass(frozen=True)
 class Movie:
@@ -350,12 +356,12 @@ with playwright_chromium() as browser:
             snap = fetch_and_collect(browser, t)        # fetcher + site adapter
         except Exception:
             log.warning("target failed", t.id)
-            snapshots.append(carry_over(t, previous))           # status: stale | error
+            snapshots.append(carry_over(t, previous, now))      # status: stale | error
             continue
         det = detect(state.get(t.id), snap.dates)
         if det.status == "no_dates":
             log.warning("no dates", t.id)
-            snapshots.append(carry_over(t, previous))           # status: stale | error
+            snapshots.append(carry_over(t, previous, now))      # status: stale | error
             continue
         snapshots.append(entry(t, snap, status="ok"))
         if det.new_day_opened:
@@ -363,8 +369,8 @@ with playwright_chromium() as browser:
         state[t.id] = max(state.get(t.id, ""), det.new_max)
 
 for (t, det) in alerts:
-    send_telegram(settings, format_alert(t, det, tz=settings.tz))   # guarded
-    append_event(t, det)
+    send_telegram(settings, format_alert(t, det))   # guarded, never raises
+    append_event(t, det, now)
 
 save_state(state)                    # write-if-changed
 save_snapshot(snapshots)             # write-if-changed (ignoring generated_at)
@@ -467,9 +473,11 @@ dashboard-only change that does not affect the monitor.
 
 ## 13. Edge cases
 
-- **Date strip without a year** (VOX `Thu 30 Jul`): infer year from today in
-  `CHECK_TZ`, rolling forward when the parsed month precedes the current month
-  (Dec→Jan boundary).
+- **Date strip without a year** (a strip rendering `Thu 30 Jul`): infer the year
+  from today in `CHECK_TZ`, rolling forward when the parsed month precedes the
+  current month (Dec→Jan boundary). Not needed by any adapter today — VOX
+  exposes `d=YYYYMMDD` and Scene `DD-MM-YYYY` — but kept as the fallback for a
+  site that drops its machine-readable dates.
 - **Target yields zero dates** (movie ended, redesign, render failure):
   `no_dates` → warning, state untouched, no false alert, previous dashboard
   entry retained and marked stale.
