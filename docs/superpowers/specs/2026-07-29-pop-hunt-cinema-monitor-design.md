@@ -46,11 +46,17 @@ Headless-browser-for-everything (chosen for resilience): every target renders in
 headless Chromium via **Playwright**. This uniformly handles VOX's Akamai bot
 protection, Premiere's Next.js client-side rendering, and Scene's server-rendered
 pages without per-site network workarounds. Runs on a **GitHub Actions** cron
-every 30 minutes. Data persists as JSON committed to the repo. The dashboard is
-a dependency-free static site deployed to **GitHub Pages** by the same workflow.
+every 30 minutes in a **private** repo. Data persists as JSON committed to the
+repo. The dashboard is a static single-page app built by the same workflow and
+deployed to **Cloudflare Pages**, which serves from a private repo on its free
+tier and gives a URL reachable from the user's phone.
 
-Stack: Python 3.12, Playwright (Chromium), PyYAML, `requests` (Telegram API),
-pytest. Dashboard: vanilla HTML/CSS/JS — no framework, no build step.
+Stack:
+
+- **Monitor:** Python 3.12, Playwright (Chromium), PyYAML, `requests` (Telegram
+  API), pytest.
+- **Dashboard:** Vite, React 19, TanStack Router (file-based routing),
+  TypeScript, Vitest.
 
 ## 4. The three sites (observed 2026-07-29)
 
@@ -83,8 +89,8 @@ adapters (browser, network, disk), so the core is testable without network.
 | `notifiers/format` | Build alert message text | pure |
 | `notifiers/telegram` | Send via Telegram Bot API | side-effect |
 | `main` | Orchestrate a run: fetch → parse → detect → notify → persist | side-effect |
-| `site/` | Static dashboard (HTML/CSS/JS) reading the JSON data files | — |
-| `.github/workflows/monitor.yml` | Cron, run, commit changed data, deploy Pages | — |
+| `site/` | Vite + React 19 + TanStack Router SPA reading the JSON data files | — |
+| `.github/workflows/monitor.yml` | Cron, run, commit changed data, build & deploy dashboard | — |
 
 ### 5.1 Repository layout
 
@@ -115,10 +121,22 @@ pop-hunt/
 │       ├── __init__.py
 │       ├── format.py
 │       └── telegram.py
-├── site/
+├── site/                       # Vite + React 19 + TanStack Router (TypeScript)
 │   ├── index.html
-│   ├── style.css
-│   └── app.js                  # fetches ./data/*.json, renders dashboard
+│   ├── package.json
+│   ├── vite.config.ts          # tanstackRouter() plugin BEFORE react()
+│   ├── tsconfig.json
+│   ├── public/data/            # snapshot.json + events.json copied here at build
+│   └── src/
+│       ├── main.tsx            # router bootstrap
+│       ├── types.ts            # TS mirrors of the Python data model
+│       ├── lib/data.ts         # cached fetch of /data/*.json
+│       ├── lib/format.ts       # pure date/showtime formatting helpers
+│       ├── components/         # MovieCard, ShowtimeList, EventFeed, TargetCard
+│       └── routes/
+│           ├── __root.tsx      # shell: header, nav, Outlet
+│           ├── index.tsx       # overview: events feed + target cards
+│           └── targets.$targetId.tsx   # movies + showtimes, ?date= search param
 ├── tests/
 │   ├── fixtures/               # saved real HTML per site
 │   ├── test_adapters.py
@@ -247,6 +265,8 @@ location on pages that require selection. These four are the seed set.
 | `TELEGRAM_BOT_TOKEN` | Telegram bot auth (GitHub Actions secret) | yes, for alerts |
 | `TELEGRAM_CHAT_ID` | Telegram destination chat (GitHub Actions secret) | yes, for alerts |
 | `CHECK_TZ` | Timezone for date logic and timestamps (default `Africa/Cairo`) | no |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare Pages deploy auth (GitHub Actions secret) | yes, for dashboard |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account (GitHub Actions secret) | yes, for dashboard |
 
 ### 8.3 Persisted data
 
@@ -366,20 +386,39 @@ Book: {url}
 
 ## 11. Dashboard
 
-A single static page, no framework and no build step — it fetches
-`data/snapshot.json` and `data/events.json` and renders them.
+A **Vite + React 19** single-page app using **TanStack Router** file-based
+routing, written in TypeScript. It is a static build (no server, no SSR) that
+fetches `data/snapshot.json` and `data/events.json` at runtime.
+
+**Routes:**
+
+| Route | File | Shows |
+|-------|------|-------|
+| `/` | `routes/index.tsx` | Recent-openings feed + a card per target |
+| `/targets/$targetId` | `routes/targets.$targetId.tsx` | That target's movies, posters, and showtimes |
+
+The target route takes a typed search param `?date=YYYY-MM-DD` selecting the day
+whose showtimes are shown, validated with `validateSearch` and defaulting to the
+earliest bookable date. This makes a given day linkable and survives reload —
+the natural fit for TanStack Router's typed-search-param API, and it mirrors the
+cinemas' own date-strip pattern.
+
+**Data loading:** `src/lib/data.ts` exposes `loadDashboard()` — a single fetch of
+both JSON files, memoised in a module-level promise. Route `loader`s call it, so
+navigating between routes never refetches. Types in `src/types.ts` mirror the
+Python data model exactly.
 
 **Sections:**
 
 1. **Header** — "Last checked {built_at}" and "Data as of {generated_at}".
 2. **Recent openings** — reverse-chronological feed from `events.json`: which
    target opened which date, and when.
-3. **Per-target cards** — for each target: label, booking window
-   (`through {furthest}`), a stale/error badge if the last render failed, and a
-   movie grid (poster, title, rating, runtime, language).
-4. **Showtimes** — selecting a movie shows its showtimes grouped by date, with
-   the experience (MAX/GOLD/4DX/PREMIERE/Standard) and attributes (3D) labelled.
-   A date selector mirrors the cinemas' own date-strip pattern.
+3. **Per-target cards** — label, booking window (`through {furthest}`), a
+   stale/error badge when the last render failed, and a link into the target route.
+4. **Movies & showtimes** — poster, title, rating, runtime, language; showtimes
+   for the selected date labelled with experience (MAX/GOLD/4DX/PREMIERE/
+   Standard) and attributes (3D). Sold-out/unavailable times are shown dimmed
+   rather than hidden, so a day never looks empty.
 
 **Poster images** are hot-linked from the cinemas' CDNs with
 `referrerpolicy="no-referrer"` and `loading="lazy"`; a CSS placeholder covers
@@ -394,27 +433,37 @@ read-only view — there are no controls that mutate anything.
 
 - `on.schedule: cron '*/30 * * * *'` plus `workflow_dispatch` for manual runs.
 - `concurrency: { group: monitor, cancel-in-progress: false }` — no overlapping runs.
-- `permissions: { contents: write, pages: write, id-token: write }`.
+- `permissions: { contents: write, deployments: write }`.
 - Steps: checkout → setup-python 3.12 → `pip install -e .` →
   `playwright install --with-deps chromium` → `python -m pop_hunt.main`
   (Telegram secrets in env) → commit `state.json` + `data/` **only if changed**
-  (`git diff --quiet || commit && push`, message tagged `[skip ci]`) → stage the
-  site (copy `data/` into `site/`, inject `built_at`) → `upload-pages-artifact`
-  → `deploy-pages`.
+  (`git diff --quiet || commit && push`, message tagged `[skip ci]`) → copy
+  `data/*.json` into `site/public/data/` and write `built_at` → setup-node →
+  `npm ci && npm run build` in `site/` → deploy `site/dist` with
+  `cloudflare/wrangler-action@v3`:
 
-Pages deploys **every run** so "last checked" stays fresh, while the repo is
-committed to only on real data change. Deploying from an uploaded artifact
-(rather than a `/docs` folder or `gh-pages` branch) keeps the published site to
-exactly `site/` + `data/` and leaves the repo layout free.
+```yaml
+- uses: cloudflare/wrangler-action@v3
+  with:
+    apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    command: pages deploy site/dist --project-name=pop-hunt
+```
+
+The dashboard deploys **every run** so "last checked" stays fresh, while the
+repo is committed to only on real data change. Cloudflare Pages' free tier
+deploys from a private repo via this direct-upload path — the repo is never
+connected to Cloudflare, the workflow just uploads the built directory.
 
 GitHub cron is best-effort and can lag several minutes under load; acceptable
 since new days open ~once daily.
 
-**Repo visibility:** GitHub Pages on the Free plan requires a **public** repo.
-Nothing sensitive lives in the repo — the Telegram token is an Actions secret,
-and the data is public cinema listings. If the repo must stay private, the
-Pages step is dropped and the dashboard is opened locally from `site/`; the
-monitor and alerts are unaffected.
+**Repo visibility:** the repo is **private**. The Telegram and Cloudflare
+tokens live in GitHub Actions secrets, never in the repo. Note the deployed
+`*.pages.dev` URL is reachable by anyone who knows it; the data is public
+cinema listings, so this is acceptable. To restrict it, put **Cloudflare
+Access** in front of the project (free tier covers up to 50 users) — a
+dashboard-only change that does not affect the monitor.
 
 ## 13. Edge cases
 
@@ -436,6 +485,9 @@ monitor and alerts are unaffected.
 - **Adapters:** save real rendered HTML from each site as fixtures; unit-test
   `parse_tab_date`, `parse_showtimes`, `parse_movies`, and the shared collector
   against a fixture DOM. No network in tests.
+- **Dashboard:** Vitest over the pure helpers in `lib/format.ts` and
+  `lib/data.ts` (parsing/grouping/formatting), plus render smoke tests for the
+  two routes against a fixture snapshot. No network in tests.
 - **Detector:** table-driven over `baseline`, `no_change`, `new_day` (single and
   multiple added dates), `no_dates`, and the never-regress rule.
 - **Store:** write-if-changed semantics (unchanged content → no rewrite;
@@ -453,8 +505,8 @@ unit.
 fixtures, detector, store, Telegram notifier, `main`, workflow cron with commit.
 Alerting is live and correct at the end of this phase.
 
-**Phase 2 — dashboard:** snapshot/events data files wired through, static site,
-Pages deployment.
+**Phase 2 — dashboard:** snapshot/events data files wired through, the Vite +
+React 19 + TanStack Router SPA, and Cloudflare Pages deployment.
 
 The adapters capture full snapshot data from Phase 1, so Phase 2 adds no
 scraping work — only presentation.
@@ -464,9 +516,15 @@ scraping work — only presentation.
 1. **Telegram:** create a bot via **@BotFather** → copy `TELEGRAM_BOT_TOKEN`;
    message the bot, then read `chat_id` from
    `https://api.telegram.org/bot<token>/getUpdates` → set `TELEGRAM_CHAT_ID`.
-2. **Repo:** push to GitHub, add both as **Actions secrets**, enable Actions,
-   and enable Pages with source "GitHub Actions".
-3. Trigger `workflow_dispatch` once to verify, then the cron takes over.
+2. **Cloudflare:** create a free account; create a Pages project named
+   `pop-hunt` (Direct Upload, no Git connection); create an API token with the
+   **Cloudflare Pages: Edit** permission → `CLOUDFLARE_API_TOKEN`; copy the
+   account ID from the dashboard → `CLOUDFLARE_ACCOUNT_ID`.
+3. **Repo:** push to a **private** GitHub repo, add all four values as **Actions
+   secrets**, and enable Actions.
+4. Trigger `workflow_dispatch` once to verify, then the cron takes over.
+5. *(Optional)* Put **Cloudflare Access** in front of the Pages project to
+   require a login before the dashboard is viewable.
 
 ## 17. Out of scope (possible future work)
 
