@@ -19,5 +19,11 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/test-setup.ts'],
+    // Pinned, and deliberately a NEGATIVE offset. Date handling here has a real
+    // failure mode - `new Date('2026-01-01')` parses as UTC, so a naive parse
+    // renders the previous day west of UTC. In Cairo (+03) or UTC that bug is
+    // invisible and the guard test passes either way. Running tests at -04/-05
+    // is what makes it falsifiable.
+    env: { TZ: 'America/New_York' },
   },
 })

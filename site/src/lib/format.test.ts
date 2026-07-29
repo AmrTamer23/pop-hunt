@@ -35,6 +35,9 @@ describe('dayLabel', () => {
     expect(dayLabel('2026-07-30')).toBe('Thu 30 Jul')
   })
 
+  // Only meaningful because vite.config.ts pins TZ to a negative offset. In
+  // UTC or anywhere east of it this passes with a naive `new Date(iso)` parse,
+  // i.e. it would silently stop testing anything. Do not remove the pinned TZ.
   it('does not shift the day across timezones', () => {
     // Parsing "2026-01-01" as UTC then rendering locally can yield 31 Dec.
     expect(dayLabel('2026-01-01')).toBe('Thu 1 Jan')
@@ -81,8 +84,15 @@ describe('groupByExperience', () => {
 })
 
 describe('formatGeneratedAt', () => {
-  it('renders a readable timestamp', () => {
-    expect(formatGeneratedAt('2026-07-29T04:30:36+03:00')).toContain('29 Jul')
+  // Derives the expectation from the same instant rather than hardcoding one
+  // zone's wall clock, so this asserts the contract - a readable local
+  // rendering - without encoding the author's timezone.
+  it('renders a readable timestamp in the local zone', () => {
+    const iso = '2026-07-29T04:30:36+03:00'
+    const expected = new Date(iso).toLocaleString('en-GB', {
+      day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit',
+    })
+    expect(formatGeneratedAt(iso)).toBe(expected)
   })
 
   it('handles never-generated data', () => {
