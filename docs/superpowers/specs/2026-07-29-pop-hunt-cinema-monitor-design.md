@@ -475,12 +475,24 @@ connected to Cloudflare, the workflow just uploads the built directory.
 GitHub cron is best-effort and can lag several minutes under load; acceptable
 since new days open ~once daily.
 
-**Repo visibility:** the repo is **private**. The Telegram and Cloudflare
-tokens live in GitHub Actions secrets, never in the repo. Note the deployed
-`*.pages.dev` URL is reachable by anyone who knows it; the data is public
-cinema listings, so this is acceptable. To restrict it, put **Cloudflare
-Access** in front of the project (free tier covers up to 50 users) — a
-dashboard-only change that does not affect the monitor.
+**Repo visibility: public.** This is driven by Actions minutes, not by
+preference. GitHub Free gives a *private* repo 2,000 Actions minutes/month;
+a 30-minute cadence is ~1,440 runs/month at ~3-5 min each (install ~1-2 min,
+scrape ~2.5 min of which Premiere's wizard is ~72s), i.e. 4,300-5,800 minutes —
+2-3x over the allowance, roughly $25-30/month in overage. Public repos get
+unlimited free Actions, so the 30-minute cadence costs nothing.
+
+Nothing sensitive lives in the repo: the Telegram bot token and Cloudflare
+credentials are Actions secrets, and `targets.yaml` plus the `data/` files are
+public cinema listings. The tradeoff is that the target list and captured
+listing data are world-readable.
+
+**Consequence for hosting:** the dashboard went to Cloudflare Pages *because*
+a private repo cannot use GitHub Pages on the free plan. That constraint is now
+gone, so GitHub Pages is a viable simplification for Phase 2 (one less account
+and no `CLOUDFLARE_*` secrets). Cloudflare Pages remains specified — it also
+offers Access gating if the dashboard should ever require a login — but this is
+worth revisiting when Phase 2 starts.
 
 ## 13. Edge cases
 
