@@ -119,6 +119,34 @@ def parse_movies(html: str) -> list[Movie]:
     return movies
 
 
+def parse_movies_with_showtimes(html: str, iso_date: str) -> list[Movie]:
+    """One Movie per article, each carrying only ITS OWN showtimes.
+
+    VOX groups showtimes inside each <article class="movie-compare">, so the
+    per-article fragment is the correct scope. Parsing page-wide instead gives
+    every movie the whole cinema's schedule - invisible to detection, which
+    only reads dates, but plainly wrong on the dashboard.
+    """
+    movies: list[Movie] = []
+    for article in _ARTICLE.findall(html):
+        parsed = parse_movies(article)
+        if not parsed:
+            continue
+        showtimes = parse_showtimes(article)
+        movie = parsed[0]
+        movies.append(
+            Movie(
+                title=movie.title,
+                poster_url=movie.poster_url,
+                rating=movie.rating,
+                runtime_min=movie.runtime_min,
+                language=movie.language,
+                showtimes={iso_date: showtimes} if showtimes else {},
+            )
+        )
+    return movies
+
+
 class VoxAdapter:
     site_id = SITE_ID
 
@@ -141,31 +169,19 @@ class VoxAdapter:
         link_dates = parse_date_links(html)
 
         dates: list[str] = list(link_dates)
-        showtimes_by_date: dict[str, list[Showtime]] = {}
+        movies = parse_movies(html)
 
         # The displayed day is not in the strip - it renders as Today/Tomorrow -
         # so it precedes the first link. It is also the one day whose showtimes
         # we can actually see, so it counts only if it has at least one, keeping
         # the "a date counts only if it has >=1 showtime" rule intact where it
         # is observable.
-        if link_dates:
+        if link_dates and parse_showtimes(html):
             displayed = preceding_day(link_dates[0])
-            showtimes = parse_showtimes(html)
-            if showtimes:
-                dates.append(displayed)
-                showtimes_by_date[displayed] = showtimes
-
-        movies = [
-            Movie(
-                title=movie.title,
-                poster_url=movie.poster_url,
-                rating=movie.rating,
-                runtime_min=movie.runtime_min,
-                language=movie.language,
-                showtimes=showtimes_by_date,
-            )
-            for movie in parse_movies(html)
-        ]
+            dates.append(displayed)
+            # Per article, never page-wide: a cinema-scope target lists every
+            # movie at that cinema, and each must carry only its own times.
+            movies = parse_movies_with_showtimes(html, displayed)
 
         return Snapshot(
             target_id=target.id,

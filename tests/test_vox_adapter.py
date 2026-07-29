@@ -5,6 +5,7 @@ from pop_hunt.adapters.vox import (
     date_url,
     parse_date_links,
     parse_movies,
+    parse_movies_with_showtimes,
     parse_showtimes,
     preceding_day,
 )
@@ -30,11 +31,13 @@ class _FakePage:
 
     def __init__(self, html: str):
         self._html = html
+        self.goto_calls = 0
 
     def content(self) -> str:
         return self._html
 
     def goto(self, *args, **kwargs):
+        self.goto_calls += 1
         raise AssertionError("collect must not navigate")
 
 
@@ -94,6 +97,44 @@ def test_parse_movies_reads_title_poster_and_metadata():
     assert movie.runtime_min == 140
 
 
+def test_parse_movies_with_showtimes_attributes_times_to_their_own_movie():
+    html = (FIXTURES / "vox_two_movies.html").read_text()
+    movies = parse_movies_with_showtimes(html, "2026-07-30")
+
+    by_title = {m.title: m for m in movies}
+    assert set(by_title) == {"Spider-Man: Brand New Day", "The Odyssey"}
+
+    spidey = by_title["Spider-Man: Brand New Day"].showtimes["2026-07-30"]
+    odyssey = by_title["The Odyssey"].showtimes["2026-07-30"]
+
+    assert [s.time for s in spidey] == ["10:45am", "2:00pm", "12:00pm", "1:30pm"]
+    assert [s.time for s in odyssey] == ["6:00pm", "9:30pm"]
+    # The bug this guards: every movie carrying every movie's times.
+    assert all(s.time not in {"6:00pm", "9:30pm"} for s in spidey)
+
+
+def test_parse_movies_with_showtimes_keeps_movie_metadata():
+    html = (FIXTURES / "vox_two_movies.html").read_text()
+    movies = parse_movies_with_showtimes(html, "2026-07-30")
+    spidey = next(m for m in movies if m.title == "Spider-Man: Brand New Day")
+    assert spidey.rating == "12+"
+    assert spidey.runtime_min == 140
+    assert spidey.language == "English"
+    assert spidey.poster_url is not None
+
+
+def test_real_cinema_fixture_gives_each_movie_its_own_showtimes():
+    """vox-moe-all has 17 movies; they must not all share one schedule."""
+    html = (FIXTURES / "vox-moe-all.html").read_text()
+    movies = parse_movies_with_showtimes(html, "2026-07-30")
+    assert len(movies) >= 10
+    schedules = [
+        tuple((s.time, s.experience) for s in m.showtimes.get("2026-07-30", []))
+        for m in movies
+    ]
+    assert len(set(schedules)) > 1, "every movie got an identical schedule"
+
+
 def test_adapter_declares_its_site_id():
     assert VoxAdapter().site_id == "vox"
 
@@ -128,6 +169,27 @@ def test_collect_records_showtimes_for_the_displayed_day_only():
         "12:00pm",
         "1:30pm",
     ]
+
+
+def test_collect_gives_each_movie_its_own_showtimes_without_navigating():
+    """A cinema-scope page must not hand every movie the whole schedule."""
+    page = _FakePage((FIXTURES / "vox_two_movies.html").read_text())
+    snapshot = VoxAdapter().collect(page, TARGET)
+
+    by_title = {m.title: m for m in snapshot.movies}
+    assert set(by_title) == {"Spider-Man: Brand New Day", "The Odyssey"}
+    assert [s.time for s in by_title["Spider-Man: Brand New Day"].showtimes["2026-07-30"]] == [
+        "10:45am",
+        "2:00pm",
+        "12:00pm",
+        "1:30pm",
+    ]
+    assert [s.time for s in by_title["The Odyssey"].showtimes["2026-07-30"]] == [
+        "6:00pm",
+        "9:30pm",
+    ]
+    # _FakePage.goto raises, so reaching here already proves it; assert anyway.
+    assert page.goto_calls == 0
 
 
 def test_collect_without_a_date_strip_yields_no_dates_and_does_not_raise():
