@@ -12,6 +12,7 @@ export function DateStrip({
   onSelect: (iso: string) => void
 }) {
   const selectedRef = useRef<HTMLButtonElement>(null)
+  const firstRun = useRef(true)
 
   // The strip scrolls, and a deep link or a shared URL can land on a day that
   // starts off the right edge - leaving a page where nothing looks selected.
@@ -21,11 +22,21 @@ export function DateStrip({
     const reduced =
       window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
 
+    // Instant on first render, animated afterwards. A background tab - opened
+    // with cmd-click, or restored with the session - throttles the frames a
+    // smooth scroll needs, so it would never arrive: the reader switches to
+    // the tab and finds the strip still at the left, with nothing left to
+    // re-trigger it. First render just has to BE in the right place. The
+    // animation is worth it only later, where it shows movement the reader
+    // asked for by picking a day.
+    const behavior = firstRun.current || reduced ? 'auto' : 'smooth'
+    firstRun.current = false
+
     selectedRef.current?.scrollIntoView({
       // 'nearest' vertically: this must move the strip, never the page.
       block: 'nearest',
       inline: 'center',
-      behavior: reduced ? 'auto' : 'smooth',
+      behavior,
     })
   }, [selected])
 
