@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T17:07:57+03:00",
+  "generated_at": "2026-07-29T20:50:36+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -29,7 +29,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "2:00pm",
@@ -250,26 +250,8 @@
           "showtimes": {
             "2026-07-29": [
               {
-                "time": "7:00pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "5:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:30pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": false
               },
@@ -286,20 +268,8 @@
                 "available": false
               },
               {
-                "time": "5:15pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "9:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -321,38 +291,8 @@
           "showtimes": {
             "2026-07-29": [
               {
-                "time": "5:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -398,24 +338,6 @@
                 "available": false
               },
               {
-                "time": "5:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -438,24 +360,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-29": [
-              {
-                "time": "7:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:30pm",
                 "experience": "Standard",
@@ -486,18 +390,6 @@
           "showtimes": {
             "2026-07-29": [
               {
-                "time": "5:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -514,12 +406,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-29": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:00pm",
                 "experience": "Standard",
@@ -544,43 +430,8 @@
           "showtimes": {
             "2026-07-29": [
               {
-                "time": "5:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Eben Meen Fehom",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013201_1781247110449.jpg",
-          "rating": "16+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -595,12 +446,6 @@
           "language": "English",
           "showtimes": {
             "2026-07-29": [
-              {
-                "time": "5:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:00pm",
                 "experience": "Standard",
@@ -619,31 +464,8 @@
           "showtimes": {
             "2026-07-29": [
               {
-                "time": "7:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00am",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Ezma",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013038_1777638808607.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "8:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -658,12 +480,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-29": [
-              {
-                "time": "5:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "10:30pm",
                 "experience": "Standard",
@@ -684,23 +500,6 @@
               {
                 "time": "9:30pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Keeper",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012712_1763392373376.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -734,23 +533,6 @@
             "2026-07-29": [
               {
                 "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Furious",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013193_1780636528944.jpg",
-          "rating": "18+",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "7:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -887,7 +669,7 @@
                 "time": "10:30 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "01:00 PM",
@@ -953,7 +735,7 @@
                 "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "04:00 PM",
@@ -965,19 +747,19 @@
                 "time": "06:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               }
             ],
             "2026-08-01": [
@@ -991,7 +773,7 @@
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "03:45 PM",
@@ -1089,13 +871,13 @@
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "06:30 PM",
