@@ -1017,7 +1017,7 @@ def format_alert(target: Target, detection: Detection) -> str:
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `.venv/bin/pytest tests/test_format.py -v`
-Expected: PASS — 3 passed
+Expected: PASS — 5 passed
 
 - [ ] **Step 5: Commit**
 
@@ -1333,7 +1333,7 @@ def main(argv: list[str]) -> int:
         for target in targets:
             page = context.new_page()
             print(f"-> {target.id}: {target.url}")
-            page.goto(target.url, wait_until="networkidle", timeout=60_000)
+            page.goto(target.url, wait_until="domcontentloaded", timeout=60_000)
             page.wait_for_timeout(3_000)
             out = FIXTURES / f"{target.id}.html"
             out.write_text(page.content(), encoding="utf-8")
@@ -1919,7 +1919,13 @@ class VoxAdapter:
         dates_with_showtimes: list[str] = []
 
         for iso in candidates:
-            page.goto(date_url(target.url, iso), wait_until="networkidle", timeout=60_000)
+            # domcontentloaded, NOT networkidle: VOX holds background
+            # connections open so networkidle never fires and goto times out.
+            page.goto(
+                date_url(target.url, iso),
+                wait_until="domcontentloaded",
+                timeout=60_000,
+            )
             page.wait_for_timeout(1_500)
             day_html = page.content()
             showtimes = parse_showtimes(day_html)
@@ -2183,11 +2189,11 @@ Expected: PASS — including the registry test from Task 9, which has been red u
 .venv/bin/python - <<'PY'
 from pop_hunt.adapters import get_adapter
 from pop_hunt.config import load_targets
-from pop_hunt.fetcher import browser_context, collect_target
+from pop_hunt.fetcher import browser_session, collect_target
 
 target = next(t for t in load_targets("targets.yaml") if t.site == "premiere")
-with browser_context() as context:
-    snap = collect_target(context, target, get_adapter("premiere"))
+with browser_session() as browser:
+    snap = collect_target(browser, target, get_adapter("premiere"))
 print("dates :", snap.dates)
 print("movies:", [m.title for m in snap.movies])
 PY
@@ -2216,6 +2222,8 @@ git commit -m "feat: add premiere cinemas adapter"
 
 ```python
 # tests/test_fetcher.py
+import pytest
+
 from pop_hunt.config import Target
 from pop_hunt.fetcher import collect_target
 from pop_hunt.models import Snapshot
@@ -2229,7 +2237,7 @@ class _FakePage:
         self.closed = False
 
     def goto(self, url, wait_until, timeout):
-        self.goto_calls.append(url)
+        self.goto_calls.append((url, wait_until))
 
     def wait_for_timeout(self, ms):
         pass
@@ -2241,9 +2249,23 @@ class _FakePage:
 class _FakeContext:
     def __init__(self, page):
         self._page = page
+        self.closed = False
 
     def new_page(self):
         return self._page
+
+    def close(self):
+        self.closed = True
+
+
+class _FakeBrowser:
+    def __init__(self, context):
+        self._context = context
+        self.contexts_created = 0
+
+    def new_context(self, **kwargs):
+        self.contexts_created += 1
+        return self._context
 
 
 class _FakeAdapter:
@@ -2261,21 +2283,38 @@ def test_collect_target_navigates_and_delegates_to_the_adapter():
     page = _FakePage()
     adapter = _FakeAdapter()
 
-    snapshot = collect_target(_FakeContext(page), TARGET, adapter)
+    snapshot = collect_target(_FakeBrowser(_FakeContext(page)), TARGET, adapter)
 
-    assert page.goto_calls == ["https://x.test"]
+    assert page.goto_calls == [("https://x.test", "domcontentloaded")]
     assert adapter.seen_page is page
     assert snapshot.dates == ["2026-08-05"]
 
 
-def test_collect_target_always_closes_the_page():
+def test_collect_target_does_not_wait_for_networkidle():
+    """VOX holds connections open, so networkidle never fires and goto times out."""
     page = _FakePage()
-    collect_target(_FakeContext(page), TARGET, _FakeAdapter())
+    collect_target(_FakeBrowser(_FakeContext(page)), TARGET, _FakeAdapter())
+    assert all(wait != "networkidle" for _url, wait in page.goto_calls)
+
+
+def test_collect_target_creates_its_own_context():
+    """VOX rejects the second request made from a reused context."""
+    browser = _FakeBrowser(_FakeContext(_FakePage()))
+    collect_target(browser, TARGET, _FakeAdapter())
+    assert browser.contexts_created == 1
+
+
+def test_collect_target_always_closes_page_and_context():
+    page = _FakePage()
+    context = _FakeContext(page)
+    collect_target(_FakeBrowser(context), TARGET, _FakeAdapter())
     assert page.closed is True
+    assert context.closed is True
 
 
-def test_collect_target_closes_the_page_even_when_the_adapter_raises():
+def test_collect_target_closes_everything_even_when_the_adapter_raises():
     page = _FakePage()
+    context = _FakeContext(page)
 
     class Boom:
         site_id = "scene"
@@ -2283,11 +2322,11 @@ def test_collect_target_closes_the_page_even_when_the_adapter_raises():
         def collect(self, page, target):
             raise RuntimeError("selector gone")
 
-    try:
-        collect_target(_FakeContext(page), TARGET, Boom())
-    except RuntimeError:
-        pass
+    with pytest.raises(RuntimeError):
+        collect_target(_FakeBrowser(context), TARGET, Boom())
+
     assert page.closed is True
+    assert context.closed is True
 ```
 
 - [ ] **Step 2: Run test to verify it fails**
@@ -2322,39 +2361,50 @@ USER_AGENT = (
 
 
 @contextmanager
-def browser_context():
-    """A headless Chromium context that looks like a normal desktop browser."""
+def browser_session():
+    """A headless real-Chrome browser.
+
+    channel="chrome" uses real Chrome, not Playwright's bundled Chromium. VOX
+    sits behind Akamai bot management, which rejects the bundled build at the
+    HTTP/2 layer (net::ERR_HTTP2_PROTOCOL_ERROR) before any content loads. Real
+    Chrome is accepted. Scene and Premiere work with either, so this is the
+    single launch config for all three.
+    """
     with sync_playwright() as pw:
-        # channel="chrome" uses real Chrome, not Playwright's bundled Chromium.
-        # VOX sits behind Akamai bot management, which rejects the bundled
-        # build at the HTTP/2 layer (net::ERR_HTTP2_PROTOCOL_ERROR) before any
-        # content loads. Real Chrome is accepted. Scene and Premiere work with
-        # either, so this is the single launch config for all three.
         browser = pw.chromium.launch(headless=True, channel="chrome")
-        context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
         try:
-            yield context
+            yield browser
         finally:
-            context.close()
             browser.close()
 
 
-def collect_target(context, target: Target, adapter) -> Snapshot:
-    """Render one target and hand the page to its adapter."""
+def collect_target(browser, target: Target, adapter) -> Snapshot:
+    """Render one target in its OWN context and hand the page to its adapter.
+
+    A fresh context per target is deliberate, not tidiness: VOX rejects the
+    second request made from a reused context with
+    net::ERR_HTTP2_PROTOCOL_ERROR, even though the same URL loads fine on its
+    own. Isolating each target makes the run reproducible.
+    """
+    context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
     page = context.new_page()
     try:
         log.info("rendering %s", target.id)
-        page.goto(target.url, wait_until="networkidle", timeout=NAV_TIMEOUT_MS)
+        # domcontentloaded, NOT networkidle: VOX holds background connections
+        # open indefinitely, so networkidle never fires and goto times out even
+        # though the page rendered in ~2s. SETTLE_MS covers the rest.
+        page.goto(target.url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
         page.wait_for_timeout(SETTLE_MS)
         return adapter.collect(page, target)
     finally:
         page.close()
+        context.close()
 ```
 
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `.venv/bin/pytest tests/test_fetcher.py -v`
-Expected: PASS — 3 passed
+Expected: PASS — 5 passed
 
 - [ ] **Step 5: Commit**
 
@@ -2503,7 +2553,7 @@ from zoneinfo import ZoneInfo
 from pop_hunt.adapters import get_adapter
 from pop_hunt.config import Settings, Target, load_settings, load_targets
 from pop_hunt.detector import NEW_DAY, NO_DATES, Detection, detect
-from pop_hunt.fetcher import browser_context, collect_target
+from pop_hunt.fetcher import browser_session, collect_target
 from pop_hunt.models import Snapshot
 from pop_hunt.notifiers import telegram
 from pop_hunt.notifiers.format import format_alert
@@ -2618,10 +2668,10 @@ def main() -> int:
     previous = load_snapshot(SNAPSHOT_FILE)
     now = datetime.now(ZoneInfo(settings.tz)).isoformat(timespec="seconds")
 
-    with browser_context() as context:
+    with browser_session() as browser:
 
         def collect(target: Target) -> Snapshot:
-            return collect_target(context, target, get_adapter(target.site))
+            return collect_target(browser, target, get_adapter(target.site))
 
         entries, alerts, new_state = run_targets(
             targets, state, previous, collect, now
@@ -2894,10 +2944,17 @@ git commit -m "chore: verify phase 1 end to end"
 Accepted for Phase 1, recorded so they are not mistaken for bugs:
 
 - **Cinema-scope showtimes are not split per movie.** For a `scope: cinema`
-  target, every movie on the page carries the same `showtimes_by_date` map.
-  Detection is exact regardless (it only uses the date set); only the
-  dashboard's per-movie breakdown is coarse. Fix by parsing showtimes inside
-  each `<article>` rather than page-wide.
+  target, every movie on the page carries the same `showtimes_by_date` map —
+  confirmed on `vox-moe-all`, where all 17 movies each carry the same 97
+  showtimes. Detection is exact regardless (it only uses the date set); only
+  the dashboard's per-movie breakdown is coarse. Fix by running
+  `parse_showtimes` inside each `<article>` rather than page-wide.
+- **VOX rejects a reused browser context.** The second request from one context
+  fails with `net::ERR_HTTP2_PROTOCOL_ERROR` even though the same URL loads
+  fine alone, so `collect_target` builds a fresh context per target. Combined
+  with `channel="chrome"` and `domcontentloaded`, capture is reliable — but
+  this is bot management, and it may tighten. If it does, VOX targets degrade
+  to `error` tiles and the other targets keep alerting.
 - **Premiere may yield dates only, or nothing.** Its SPA did not render
   showtimes on demand during investigation. Strategy B (Task 13) recovers the
   booking window without movies, and a total failure degrades to an `error`
