@@ -123,29 +123,37 @@ class VoxAdapter:
     site_id = SITE_ID
 
     def collect(self, page, target: Target) -> Snapshot:
+        """Read everything off the page the fetcher already loaded.
+
+        DO NOT ADD NAVIGATION HERE. VOX rejects the second request made from a
+        reused context with net::ERR_HTTP2_PROTOCOL_ERROR, so a per-date
+        `page.goto` loop fails every VOX run outright - it is what this method
+        used to do, and it took both VOX targets down.
+
+        It is also unnecessary for detection: the date strip is specific to
+        this movie at this cinema, so a date appearing in the strip already
+        means the movie has showings that day. Phase 1 therefore records
+        showtimes only for the day the page rendered, and defers per-day
+        showtimes for the remaining dates to Phase 2 - which will need a FRESH
+        CONTEXT per date. `date_url` is kept for exactly that.
+        """
         html = page.content()
         link_dates = parse_date_links(html)
 
-        # The displayed day is not in the strip; it precedes the first link.
-        candidates = list(link_dates)
-        if link_dates:
-            candidates.insert(0, preceding_day(link_dates[0]))
-
-        titles: dict[str, Movie] = {m.title: m for m in parse_movies(html)}
+        dates: list[str] = list(link_dates)
         showtimes_by_date: dict[str, list[Showtime]] = {}
-        dates_with_showtimes: list[str] = []
 
-        for iso in candidates:
-            page.goto(date_url(target.url, iso), wait_until="networkidle", timeout=60_000)
-            page.wait_for_timeout(1_500)
-            day_html = page.content()
-            showtimes = parse_showtimes(day_html)
-            if not showtimes:
-                continue
-            dates_with_showtimes.append(iso)
-            showtimes_by_date[iso] = showtimes
-            for movie in parse_movies(day_html):
-                titles.setdefault(movie.title, movie)
+        # The displayed day is not in the strip - it renders as Today/Tomorrow -
+        # so it precedes the first link. It is also the one day whose showtimes
+        # we can actually see, so it counts only if it has at least one, keeping
+        # the "a date counts only if it has >=1 showtime" rule intact where it
+        # is observable.
+        if link_dates:
+            displayed = preceding_day(link_dates[0])
+            showtimes = parse_showtimes(html)
+            if showtimes:
+                dates.append(displayed)
+                showtimes_by_date[displayed] = showtimes
 
         movies = [
             Movie(
@@ -156,11 +164,11 @@ class VoxAdapter:
                 language=movie.language,
                 showtimes=showtimes_by_date,
             )
-            for movie in titles.values()
+            for movie in parse_movies(html)
         ]
 
         return Snapshot(
             target_id=target.id,
-            dates=sorted(dates_with_showtimes),
+            dates=sorted(dates),
             movies=movies,
         )

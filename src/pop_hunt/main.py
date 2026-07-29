@@ -45,13 +45,25 @@ def build_entry(target: Target, snapshot: Snapshot, status: str) -> dict[str, An
 
 
 def carry_over(target: Target, previous: dict[str, Any], now: str) -> dict[str, Any]:
-    """Reuse the last good entry so a failed render doesn't empty the dashboard."""
-    for entry in previous.get("targets") or []:
-        if entry.get("id") == target.id and entry.get("movies"):
-            carried = dict(entry)
-            carried["status"] = "stale"
-            carried.setdefault("stale_since", now)
-            return carried
+    """Reuse the last good entry so a failed render doesn't empty the dashboard.
+
+    `stale_since` is stamped once per outage and then preserved, including for
+    a target that has never rendered. Re-stamping it every run would make
+    snapshot.json differ every run, and the workflow commits that file - a
+    commit every 30 minutes for a target that is merely still down.
+    """
+    prior = next(
+        (e for e in previous.get("targets") or [] if e.get("id") == target.id), None
+    )
+
+    # Shallow copy: nothing here mutates the nested lists, so it stays cheap
+    # while leaving `previous` untouched.
+    if prior is not None and prior.get("movies"):
+        carried = dict(prior)
+        carried["status"] = "stale"
+        carried.setdefault("stale_since", now)
+        return carried
+
     return {
         "id": target.id,
         "label": target.label,
@@ -61,7 +73,7 @@ def carry_over(target: Target, previous: dict[str, Any], now: str) -> dict[str, 
         "dates": [],
         "movies": [],
         "status": "error",
-        "stale_since": now,
+        "stale_since": (prior or {}).get("stale_since") or now,
     }
 
 

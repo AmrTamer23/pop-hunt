@@ -45,6 +45,24 @@ def test_carry_over_produces_an_error_entry_when_nothing_was_ever_captured():
     assert entry["dates"] == []
 
 
+def test_carry_over_keeps_stale_since_stable_for_a_never_succeeded_target():
+    """Re-stamping `now` every run rewrites snapshot.json, so CI commits hourly."""
+    first = carry_over(TARGET, {"targets": []}, now="2026-08-01T10:00:00+03:00")
+    second = carry_over(
+        TARGET, {"targets": [first]}, now="2026-08-01T11:00:00+03:00"
+    )
+    assert second == first
+    assert second["stale_since"] == "2026-08-01T10:00:00+03:00"
+
+
+def test_carry_over_does_not_mutate_a_previous_error_entry():
+    original = carry_over(TARGET, {"targets": []}, now="2026-08-01T10:00:00+03:00")
+    snapshot = {"targets": [original]}
+    before = dict(original)
+    carry_over(TARGET, snapshot, now="2026-08-01T11:00:00+03:00")
+    assert original == before
+
+
 def test_carry_over_does_not_mutate_the_previous_entry():
     original = build_entry(TARGET, SNAPSHOT, status="ok")
     previous = {"targets": [original]}

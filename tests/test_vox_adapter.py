@@ -8,9 +8,34 @@ from pop_hunt.adapters.vox import (
     parse_showtimes,
     preceding_day,
 )
+from pop_hunt.config import Target
 
 FIXTURES = Path(__file__).parent / "fixtures"
 DAY_HTML = (FIXTURES / "vox_day.html").read_text()
+
+TARGET = Target(
+    id="vox-1",
+    label="VOX",
+    site="vox",
+    url="https://egy.voxcinemas.com/showtimes?c=mall-of-egypt&m=spider-man",
+)
+
+
+class _FakePage:
+    """A page that fails loudly if `collect` tries to drive the browser.
+
+    Only `content()` is provided: any other call raises AttributeError, so a
+    reintroduced navigation loop cannot pass silently.
+    """
+
+    def __init__(self, html: str):
+        self._html = html
+
+    def content(self) -> str:
+        return self._html
+
+    def goto(self, *args, **kwargs):
+        raise AssertionError("collect must not navigate")
 
 
 def test_parse_date_links_reads_the_d_query_param():
@@ -78,3 +103,40 @@ def test_real_fixture_still_yields_dates_showtimes_and_movies():
     assert len(parse_date_links(html)) >= 1
     assert len(parse_showtimes(html)) >= 1
     assert len(parse_movies(html)) >= 1
+
+
+def test_collect_returns_the_link_dates_plus_the_displayed_day_sorted():
+    snapshot = VoxAdapter().collect(_FakePage(DAY_HTML), TARGET)
+    assert snapshot.dates == ["2026-07-30", "2026-07-31", "2026-08-01"]
+    assert snapshot.target_id == "vox-1"
+
+
+def test_collect_never_navigates():
+    """VOX rejects the second request from a reused context; the strip is enough."""
+    # _FakePage.goto raises, so this passing proves no navigation happened.
+    assert VoxAdapter().collect(_FakePage(DAY_HTML), TARGET).dates
+
+
+def test_collect_records_showtimes_for_the_displayed_day_only():
+    snapshot = VoxAdapter().collect(_FakePage(DAY_HTML), TARGET)
+    movie = snapshot.movies[0]
+    assert movie.title == "Spider-Man: Brand New Day"
+    assert list(movie.showtimes) == ["2026-07-30"]
+    assert [s.time for s in movie.showtimes["2026-07-30"]] == [
+        "10:45am",
+        "2:00pm",
+        "12:00pm",
+        "1:30pm",
+    ]
+
+
+def test_collect_without_a_date_strip_yields_no_dates_and_does_not_raise():
+    snapshot = VoxAdapter().collect(_FakePage("<div>nothing</div>"), TARGET)
+    assert snapshot.dates == []
+
+
+def test_collect_omits_the_displayed_day_when_it_has_no_showtimes():
+    """The displayed day is the one day we can verify, so the rule still applies."""
+    html = '<a href="/s?c=x&amp;d=20260731">x</a>'
+    snapshot = VoxAdapter().collect(_FakePage(html), TARGET)
+    assert snapshot.dates == ["2026-07-31"]
