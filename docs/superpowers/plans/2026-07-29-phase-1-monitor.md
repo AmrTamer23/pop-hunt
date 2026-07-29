@@ -2964,10 +2964,16 @@ Accepted for Phase 1, recorded so they are not mistaken for bugs:
   with `channel="chrome"` and `domcontentloaded`, capture is reliable — but
   this is bot management, and it may tighten. If it does, VOX targets degrade
   to `error` tiles and the other targets keep alerting.
-- **Premiere may yield dates only, or nothing.** Its SPA did not render
-  showtimes on demand during investigation. Strategy B (Task 13) recovers the
-  booking window without movies, and a total failure degrades to an `error`
-  entry for that one target — the other three keep working.
+- **Premiere's wizard is intermittently undrivable** — observed failing 1 run in
+  4, returning in ~3.5s instead of the usual ~70s. It correctly reports zero
+  dates rather than guessing, so the target flips to a `stale` card and no
+  alert fires; the next successful run flips it back. Two consequences: expect
+  the occasional stale card, and expect `snapshot.json` to change (and CI to
+  commit) on each flip. The payload fallback was deliberately removed rather
+  than used to paper over this — its dates come from other films' site-wide
+  window, and since state never regresses, one wrong-but-plausible date would
+  permanently suppress every genuine alert. No dates is recoverable; a wrong
+  date is not.
 - **Regex parsing, not a DOM parser.** Chosen so the pure functions are
   testable with no browser. It is tolerant enough for these three sites but
   will need updating after a redesign; the real-fixture guard test in each
