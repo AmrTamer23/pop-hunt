@@ -35,6 +35,8 @@ class Showtime:
 
 @dataclass(frozen=True)
 class Movie:
+    """A film on the listing, with showtimes keyed by ISO date."""
+
     title: str
     poster_url: str | None = None
     rating: str | None = None

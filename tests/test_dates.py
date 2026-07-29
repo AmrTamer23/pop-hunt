@@ -31,3 +31,27 @@ def test_parse_day_month_keeps_same_year_for_later_month():
 def test_parse_day_month_rejects_unparseable_text():
     with pytest.raises(ValueError):
         parse_day_month("Coming Soon", today=date(2026, 7, 29))
+
+
+def test_parse_day_month_ignores_four_digit_year_token():
+    assert parse_day_month("30 Jul 2026", today=date(2026, 7, 29)) == "2026-07-30"
+
+
+def test_parse_day_month_first_day_wins_over_trailing_digit_noise():
+    assert parse_day_month("Thu 30 Jul 12 shows", today=date(2026, 7, 29)) == "2026-07-30"
+
+
+def test_parse_day_month_is_order_independent():
+    assert parse_day_month("Jul 30", today=date(2026, 7, 29)) == "2026-07-30"
+
+
+def test_parse_day_month_rejects_out_of_range_day():
+    with pytest.raises(ValueError):
+        parse_day_month("99 Jul", today=date(2026, 7, 29))
+
+
+def test_parse_dmy_rejects_unparseable_text():
+    with pytest.raises(ValueError):
+        parse_dmy("not a date")
+    with pytest.raises(ValueError):
+        parse_dmy("aa-bb-cccc")

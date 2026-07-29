@@ -1,3 +1,5 @@
+import json
+
 from pop_hunt.models import Movie, Showtime, Snapshot
 
 
@@ -32,3 +34,13 @@ def test_snapshot_round_trips():
         movies=[Movie(title="A Film")],
     )
     assert Snapshot.from_dict(snap.to_dict()) == snap
+
+
+def test_snapshot_round_trips_through_json():
+    # This is the real downstream contract: the dashboard reads this as JSON.
+    snap = Snapshot(
+        target_id="vox-moe-spiderman",
+        dates=["2026-07-30", "2026-07-31"],
+        movies=[Movie(title="A Film")],
+    )
+    assert Snapshot.from_dict(json.loads(json.dumps(snap.to_dict()))) == snap

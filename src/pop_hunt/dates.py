@@ -31,9 +31,9 @@ def parse_day_month(text: str, today: date) -> str:
         cleaned = token.strip().lower()
         if cleaned[:3] in _MONTHS:
             month = _MONTHS[cleaned[:3]]
-        elif cleaned.isdigit():
+        elif cleaned.isdigit() and len(cleaned) <= 2 and day is None:
             day = int(cleaned)
-    if day is None or month is None:
+    if day is None or month is None or not 1 <= day <= 31:
         raise ValueError(f"cannot parse day/month from {text!r}")
     year = today.year + 1 if month < today.month else today.year
     return f"{year:04d}-{month:02d}-{day:02d}"

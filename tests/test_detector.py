@@ -42,3 +42,15 @@ def test_window_shrinking_is_not_a_new_day():
     result = detect("2026-08-05", ["2026-07-30", "2026-08-01"])
     assert result.status == NO_CHANGE
     assert result.new_day_opened is False
+
+
+def test_new_day_dedupes_repeated_dates_in_added():
+    # Responsive sites often render the date strip twice (desktop + mobile DOM).
+    result = detect("2026-08-05", ["2026-08-06", "2026-08-06"])
+    assert result.added == ["2026-08-06"]
+
+
+def test_new_day_handles_unsorted_input():
+    result = detect("2026-08-05", ["2026-08-08", "2026-08-06"])
+    assert result.new_max == "2026-08-08"
+    assert result.added == ["2026-08-06", "2026-08-08"]
