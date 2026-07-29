@@ -40,10 +40,12 @@
 
 **Dependency order:** models → dates → detector → config → store → format → telegram → adapter protocol → fixtures → adapters (scene, vox, premiere) → fetcher → main → workflow. Tasks below follow this order, so every task depends only on already-built units.
 
-**One deliberate exception:** Task 9 writes the adapter registry, which imports
-three modules that do not exist until Task 13. Its test is therefore red from
-Task 9 to Task 13 — this is called out in both tasks and is the only red-between-tasks
-step in the plan.
+**Registry sequencing:** Task 9 creates the `SiteAdapter` protocol ONLY. The
+registry in `adapters/__init__.py` imports all three adapter modules, so writing
+it before they exist would make `import pop_hunt.adapters` raise — which breaks
+*test collection* for Tasks 11 and 12, not just the registry's own test. The
+registry and its test are therefore written together in Task 13, once all three
+adapters exist. The suite stays green after every task.
 
 ---
 
@@ -839,17 +841,29 @@ from pathlib import Path
 from typing import Any
 
 MAX_EVENTS = 200
-EMPTY_SNAPSHOT: dict[str, Any] = {"generated_at": None, "targets": []}
+
+
+def _empty_snapshot() -> dict[str, Any]:
+    """Fresh each call - a module-level constant would be shared and mutable."""
+    return {"generated_at": None, "targets": []}
 
 
 def _read_json(path: str | Path, default: Any) -> Any:
+    """Return the parsed file, or `default` if it is missing or unusable.
+
+    Wrong-type JSON must fall back too, not just malformed JSON: these files
+    are committed to the repo, so a bad one is sticky and would otherwise
+    crash every run until a human intervened. `json.JSONDecodeError` subclasses
+    `ValueError`, and so does `UnicodeDecodeError` on a binary file.
+    """
     file = Path(path)
     if not file.exists():
         return default
     try:
-        return json.loads(file.read_text())
-    except (json.JSONDecodeError, ValueError):
+        value = json.loads(file.read_text())
+    except ValueError:
         return default
+    return value if isinstance(value, type(default)) else default
 
 
 def _write_json(path: str | Path, payload: Any) -> None:
@@ -871,7 +885,7 @@ def save_state(path: str | Path, state: dict[str, str]) -> bool:
 
 
 def load_snapshot(path: str | Path) -> dict[str, Any]:
-    return _read_json(path, dict(EMPTY_SNAPSHOT))
+    return _read_json(path, _empty_snapshot())
 
 
 def save_snapshot(
@@ -879,8 +893,12 @@ def save_snapshot(
 ) -> bool:
     """Write the dashboard feed, ignoring `generated_at` when comparing.
 
-    Only a real content change should touch the file.
+    Only a real content change should touch the file. `targets` is normalised
+    through JSON first: any value that changes type on a round trip (a tuple
+    becoming a list) would otherwise compare unequal forever and produce a
+    commit every 30 minutes - the exact thing write-if-changed prevents.
     """
+    targets = json.loads(json.dumps(targets))
     if load_snapshot(path).get("targets") == targets:
         return False
     _write_json(path, {"generated_at": generated_at, "targets": targets})
