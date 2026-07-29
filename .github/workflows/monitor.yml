@@ -1,0 +1,47 @@
+name: monitor
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -e .
+          python -m playwright install --with-deps chrome
+
+      - name: Run monitor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CHECK_TZ: Africa/Cairo
+        run: python -m pop_hunt.main
+
+      - name: Commit data if it changed
+        run: |
+          git config user.name "pop-hunt bot"
+          git config user.email "actions@github.com"
+          git add state.json data
+          if git diff --cached --quiet; then
+            echo "no data change"
+          else
+            git commit -m "data: update booking state [skip ci]"
+            git push
+          fi
