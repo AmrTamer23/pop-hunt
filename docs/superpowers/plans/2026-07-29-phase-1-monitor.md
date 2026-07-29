@@ -371,11 +371,15 @@ def parse_day_month(text: str, today: date) -> str:
     month: int | None = None
     for token in text.replace(",", " ").split():
         cleaned = token.strip().lower()
+        # Weekday abbreviations never collide with month ones, which is what
+        # makes this order-independent loop safe.
         if cleaned[:3] in _MONTHS:
             month = _MONTHS[cleaned[:3]]
-        elif cleaned.isdigit():
+        elif cleaned.isdigit() and len(cleaned) <= 2 and day is None:
+            # First-wins and at most two digits: a trailing year token ("30 Jul
+            # 2026") or a stray number must not overwrite the day.
             day = int(cleaned)
-    if day is None or month is None:
+    if day is None or month is None or not 1 <= day <= 31:
         raise ValueError(f"cannot parse day/month from {text!r}")
     year = today.year + 1 if month < today.month else today.year
     return f"{year:04d}-{month:02d}-{day:02d}"
@@ -486,7 +490,11 @@ class Detection:
 def detect(previous_furthest: str | None, dates: list[str]) -> Detection:
     """Compare the furthest date seen before against this run's dates.
 
-    ISO date strings compare chronologically as plain strings.
+    Precondition: every date MUST be zero-padded fixed-width `YYYY-MM-DD`,
+    which is what `dates.py` guarantees. Only then do ISO strings compare
+    chronologically as plain strings. A single unpadded date such as
+    "2026-8-6" would sort above every padded date that year, fire a spurious
+    alert, and then suppress real ones until the year rolls over.
     """
     if not dates:
         return Detection(NO_DATES, False, previous_furthest, None, [])
@@ -498,7 +506,9 @@ def detect(previous_furthest: str | None, dates: list[str]) -> Detection:
         return Detection(BASELINE, False, None, current_max, [])
 
     if current_max > previous_furthest:
-        added = sorted(d for d in dates if d > previous_furthest)
+        # Deduped: responsive sites often render the date strip twice
+        # (desktop + mobile DOM), which would otherwise repeat in the alert.
+        added = sorted({d for d in dates if d > previous_furthest})
         return Detection(NEW_DAY, True, previous_furthest, current_max, added)
 
     return Detection(NO_CHANGE, False, previous_furthest, current_max, [])
