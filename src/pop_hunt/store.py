@@ -11,7 +11,11 @@ from pathlib import Path
 from typing import Any
 
 MAX_EVENTS = 200
-EMPTY_SNAPSHOT: dict[str, Any] = {"generated_at": None, "targets": []}
+
+
+def _empty_snapshot() -> dict[str, Any]:
+    """Fresh each call - a module-level constant would be shared and mutable."""
+    return {"generated_at": None, "targets": []}
 
 
 def _read_json(path: str | Path, default: Any) -> Any:
@@ -19,9 +23,10 @@ def _read_json(path: str | Path, default: Any) -> Any:
     if not file.exists():
         return default
     try:
-        return json.loads(file.read_text())
-    except (json.JSONDecodeError, ValueError):
+        value = json.loads(file.read_text())
+    except ValueError:
         return default
+    return value if isinstance(value, type(default)) else default
 
 
 def _write_json(path: str | Path, payload: Any) -> None:
@@ -43,7 +48,7 @@ def save_state(path: str | Path, state: dict[str, str]) -> bool:
 
 
 def load_snapshot(path: str | Path) -> dict[str, Any]:
-    return _read_json(path, dict(EMPTY_SNAPSHOT))
+    return _read_json(path, _empty_snapshot())
 
 
 def save_snapshot(
@@ -53,6 +58,7 @@ def save_snapshot(
 
     Only a real content change should touch the file.
     """
+    targets = json.loads(json.dumps(targets))
     if load_snapshot(path).get("targets") == targets:
         return False
     _write_json(path, {"generated_at": generated_at, "targets": targets})

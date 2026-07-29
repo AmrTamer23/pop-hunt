@@ -33,6 +33,16 @@ def test_load_targets_reads_all_fields(tmp_path):
     assert targets[1].cinema == "Cima Arkan"
 
 
+def test_load_targets_defaults_scope_to_movie_when_absent(tmp_path):
+    path = tmp_path / "targets.yaml"
+    path.write_text(
+        'targets:\n'
+        '  - {id: a, label: A, site: scene, url: "https://x.test"}\n'
+    )
+    targets = load_targets(path)
+    assert targets[0].scope == "movie"
+
+
 def test_load_targets_rejects_duplicate_ids(tmp_path):
     path = tmp_path / "targets.yaml"
     path.write_text(

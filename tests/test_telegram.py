@@ -20,6 +20,7 @@ def test_send_posts_to_the_bot_api(monkeypatch):
     def fake_post(url, json, timeout):
         captured["url"] = url
         captured["json"] = json
+        captured["timeout"] = timeout
         return _FakeResponse()
 
     monkeypatch.setattr(telegram.requests, "post", fake_post)
@@ -29,6 +30,8 @@ def test_send_posts_to_the_bot_api(monkeypatch):
     assert captured["json"]["chat_id"] == "42"
     assert captured["json"]["text"] == "hello"
     assert captured["json"]["parse_mode"] == "HTML"
+    assert captured["json"]["disable_web_page_preview"] is False
+    assert captured["timeout"] == 15
 
 
 def test_send_skips_when_not_configured(monkeypatch):

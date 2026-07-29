@@ -58,6 +58,42 @@ def test_load_snapshot_returns_empty_shape_when_absent(tmp_path):
     }
 
 
+def test_load_snapshot_does_not_share_state_across_calls(tmp_path):
+    first = load_snapshot(tmp_path / "missing-1.json")
+    first["targets"].append({"id": "polluted"})
+
+    second = load_snapshot(tmp_path / "missing-2.json")
+    assert second == {"generated_at": None, "targets": []}
+
+
+def test_load_state_returns_empty_dict_when_json_is_wrong_type(tmp_path):
+    path = tmp_path / "state.json"
+    path.write_text("[1, 2, 3]")
+    assert load_state(path) == {}
+
+
+def test_load_events_returns_empty_list_when_json_is_wrong_type(tmp_path):
+    path = tmp_path / "events.json"
+    path.write_text('"hello"')
+    assert load_events(path) == []
+
+
+def test_load_snapshot_returns_empty_shape_when_json_is_wrong_type(tmp_path):
+    path = tmp_path / "snapshot.json"
+    path.write_text('"hello"')
+    assert load_snapshot(path) == {"generated_at": None, "targets": []}
+
+
+def test_save_snapshot_normalizes_tuples_before_comparing(tmp_path):
+    path = tmp_path / "snapshot.json"
+    targets = [{"id": "a", "attributes": ("x", "y")}]
+
+    assert save_snapshot(path, targets, "t1") is True
+    # Same content (tuple normalizes to the same list JSON already stored) ->
+    # must NOT report a change, or this would rewrite every run forever.
+    assert save_snapshot(path, targets, "t2") is False
+
+
 def test_append_events_puts_newest_first(tmp_path):
     path = tmp_path / "events.json"
     append_events(path, [{"at": "t1", "target_id": "a"}])
@@ -74,4 +110,7 @@ def test_append_events_is_a_noop_for_empty_input(tmp_path):
 def test_append_events_caps_the_log(tmp_path):
     path = tmp_path / "events.json"
     append_events(path, [{"at": f"t{i}"} for i in range(250)])
-    assert len(load_events(path)) == 200
+    kept = load_events(path)
+    # Must keep the NEWEST 200 (the front of the batch), not the oldest, and
+    # preserve newest-first order.
+    assert [e["at"] for e in kept] == [f"t{i}" for i in range(200)]

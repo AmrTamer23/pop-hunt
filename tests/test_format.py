@@ -34,3 +34,12 @@ def test_alert_escapes_html_in_the_label():
     assert "&lt;B&gt;" in text
     assert "&amp;" in text
     assert "<B>" not in text
+
+
+def test_alert_escapes_html_in_the_url():
+    target = Target(id="x", label="Cinema", site="scene", url="https://x.test/?a=1&b=2")
+    detection = detect("2026-08-05", ["2026-08-06"])
+    text = format_alert(target, detection)
+
+    assert "&amp;" in text
+    assert "?a=1&b=2" not in text
