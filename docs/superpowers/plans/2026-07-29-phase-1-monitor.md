@@ -1276,8 +1276,16 @@ Adapters are written against **saved real HTML**, so tests never touch the netwo
 
 - [ ] **Step 1: Install the browser**
 
-Run: `.venv/bin/playwright install --with-deps chromium`
-Expected: downloads Chromium; ends without error.
+Run: `.venv/bin/playwright install --with-deps chrome`
+Expected: installs real Chrome; ends without error.
+
+**Real Chrome, not bundled Chromium.** VOX sits behind Akamai bot management,
+which rejects Playwright's bundled Chromium at the HTTP/2 layer
+(`net::ERR_HTTP2_PROTOCOL_ERROR`) before any content loads — reproduced 6/6
+across both VOX URLs, both wait strategies and two user agents, while the same
+Chromium loads Scene and Premiere fine. `--disable-http2` does not help (it
+times out instead). Real Chrome loads the page normally. Everything therefore
+launches with `channel="chrome"`.
 
 - [ ] **Step 2: Write the script**
 
@@ -1315,7 +1323,12 @@ def main(argv: list[str]) -> int:
 
     FIXTURES.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        # channel="chrome" uses real Chrome, not Playwright's bundled Chromium.
+        # VOX sits behind Akamai bot management, which rejects the bundled
+        # build at the HTTP/2 layer (net::ERR_HTTP2_PROTOCOL_ERROR) before any
+        # content loads. Real Chrome is accepted. Scene and Premiere work with
+        # either, so this is the single launch config for all three.
+        browser = pw.chromium.launch(headless=True, channel="chrome")
         context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
         for target in targets:
             page = context.new_page()
@@ -1788,7 +1801,9 @@ from pop_hunt.models import Movie, Showtime, Snapshot
 
 SITE_ID = "vox"
 
-_DATE_PARAM = re.compile(r"[?&]d=(\d{8})")
+# NOTE the `amp;`: in raw HTML the separator is `&amp;d=`, not `&d=`. Matching
+# only `[?&]d=` finds ZERO dates and the target silently never alerts.
+_DATE_PARAM = re.compile(r"[?&](?:amp;)?d=(\d{8})")
 _ARTICLE = re.compile(r'<article\b[^>]*\bmovie-compare\b.*?</article>', re.DOTALL)
 _TITLE = re.compile(r"<h2\b[^>]*>(.*?)</h2>", re.DOTALL)
 _POSTER = re.compile(r'<img\b[^>]*\bclass="[^"]*\bhero\b[^"]*"[^>]*\bsrc="([^"]+)"')
@@ -2000,7 +2015,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36")
 
 with sync_playwright() as pw:
-    browser = pw.chromium.launch(headless=True)
+    browser = pw.chromium.launch(headless=True, channel="chrome")
     page = browser.new_context(user_agent=UA, locale="en-GB").new_page()
     page.goto(URL, wait_until="networkidle", timeout=60_000)
     page.wait_for_timeout(3_000)
@@ -2310,7 +2325,12 @@ USER_AGENT = (
 def browser_context():
     """A headless Chromium context that looks like a normal desktop browser."""
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        # channel="chrome" uses real Chrome, not Playwright's bundled Chromium.
+        # VOX sits behind Akamai bot management, which rejects the bundled
+        # build at the HTTP/2 layer (net::ERR_HTTP2_PROTOCOL_ERROR) before any
+        # content loads. Real Chrome is accepted. Scene and Premiere work with
+        # either, so this is the single launch config for all three.
+        browser = pw.chromium.launch(headless=True, channel="chrome")
         context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
         try:
             yield context
@@ -2688,7 +2708,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e .
-          python -m playwright install --with-deps chromium
+          python -m playwright install --with-deps chrome
 
       - name: Run monitor
         env:
@@ -2790,7 +2810,7 @@ opening onwards.
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -e ".[dev]"
-.venv/bin/playwright install --with-deps chromium
+.venv/bin/playwright install --with-deps chrome
 .venv/bin/pytest                       # tests never touch the network
 .venv/bin/python -m pop_hunt.main      # a real run
 ```

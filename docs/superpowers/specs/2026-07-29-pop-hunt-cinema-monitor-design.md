@@ -45,18 +45,29 @@ opened, which is the event being detected.
 ## 3. Approach
 
 Headless-browser-for-everything (chosen for resilience): every target renders in
-headless Chromium via **Playwright**. This uniformly handles VOX's Akamai bot
-protection, Premiere's Next.js client-side rendering, and Scene's server-rendered
-pages without per-site network workarounds. Runs on a **GitHub Actions** cron
-every 30 minutes in a **private** repo. Data persists as JSON committed to the
-repo. The dashboard is a static single-page app built by the same workflow and
-deployed to **Cloudflare Pages**, which serves from a private repo on its free
-tier and gives a URL reachable from the user's phone.
+headless **real Chrome** via **Playwright** (`channel="chrome"`). One launch
+config handles all three sites — Premiere's client-side rendering, Scene's
+server-rendered tabs, and VOX's bot management — with no per-site network
+workarounds.
+
+**Why real Chrome rather than Playwright's bundled Chromium:** VOX sits behind
+Akamai bot management, which rejects the bundled build at the HTTP/2 layer
+(`net::ERR_HTTP2_PROTOCOL_ERROR`) before any content loads. Verified 6/6 across
+both VOX URLs, both wait strategies and two user agents, while the same build
+loaded Scene and Premiere fine; `--disable-http2` times out instead. Real Chrome
+loads it normally. If VOX ever blocks harder, those two targets degrade to an
+`error` tile and the other targets keep alerting — see §13.
+
+Runs on a **GitHub Actions** cron every 30 minutes in a **private** repo. Data
+persists as JSON committed to the repo. The dashboard is a static single-page
+app built by the same workflow and deployed to **Cloudflare Pages**, which
+serves from a private repo on its free tier and gives a URL reachable from the
+user's phone.
 
 Stack:
 
-- **Monitor:** Python 3.12, Playwright (Chromium), PyYAML, `requests` (Telegram
-  API), pytest.
+- **Monitor:** Python 3.12, Playwright (real Chrome channel), PyYAML,
+  `requests` (Telegram API), pytest.
 - **Dashboard:** Vite, React 19, TanStack Router (file-based routing),
   TypeScript, Vitest.
 
@@ -441,7 +452,7 @@ read-only view — there are no controls that mutate anything.
 - `concurrency: { group: monitor, cancel-in-progress: false }` — no overlapping runs.
 - `permissions: { contents: write, deployments: write }`.
 - Steps: checkout → setup-python 3.12 → `pip install -e .` →
-  `playwright install --with-deps chromium` → `python -m pop_hunt.main`
+  `playwright install --with-deps chrome` → `python -m pop_hunt.main`
   (Telegram secrets in env) → commit `state.json` + `data/` **only if changed**
   (`git diff --quiet || commit && push`, message tagged `[skip ci]`) → copy
   `data/*.json` into `site/public/data/` and write `built_at` → setup-node →
