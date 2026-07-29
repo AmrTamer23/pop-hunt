@@ -52,8 +52,12 @@ function TargetDetail() {
             }
           />
           <div className="grid">
-            {target.movies.map((movie) => (
-              <MovieCard key={movie.title} movie={movie} date={selected} />
+            {target.movies.map((movie, index) => (
+              // Composite key: two distinct movies can share a title
+              // (vox-moe-all carries both the Arabic-dub and English cuts of
+              // Toy Story 5), and the source data has no id. The list is never
+              // reordered, so the index is stable.
+              <MovieCard key={`${movie.title}-${index}`} movie={movie} date={selected} />
             ))}
           </div>
         </>
