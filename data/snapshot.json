@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T01:03:29+03:00",
+  "generated_at": "2026-07-30T02:31:40+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -29,13 +29,13 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "2:00pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:15pm",
@@ -185,7 +185,7 @@
                 "time": "7:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:00pm",
@@ -252,13 +252,13 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "2:00pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:15pm",
@@ -408,7 +408,7 @@
                 "time": "7:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:00pm",
@@ -1470,7 +1470,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:15 PM",
@@ -1574,7 +1574,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
