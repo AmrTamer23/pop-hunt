@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Big+Shoulders+Display:wght@600;700;800&display=swap');
+
+/* ===========================================================================
+   pop-hunt — "late show"
+   ---------------------------------------------------------------------------
+   A cinema listings board read in the dark. Condensed signage type for names,
+   tabular figures for times, one tungsten-amber accent reserved for the three
+   things that actually carry a decision: a day that just opened, the day you
+   are looking at, and a seat you can still buy.
+
+   Everything else is warm neutral, so the amber never has to compete.
+   =========================================================================== */
+
+/* --- tokens ------------------------------------------------------------- */
+
+:root {
+  color-scheme: dark light;
+
+  --font-display: 'Big Shoulders Display', 'Oswald', 'Avenir Next Condensed',
+    'Arial Narrow', ui-sans-serif, sans-serif;
+  --font-text: 'Archivo', ui-sans-serif, -apple-system, 'Segoe UI',
+    'Helvetica Neue', Arial, sans-serif;
+
+  /* Auditorium dark: warm near-black, never blue-black. */
+  --bg: #0c0a09;
+  --surface: #17130f;
+  --surface-2: #1f1a15;
+
+  --ink: #f5efe6;
+  --ink-2: #b5aa9c;
+  /* Sold out / already started. Deliberately ~5:1 on a card, not a whisper:
+     for VOX this is the majority of the data. */
+  --ink-dim: #94897d;
+
+  --line: color-mix(in oklab, var(--ink) 12%, transparent);
+  --line-2: color-mix(in oklab, var(--ink) 26%, transparent);
+
+  --accent: #ffb02e;
+  --accent-ink: #1b1204;
+
+  /* Cool and dusty: "this reading is old", not "something broke". */
+  --stale: #9fb6c6;
+  --danger: #ff7a6a;
+
+  --pad: clamp(1rem, 4vw, 2.5rem);
+  --maxw: 76rem;
+  --radius: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Warm programme paper, not white. */
+    --bg: #f4efe4;
+    --surface: #fffdf8;
+    --surface-2: #fbf6ec;
+
+    --ink: #191410;
+    --ink-2: #675d52;
+    --ink-dim: #6f665c;
+
+    --line: color-mix(in oklab, var(--ink) 15%, transparent);
+    --line-2: color-mix(in oklab, var(--ink) 30%, transparent);
+
+    --accent: #a4490a;
+    --accent-ink: #fff8ec;
+
+    --stale: #3f5a6e;
+    --danger: #a32718;
+  }
+}
+
+/* --- reset -------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink);
+  background-color: var(--bg);
+  /* Projector spill from above the fold. Fixed px so it stays the same size
+     on a 17-movie page as on a two-item one. */
+  background-image:
+    radial-gradient(
+      1100px 420px at 50% -140px,
+      color-mix(in oklab, var(--accent) 11%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      700px 300px at 108% -40px,
+      color-mix(in oklab, var(--accent) 6%, transparent),
+      transparent 70%
+    );
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Film grain. Pointer-transparent, no blend mode — blending a full-viewport
+   fixed layer costs real scroll performance on a phone. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: inherit;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* --- shell -------------------------------------------------------------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.app__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.6rem 1.5rem;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: clamp(1.5rem, 5vw, 2.25rem) var(--pad) 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.app__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.1rem, 9vw, 3.1rem);
+  line-height: 0.82;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* The lamp. Decorative only. */
+.app__brand::before {
+  content: '';
+  flex: none;
+  width: 0.26em;
+  height: 0.26em;
+  border-radius: 1px;
+  background: var(--accent);
+  box-shadow: 0 0 0.9em color-mix(in oklab, var(--accent) 65%, transparent);
+}
+
+.app__brand:hover::before {
+  box-shadow: 0 0 1.4em var(--accent);
+}
+
+.app__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 34rem) {
+  .app__meta {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.app__main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: 0 var(--pad) clamp(3rem, 10vw, 5rem);
+}
+
+/* --- sections ----------------------------------------------------------- */
+
+.section {
+  margin-top: clamp(1.75rem, 6vw, 2.75rem);
+}
+
+.section__title {
+  margin: 0;
+  min-width: 0;
+}
+
+/* Board header. Only the overview's own section labels — the detail page's
+   title lives inside .detail__header and is styled as a page title below. */
+.section > .section__title {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.15rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 3.6vw, 1.35rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.section > .section__title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--line-2), transparent);
+}
+
+.detail__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.detail__header .section__title {
+  flex: 1 1 14ch;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 0.94;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.grid {
+  display: grid;
+  align-items: start;
+  gap: clamp(0.85rem, 2.4vw, 1.25rem);
+  /* 16rem, not 17: at 1280 the extra rem is the difference between four
+     targets on one row and three plus an orphan. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+/* Movie cards carry showtime grids, so they need more room than a target
+   card. Falls back to the rule above where :has() is unsupported. */
+.grid:has(.movie) {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20.5rem), 1fr));
+}
+
+/* --- status badges ------------------------------------------------------ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dashed + cool + quiet. Premiere sits here most of the time and that is
+   expected, so this must never look like a fault. */
+.badge--stale {
+  color: var(--stale);
+  background: color-mix(in oklab, var(--stale) 13%, transparent);
+  border: 1px dashed color-mix(in oklab, var(--stale) 45%, transparent);
+}
+
+/* Solid + red. This one is a fault. */
+.badge--error {
+  color: var(--danger);
+  background: color-mix(in oklab, var(--danger) 15%, transparent);
+  border: 1px solid color-mix(in oklab, var(--danger) 55%, transparent);
+}
+
+/* --- openings feed ------------------------------------------------------ */
+
+.feed {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.feed__item {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--accent) 9%, var(--surface-2)),
+    var(--surface) 55%
+  );
+  min-width: 0;
+}
+
+.feed__label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.05;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.feed__dates {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.feed__dates strong {
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.feed__meta {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 34rem) {
+  .feed__item {
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+  }
+
+  .feed__label,
+  .feed__dates {
+    grid-column: 1;
+  }
+
+  .feed__meta {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+}
+
+/* --- target cards ------------------------------------------------------- */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.05rem 1.1rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface) 60%);
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Marquee light strip along the top edge. */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+  min-width: 0;
+}
+
+/* Full row. Sharing it with a badge squeezes long cinema names into a column
+   of four two-word lines; the badge is happier underneath. */
+.card__title {
+  flex: 1 1 100%;
+  min-width: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.02;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.card__window {
+  text-wrap: balance;
+  padding-left: 0.65rem;
+  border-left: 2px solid var(--line-2);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.15rem;
+}
+
+/* Share the row when there is honest room for both, otherwise stack at full
+   width each. The 10rem basis is set above the point where "View showtimes"
+   starts wrapping mid-label, so it never splits across two lines beside a
+   single-line sibling. */
+.card__actions > .button {
+  flex: 1 1 10rem;
+}
+
+/* --- buttons ------------------------------------------------------------ */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 3px;
+  border: 1px solid color-mix(in oklab, var(--accent) 55%, transparent);
+  background: color-mix(in oklab, var(--accent) 9%, transparent);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.button--ghost {
+  border-color: var(--line-2);
+  background: transparent;
+  color: var(--ink-2);
+}
+
+.button--ghost:hover {
+  border-color: var(--ink-2);
+  background: color-mix(in oklab, var(--ink) 7%, transparent);
+  color: var(--ink);
+}
+
+/* --- date strip --------------------------------------------------------- */
+
+/* Scrolls itself, never the page. The negative inline margin lets it bleed
+   into the main gutter so it visibly runs off the edge on a phone. */
+.strip {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin-inline: calc(var(--pad) * -1);
+  padding: 0.25rem var(--pad) 1.1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-2) transparent;
+}
+
+.strip::-webkit-scrollbar {
+  height: 5px;
+}
+
+.strip::-webkit-scrollbar-thumb {
+  background: var(--line-2);
+  border-radius: 999px;
+}
+
+.strip__day {
+  flex: none;
+  scroll-snap-align: center;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.strip__day:hover {
+  border-color: var(--line-2);
+  color: var(--ink);
+}
+
+.strip__day--selected,
+.strip__day--selected:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+
+/* Eleven days fit without scrolling once there is room for them. */
+@media (min-width: 62rem) {
+  .strip {
+    flex-wrap: wrap;
+  }
+}
+
+/* --- movie cards -------------------------------------------------------- */
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--surface-2), var(--surface) 45%);
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Aspect ratios differ wildly between chains — VOX ships 860x300 hero stills,
+   Premiere ships 640x903 portraits, Scene ships nothing at all. A scope band
+   is the compromise: it barely crops the wide heroes that make up almost all
+   the data, it keeps seventeen cards scrollable instead of seventeen
+   full-bleed posters, and it is the ratio the content was shot in anyway.
+
+   The hatch is what a blocked hot-link leaves behind — posters are hot-linked
+   from cinema CDNs with no-referrer, so some will fail. No padding: it would
+   inset the image inside its own box and frame every successful load. */
+.movie__poster {
+  width: 100%;
+  aspect-ratio: 12 / 5;
+  object-fit: cover;
+  /* The Y offset only bites on portraits — a wider-than-the-box image is
+     scaled to the box height and has nothing left to slide. So this is tuned
+     purely for Premiere's 2:3 posters, where 20% lands on the face rather
+     than the chest, and costs the VOX heroes nothing. */
+  object-position: 50% 20%;
+  background-color: var(--surface);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--surface),
+    var(--surface) 7px,
+    var(--surface-2) 7px,
+    var(--surface-2) 14px
+  );
+  color: var(--ink-dim);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  /* Melts into the card instead of stopping on a hard edge. */
+  -webkit-mask-image: linear-gradient(180deg, #000 88%, transparent);
+  mask-image: linear-gradient(180deg, #000 88%, transparent);
+}
+
+.movie__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 1.05rem;
+  min-width: 0;
+}
+
+.movie:not(:has(.movie__poster)) .movie__body {
+  padding-top: 1.05rem;
+}
+
+.movie__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.02;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.movie__meta {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* "Not collected" is not "no screenings" and neither is an error. Neutral
+   grey, a plain rule, no colour of its own — an aside, nothing more. */
+.movie__note {
+  margin-top: 0.15rem;
+  padding: 0.55rem 0.7rem;
+  border-left: 2px solid var(--line-2);
+  border-radius: 0 3px 3px 0;
+  background: color-mix(in oklab, var(--ink) 5%, transparent);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+/* --- showtimes ---------------------------------------------------------- */
+
+.showtimes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.showtimes__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.showtimes__experience {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.showtimes__experience::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.showtimes__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.showtimes__list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Bookable: warm outline, full-strength ink. This is what the eye hunts for. */
+.showtime {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, transparent);
+  border-radius: 3px;
+  background: color-mix(in oklab, var(--accent) 11%, transparent);
+  color: var(--ink);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sold out or already started. Dropped out of the warm layer entirely, but
+   held at roughly 5:1 against the card — for VOX this is most of the board
+   and an unreadable board is a useless one. */
+.showtime--unavailable {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--ink-dim);
+  font-weight: 400;
+}
+
+.tag {
+  align-self: center;
+  padding: 0.14rem 0.3rem;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--ink) 11%, transparent);
+  color: var(--ink-2);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- empty states ------------------------------------------------------- */
+
+/* Dashed box: nothing here yet. Distinct on sight from .movie__note. */
+.empty {
+  max-width: 62ch;
+  padding: 1.15rem;
+  border: 1px dashed var(--line-2);
+  border-radius: var(--radius);
+  background: color-mix(in oklab, var(--ink) 3%, transparent);
+  color: var(--ink-2);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+/* The "no such target" state is returned bare, not wrapped in a .section, so
+   it has no section margin to inherit and would butt against the header rule. */
+.app__main > .empty {
+  margin-top: clamp(1.75rem, 6vw, 2.75rem);
+}
+
+/* --- motion ------------------------------------------------------------- */
+
+/* Declared only under no-preference, so reduced-motion users never depend on
+   an animation having run to see the page. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes ph-rise {
+    from {
+      opacity: 0;
+      transform: translateY(7px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .section {
+    animation: ph-rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+
+  .section:nth-of-type(2) {
+    animation-delay: 0.08s;
+  }
+
+  .feed__item,
+  .grid > * {
+    animation: ph-rise 0.45s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+
+  /* Stagger the first row or two only — 17 cards deep it stops reading as
+     choreography and starts reading as lag. */
+  .grid > :nth-child(1) {
+    animation-delay: 0.04s;
+  }
+  .grid > :nth-child(2) {
+    animation-delay: 0.08s;
+  }
+  .grid > :nth-child(3) {
+    animation-delay: 0.12s;
+  }
+  .grid > :nth-child(4) {
+    animation-delay: 0.16s;
+  }
+  .grid > :nth-child(5) {
+    animation-delay: 0.2s;
+  }
+  .grid > :nth-child(6) {
+    animation-delay: 0.24s;
+  }
+
+  .app__brand::before,
+  .button,
+  .strip__day,
+  .card::before {
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease,
+      opacity 0.15s ease,
+      box-shadow 0.2s ease;
+  }
+}
