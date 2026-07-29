@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  deployments: write
 
 jobs:
   check:
@@ -45,3 +46,28 @@ jobs:
             git commit -m "data: update booking state [skip ci]"
             git push
           fi
+
+      - name: Stage dashboard data
+        run: |
+          mkdir -p site/public/data
+          cp data/snapshot.json site/public/data/ 2>/dev/null || true
+          cp data/events.json  site/public/data/ 2>/dev/null || true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Build dashboard
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy dashboard
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site/dist --project-name=pop-hunt
