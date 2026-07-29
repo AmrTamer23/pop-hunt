@@ -15,7 +15,7 @@ and compares the furthest one to the last-seen value for that target in
 
 Each run also writes `data/snapshot.json` (what's showing right now, per
 target) and appends to `data/events.json` (a log of the openings that have
-been detected). Neither is consumed yet — a Phase 2 dashboard will read them.
+been detected). Both are what the [dashboard](#dashboard) renders.
 
 ## Setup
 
@@ -39,6 +39,80 @@ been detected). Neither is consumed yet — a Phase 2 dashboard will read them.
 That's expected, not a bug — there is nothing yet to compare that first
 observation against. You'll start getting alerts once a target's furthest
 bookable date advances past what that first run recorded.
+
+## Dashboard
+
+A read-only site built from the two data files above. The overview page lists
+every tracked cinema with the day it currently books through and a badge when
+that reading is stale, plus a feed of the booking days that have recently
+opened — which target, and which dates appeared.
+
+Open a cinema and you get its bookable days as a strip you can pick from, and
+for the chosen day each movie with its poster, rating, language and runtime,
+and its showtimes grouped by experience — MAX, GOLD, 4DX, Premiere, Standard.
+Sold-out and already-started times stay on the page, dimmed: hiding them makes
+a busy evening look empty.
+
+The header carries two timestamps on purpose. "Last checked" is when the
+monitor last ran; "data as of" is when anything last changed. On a quiet day
+they are hours apart, and showing only the second one looks like a broken site.
+
+### Where it lives
+
+Cloudflare Pages. The same workflow that runs the monitor builds `site/` and
+uploads it, on **every** run — including the runs that find no change and so
+commit nothing. That is what keeps "last checked" honest.
+
+### Cloudflare setup
+
+1. Create a free [Cloudflare](https://dash.cloudflare.com/sign-up) account.
+2. Create a Pages project named `pop-hunt` (Workers & Pages -> Create -> Pages)
+   using **Direct Upload**, *not* a Git connection. The workflow uploads the
+   built `site/dist` itself; a Git connection would build the repo a second
+   time, on every data commit.
+3. Create an API token (My Profile -> API Tokens -> Create Custom Token) with
+   the **Cloudflare Pages: Edit** permission.
+4. Add that token as `CLOUDFLARE_API_TOKEN` and your account ID as
+   `CLOUDFLARE_ACCOUNT_ID` under Settings -> Secrets and variables -> Actions,
+   alongside the Telegram secrets.
+
+### Running the dashboard locally
+
+```bash
+mkdir -p site/public/data
+cp data/*.json site/public/data/
+cd site && npm install && npm run dev
+```
+
+**The copy is required.** `site/public/data/` is gitignored — it is a build
+input, not source — and the page fetches `/data/snapshot.json` at runtime.
+Skip it and the site loads with no cinemas on it and no error: a missing data
+file is a legitimate state here (see the last note below), so the page falls
+back to empty rather than failing.
+
+Dashboard tests are `cd site && npx vitest run`; `npm run build` type-checks
+and builds what CI deploys.
+
+### What it will and won't tell you
+
+- **VOX showtimes are collected for one day only.** VOX rejects a second
+  showtimes request made from the same browser context, so only the day its
+  page opens on gets drilled. Every other bookable day says "Showtimes not
+  collected for this day" — the dashboard will not render an empty list there,
+  because that would claim the cinema is shut when what we actually have is no
+  information. The booking window itself comes from the date strip and is
+  complete.
+- **Premiere is currently failing to render on their side.** Their page paints
+  the similar-movies strip and the footer but never the movie hero or the
+  cinema chooser, so there is nothing for the adapter to click. Expect that
+  card to carry a stale badge and show the last reading that worked. The
+  monitor reports no dates rather than guessing at them, so a Premiere outage
+  produces silence, never a false alert.
+- **Posters are hot-linked from the cinemas' own CDNs.** Nothing is copied or
+  cached here. One that blocks the request leaves the card's neutral
+  placeholder rather than a broken-image icon.
+- **`events.json` does not exist until the first booking day opens.** A fresh
+  install has an empty feed, and that is correct, not a failure to load.
 
 ## Adding or changing a target
 
@@ -100,8 +174,6 @@ loudly the moment a site changes, even if nothing else catches it.
   bookable dates are still detected — they come from the date strip — just
   not drilled for showtimes, because VOX rejects a second request made from
   the same browser context. Detection of new days is unaffected.
-- **For a `scope: cinema` target, every movie currently carries the same
-  showtimes list** — showtimes aren't split out per movie yet.
 - **The repo is public on purpose.** GitHub Actions minutes are free on
   public repos and limited on private ones, and this monitor's 30-minute
   cadence would run well past a private repo's free allowance. No secrets
