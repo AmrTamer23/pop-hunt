@@ -1,0 +1,26 @@
+# targets.yaml — watch targets. Add or remove freely; `id` must be unique.
+targets:
+  - id: vox-moe-spiderman
+    label: "VOX Mall of Egypt — Spider-Man: Brand New Day"
+    site: vox
+    scope: movie
+    url: "https://egy.voxcinemas.com/showtimes?c=mall-of-egypt&m=spider-man-brand-new-day"
+
+  - id: vox-moe-all
+    label: "VOX Mall of Egypt — all movies"
+    site: vox
+    scope: cinema
+    url: "https://egy.voxcinemas.com/showtimes?c=mall-of-egypt"
+
+  - id: scene-district5-spiderman
+    label: "Scene District 5 — Spider-Man: Brand New Day"
+    site: scene
+    scope: movie
+    url: "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
+
+  - id: premiere-cima-arkan-spiderman
+    label: "Premiere Cima Arkan — Spider-Man: Brand New Day"
+    site: premiere
+    scope: movie
+    cinema: "Cima Arkan"
+    url: "https://www.premiere-cinemas.com/en/movie-details/9961.764/1"
