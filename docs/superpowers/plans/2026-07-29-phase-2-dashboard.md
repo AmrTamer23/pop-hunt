@@ -1650,8 +1650,16 @@ git commit -m "docs: document the dashboard"
 - **VOX shows one day of showtimes.** Detection is unaffected. Collecting the
   rest needs a fresh browser context per date (VOX rejects repeat requests from
   one context), which would add roughly 5s per date per target.
-- **Premiere flakes about 1 run in 4**, showing a stale badge until the next
-  good run.
+- **Premiere is currently failing far more than the recorded 1-in-4** — observed
+  5 consecutive failures on 2026-07-29 afternoon. Diagnosis: their page renders
+  only the "similar movies" section and footer; the movie hero and the cinema
+  chooser never paint, so `get_by_role('button', name='Cima Arkan')` finds
+  nothing. The `get-movie-show-dates` API still returns 200, so the data is
+  fetched and the SPA simply fails to render it. This is a fault on their side,
+  not in the adapter, which correctly reports no dates rather than guessing.
+  Expect a persistent stale card for that target until Premiere's site
+  recovers. If it does not, the adapter may be worth a reload-and-retry, since
+  the symptom is a partial render rather than an outright block.
 - **`snapshot.json` is ~339 KB** and is fetched whole on first load. Fine now;
   if targets multiply, split it per target or trim showtimes from the overview
   payload.
