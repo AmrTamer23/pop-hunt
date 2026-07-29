@@ -2943,6 +2943,15 @@ git commit -m "chore: verify phase 1 end to end"
 
 Accepted for Phase 1, recorded so they are not mistaken for bugs:
 
+- **VOX and Premiere collect dates without per-date navigation for VOX.** A
+  cinema's date strip is specific to that movie at that cinema, so strip
+  membership already implies the movie shows that day — detection needs only
+  the strip. VOX therefore parses one page and never navigates: its per-date
+  drilling both broke (VOX rejects the second request from a reused context)
+  and cost ~5s per date. The consequence is that VOX carries showtimes only for
+  the initially displayed day; Phase 2 decides whether to pay a fresh context
+  per date for the rest. Premiere still drills the full wizard (~65s of its
+  ~70s runtime) because it works and Actions minutes are free on a public repo.
 - **Cinema-scope showtimes are not split per movie.** For a `scope: cinema`
   target, every movie on the page carries the same `showtimes_by_date` map —
   confirmed on `vox-moe-all`, where all 17 movies each carry the same 97
