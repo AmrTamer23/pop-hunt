@@ -30,18 +30,31 @@ def main(argv: list[str]) -> int:
 
     FIXTURES.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
-        context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
+        # channel="chrome" uses real Chrome, not Playwright's bundled Chromium.
+        # VOX sits behind Akamai bot management, which rejects the bundled build
+        # at the HTTP/2 layer (net::ERR_HTTP2_PROTOCOL_ERROR) before any content
+        # loads. Scene and Premiere work with either, so this is the single
+        # launch config for all three.
+        browser = pw.chromium.launch(headless=True, channel="chrome")
         for target in targets:
+            # A fresh context per target, not one shared context: VOX's bot
+            # management rejects the second hit on a reused context with
+            # net::ERR_HTTP2_PROTOCOL_ERROR, so capturing both VOX targets in
+            # one run needs each to start from clean cookies.
+            context = browser.new_context(user_agent=USER_AGENT, locale="en-GB")
             page = context.new_page()
             print(f"-> {target.id}: {target.url}")
-            page.goto(target.url, wait_until="networkidle", timeout=60_000)
+            # "domcontentloaded", not "networkidle": VOX keeps background
+            # connections open forever, so networkidle never fires and the
+            # capture times out even though the page rendered in ~2s. The
+            # settle wait below covers any client-side rendering.
+            page.goto(target.url, wait_until="domcontentloaded", timeout=60_000)
             page.wait_for_timeout(3_000)
             out = FIXTURES / f"{target.id}.html"
             out.write_text(page.content(), encoding="utf-8")
             print(f"   saved {out.relative_to(Path.cwd())} ({out.stat().st_size} bytes)")
             page.close()
-        context.close()
+            context.close()
         browser.close()
     return 0
 
