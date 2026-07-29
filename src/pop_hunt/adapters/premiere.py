@@ -7,10 +7,11 @@ showtimes sit two wizard steps deeper still, behind a format then an
 experience. So this adapter drives four levels of UI rather than one.
 
 The cinema buttons carry nothing but generated utility classes, so they are
-matched on their text - `target.cinema`. When that fails, the embedded
-Next.js payload is used as a fallback: it streams through `self.__next_f`
-(not a classic `__NEXT_DATA__` blob) and carries a `show_dates` window, so a
-chooser change degrades to dates-only instead of to nothing.
+matched on their text - `target.cinema`. If that fails the target reports no
+dates at all, deliberately: see `PremiereAdapter.collect`.
+
+Movie metadata comes from the embedded Next.js payload, which streams
+through `self.__next_f` rather than a classic `__NEXT_DATA__` blob.
 """
 
 from __future__ import annotations
@@ -139,13 +140,16 @@ def parse_movie_meta(html: str) -> Movie:
 
 
 def parse_payload_dates(html: str) -> list[str]:
-    """The booking window advertised in the embedded payload.
+    """The site-wide booking window advertised in the embedded payload.
 
-    Fallback only. These `show_dates` belong to the page's *similar movies*,
-    so they describe Premiere's site-wide window rather than this cinema's
-    window for this film. That is still the right shape for the
-    furthest-date rule, which reads only max(dates), but it is strictly
-    worse than the strip and is used only when the strip cannot be reached.
+    Deliberately NOT a date source for detection - see the comment in
+    `PremiereAdapter.collect` for why. These `show_dates` belong to the
+    page's *similar movies*, so they describe what Premiere is selling
+    across its cinemas, not what this cinema is selling for this film.
+
+    Kept as a pure read of the payload: it is the only thing that can say
+    what window the page advertises when the chooser cannot be driven,
+    which makes it useful for the dashboard and for diagnosis.
     """
     dates: set[str] = set()
     for run in _SHOW_DATES.findall(decode_flight(html)):
@@ -256,24 +260,28 @@ class PremiereAdapter:
     site_id = SITE_ID
 
     def collect(self, page, target: Target) -> Snapshot:
+        # If the chooser cannot be driven, report nothing - never the payload
+        # window from `parse_payload_dates`. Those dates belong to the page's
+        # similar movies and can run ahead of this cinema's, and upstream
+        # state never regresses (it keeps max(stored, new)), so a single
+        # plausible-but-wrong date would permanently raise the bar and
+        # silently suppress every genuine alert after it. No dates is a
+        # visible, recoverable failure; wrong dates is neither.
+        if not _select_cinema(page, target.cinema):
+            return Snapshot(target_id=target.id, dates=[], movies=[])
+
+        page.wait_for_timeout(SETTLE_MS)
         html = page.content()
+        strip = parse_strip_dates(html, date.today())
+        if not strip:
+            return Snapshot(target_id=target.id, dates=[], movies=[])
+
         movie = parse_movie_meta(html)
-        strip: list[str] = []
-        showtimes_by_date: dict[str, list[Showtime]] = {}
-
-        if _select_cinema(page, target.cinema):
-            page.wait_for_timeout(SETTLE_MS)
-            strip = parse_strip_dates(page.content(), date.today())
-            showtimes_by_date = _collect_showtimes(page, strip)
-
-        # `sorted(set(...))` is what detect() requires: zero-padded ISO dates
-        # in ascending order. An empty strip means the chooser never rendered,
-        # so fall back to the site-wide window rather than reporting nothing.
-        dates = sorted(set(strip)) or parse_payload_dates(html)
-
         return Snapshot(
             target_id=target.id,
-            dates=dates,
+            # sorted(set(...)) is what detect() requires: zero-padded ISO
+            # dates in ascending order.
+            dates=sorted(set(strip)),
             movies=[
                 Movie(
                     title=movie.title,
@@ -281,7 +289,7 @@ class PremiereAdapter:
                     rating=movie.rating,
                     runtime_min=movie.runtime_min,
                     language=movie.language,
-                    showtimes=showtimes_by_date,
+                    showtimes=_collect_showtimes(page, strip),
                 )
             ],
         )

@@ -204,10 +204,11 @@ def test_collect_returns_the_strip_dates_sorted_and_zero_padded():
     assert snapshot.dates[-1] == "2026-08-05"
 
 
-def test_collect_prefers_the_strip_over_the_wider_payload_window():
+def test_collect_reports_the_strip_not_the_wider_payload_window():
     # The payload's show_dates start a day earlier than this cinema's strip.
     page = FakePage(PAGE_HTML, DAY_HTML)
     snapshot = PremiereAdapter().collect(page, TARGET)
+    assert "2026-07-29" in parse_payload_dates(PAGE_HTML)
     assert "2026-07-29" not in snapshot.dates
 
 
@@ -222,27 +223,42 @@ def test_collect_returns_showtimes_tagged_with_their_experience():
     assert ("3D",) in {s.attributes for s in showtimes}
 
 
-def test_collect_falls_back_to_payload_dates_when_the_cinema_is_missing():
+def test_collect_returns_no_dates_when_the_cinema_button_is_missing():
     # Premiere renames the cinema: the button the target names is gone.
     renamed = PAGE_HTML.replace(">Cima Arkan</button>", ">Arkan Mall</button>")
     page = FakePage(renamed, DAY_HTML)
     snapshot = PremiereAdapter().collect(page, TARGET)
     assert page.clicked == []
-    assert snapshot.dates == parse_payload_dates(PAGE_HTML)
+    # The payload window is right there and is deliberately NOT used: it is
+    # the similar movies' site-wide window and can run ahead of this cinema.
+    assert parse_payload_dates(renamed) != []
+    assert snapshot.dates == []
+    assert snapshot.movies == []
 
 
-def test_collect_falls_back_when_the_target_names_no_cinema():
+def test_collect_returns_no_dates_when_the_target_names_no_cinema():
     page = FakePage(PAGE_HTML, DAY_HTML)
     snapshot = PremiereAdapter().collect(page, Target(**{**vars(TARGET), "cinema": None}))
     assert page.clicked == []
-    assert snapshot.dates == parse_payload_dates(PAGE_HTML)
+    assert snapshot.dates == []
+    assert snapshot.movies == []
+
+
+def test_collect_returns_no_dates_when_the_strip_never_renders():
+    # The cinema is selectable, but the strip behind it never paints.
+    page = FakePage(PAGE_HTML)
+    snapshot = PremiereAdapter().collect(page, TARGET)
+    assert page.clicked == ["Cima Arkan"]
+    assert snapshot.dates == []
+    assert snapshot.movies == []
 
 
 def test_collect_returns_no_dates_rather_than_raising_when_nothing_is_there():
     page = FakePage("<html><body>redesigned</body></html>")
     snapshot = PremiereAdapter().collect(page, TARGET)
+    assert snapshot.target_id == TARGET.id
     assert snapshot.dates == []
-    assert snapshot.movies[0].title == "Unknown"
+    assert snapshot.movies == []
 
 
 def test_real_fixture_still_exposes_the_chooser_payload_and_metadata():
@@ -258,3 +274,6 @@ def test_real_day_fixture_still_yields_the_strip_formats_and_times():
     assert parse_chooser_options(DAY_HTML, "Choose Formats") == ["2D", "3D"]
     assert parse_chooser_options(DAY_HTML, "Choose Experience") == ["MAX", "Standard"]
     assert len(parse_time_options(DAY_HTML)) == 9
+    # collect() reads metadata from the post-selection page, so the payload
+    # has to survive the wizard rerenders too.
+    assert parse_movie_meta(DAY_HTML).title == "Spider-Man: Brand New Day"
