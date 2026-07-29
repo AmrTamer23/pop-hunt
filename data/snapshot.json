@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T22:20:32+03:00",
+  "generated_at": "2026-07-29T23:31:23+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -29,31 +29,31 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "2:00pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "5:15pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:30pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:45pm",
@@ -107,7 +107,7 @@
                 "time": "1:00pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "4:15pm",
@@ -242,29 +242,6 @@
       ],
       "movies": [
         {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "10:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
           "rating": "12+",
@@ -277,18 +254,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "12:30am",
@@ -324,12 +289,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-29": [
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:00am",
                 "experience": "Standard",
@@ -391,23 +350,6 @@
           }
         },
         {
-          "title": "Evil Dead Burn",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013151_1783078111532.jpg",
-          "rating": "18+",
-          "runtime_min": 110,
-          "language": "English",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Minions & Monsters",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012960_1776164010363.jpg",
           "rating": "G",
@@ -418,23 +360,6 @@
               {
                 "time": "12:00am",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Kalam Ala Eh (Awel Leila)",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013129_1777639537203.jpg",
-          "rating": "16+",
-          "runtime_min": 115,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-07-29": [
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -587,13 +512,13 @@
                 "time": "10:30 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "03:45 PM",
@@ -795,7 +720,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "06:30 PM",
@@ -1095,13 +1020,13 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
