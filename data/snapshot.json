@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:06:38+03:00",
+  "generated_at": "2026-07-30T19:08:43+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -234,12 +234,6 @@
                 "available": false
               },
               {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -350,12 +344,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-30": [
-              {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:30pm",
                 "experience": "Standard",
@@ -948,7 +936,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
