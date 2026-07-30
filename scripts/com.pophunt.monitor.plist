@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Template. Replace every __REPO__ with the absolute path to your clone, then
+  copy this to ~/Library/LaunchAgents/com.pophunt.monitor.plist and load it.
+  See "Running it locally on a schedule" in the README.
+
+  StartInterval, not StartCalendarInterval: the cadence that matters is "every
+  30 minutes", not "on the hour and the half hour".
+
+  While the Mac sleeps the timer does not fire. launchd coalesces the missed
+  intervals into a single run at wake, so a night asleep costs you one
+  catch-up run in the morning, not a burst of twenty.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.pophunt.monitor</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__REPO__/scripts/run_local.sh</string>
+    </array>
+
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <!-- Also run once at load, so you find out immediately if it is broken. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- launchd starts jobs with a bare PATH; git and python are found by
+         absolute path or through this. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/pop-hunt.local.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/pop-hunt.local.log</string>
+</dict>
+</plist>

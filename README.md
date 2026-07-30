@@ -40,6 +40,78 @@ That's expected, not a bug — there is nothing yet to compare that first
 observation against. You'll start getting alerts once a target's furthest
 bookable date advances past what that first run recorded.
 
+### Running it locally on a schedule
+
+The workflow's cron says every 30 minutes, and GitHub does not honour it.
+Scheduled workflows are best-effort and heavily throttled: measured gaps
+between real runs here have been **71 to 189 minutes**, about eleven runs a
+day. For a window that opens once a day at no announced hour, that is a long
+time to be looking the other way.
+
+A launchd agent on your Mac fixes the cadence: `StartInterval` of 1800 seconds
+is a real 30 minutes, for as long as the machine is awake. While it sleeps the
+timer does not fire, and launchd collapses everything it missed into a single
+run on wake — a night asleep costs you one catch-up run in the morning, not a
+burst of twenty.
+
+**Actions stays on.** It is the fallback for every hour your laptop is shut,
+and between them you get a tight cadence when you are around and coverage when
+you are not.
+
+**Both schedulers share one state, so neither re-alerts the other's finds.**
+`state.json` is committed to this repo, and that is what makes it work:
+`scripts/run_local.sh` pulls before the run and pushes after, so whichever
+scheduler goes next starts from what the other already saw. Without that they
+would each keep private state and both alert for the same day.
+
+#### Install
+
+```bash
+cp .env.example .env            # then fill in your bot token and chat id
+sed "s|__REPO__|$PWD|g" scripts/com.pophunt.monitor.plist \
+    > ~/Library/LaunchAgents/com.pophunt.monitor.plist
+launchctl load ~/Library/LaunchAgents/com.pophunt.monitor.plist
+```
+
+Run that `sed` from the repo root — `$PWD` is what replaces the `__REPO__`
+placeholder in the plist, and launchd needs the absolute path. `RunAtLoad` is
+set, so loading it runs the monitor once straight away and you find out
+immediately if something is wrong.
+
+#### Check on it
+
+```bash
+launchctl list | grep pophunt        # pid, last exit code, label
+tail -f /tmp/pop-hunt.local.log      # timestamped log of every run
+```
+
+In `launchctl list` the middle column is the last exit status: `0` is a healthy
+run. The log shows each run pulling, running, and then either pushing or
+reporting `no data change` — an uneventful run writes nothing, so most say the
+latter.
+
+#### Stop it
+
+```bash
+launchctl unload ~/Library/LaunchAgents/com.pophunt.monitor.plist
+```
+
+Actions keeps running after that; unloading only gives up the tighter cadence.
+
+#### If it does not run
+
+- **Nothing in the log, no pid.** The plist still has `__REPO__` in it, or the
+  path in it is wrong. Fix it, `launchctl unload`, then `load` again — editing
+  a loaded plist changes nothing by itself.
+- **`push rejected` twice in the log.** Under launchd the push uses your SSH
+  key without a terminal to prompt on, so a passphrase that is not in the
+  keychain fails silently. `ssh-add --apple-use-keychain ~/.ssh/id_ed25519`
+  once, and it can read it thereafter.
+- **Runs skipped with "another run holds …".** Expected if you started a run by
+  hand while the timer fired; the lock is there to stop two Chromes fighting
+  over the same files. A crashed run leaves the lock behind and the next one
+  clears it.
+
 ## Dashboard
 
 A read-only site built from the two data files above. The overview page lists
