@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T18:32:50+03:00",
+  "generated_at": "2026-07-30T19:04:47+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -74,16 +74,10 @@
                 "available": false
               },
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "7:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:00pm",
@@ -106,8 +100,10 @@
               {
                 "time": "11:15pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": false
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
               }
             ]
           }
@@ -191,12 +187,6 @@
                 "available": false
               },
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "7:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -246,12 +236,6 @@
                 "available": false
               },
               {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -261,7 +245,7 @@
                 "time": "7:15pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:00pm",
@@ -305,12 +289,6 @@
                 "available": false
               },
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -346,12 +324,6 @@
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -361,7 +333,7 @@
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00am",
@@ -533,12 +505,6 @@
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "06:30 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -551,7 +517,7 @@
                 "available": false
               },
               {
-                "time": "06:45 PM",
+                "time": "08:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -672,7 +638,7 @@
                 "time": "10:30 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "01:00 PM",
@@ -1199,30 +1165,6 @@
                 "available": true
               },
               {
-                "time": "11:00 AM",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "02:00 PM",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "05:00 PM",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "05:30 PM",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "08:00 PM",
                 "experience": "Standard",
                 "attributes": [],
@@ -1247,33 +1189,27 @@
                 "available": true
               },
               {
+                "time": "12:15 AM",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
                 "time": "02:00 AM",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:45 AM",
-                "experience": "MAX",
-                "attributes": [
-                  "3D"
-                ],
+                "time": "02:15 AM",
+                "experience": "Standard",
+                "attributes": [],
                 "available": true
               },
               {
-                "time": "03:00 PM",
-                "experience": "MAX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "06:15 PM",
-                "experience": "MAX",
-                "attributes": [
-                  "3D"
-                ],
+                "time": "02:30 AM",
+                "experience": "Standard",
+                "attributes": [],
                 "available": true
               }
             ],
@@ -1297,6 +1233,12 @@
                 "available": true
               },
               {
+                "time": "03:30 PM",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
                 "time": "05:00 PM",
                 "experience": "Standard",
                 "attributes": [],
@@ -1309,6 +1251,12 @@
                 "available": true
               },
               {
+                "time": "06:30 PM",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
                 "time": "08:00 PM",
                 "experience": "Standard",
                 "attributes": [],
@@ -1316,6 +1264,12 @@
               },
               {
                 "time": "09:15 PM",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:30 PM",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -1676,8 +1630,7 @@
           }
         }
       ],
-      "status": "stale",
-      "stale_since": "2026-07-29T17:03:51+03:00"
+      "status": "ok"
     }
   ]
 }
