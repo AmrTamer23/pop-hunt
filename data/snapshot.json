@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T08:44:00+03:00",
+  "generated_at": "2026-07-30T11:31:11+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -21,21 +21,15 @@
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
           "rating": "12+",
-          "runtime_min": 140,
+          "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "10:45am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "2:00pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:15pm",
@@ -47,13 +41,13 @@
                 "time": "8:30pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:45pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:45pm",
@@ -128,14 +122,6 @@
                 "available": false
               },
               {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "12:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -179,7 +165,7 @@
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "7:00pm",
@@ -199,7 +185,7 @@
                 "time": "9:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:15pm",
@@ -244,21 +230,15 @@
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
           "rating": "12+",
-          "runtime_min": 140,
+          "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "10:45am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "2:00pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:15pm",
@@ -270,13 +250,13 @@
                 "time": "8:30pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:45pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:45pm",
@@ -351,14 +331,6 @@
                 "available": false
               },
               {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "12:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -402,7 +374,7 @@
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "7:00pm",
@@ -422,7 +394,7 @@
                 "time": "9:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:15pm",
@@ -466,18 +438,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:45am",
@@ -575,12 +535,6 @@
                 "available": false
               },
               {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -652,12 +606,6 @@
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -705,12 +653,6 @@
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -757,12 +699,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-07-30": [
-              {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:45pm",
                 "experience": "Standard",
@@ -959,12 +895,6 @@
           "showtimes": {
             "2026-07-30": [
               {
-                "time": "10:30 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -993,18 +923,6 @@
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:30 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "12:00 PM",
@@ -1286,7 +1204,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
@@ -1476,7 +1394,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
