@@ -215,7 +215,7 @@ until there's a prior value to compare against.
 python3 -m venv .venv
 .venv/bin/pip install -e ".[dev]"
 .venv/bin/playwright install --with-deps chrome
-.venv/bin/pytest                       # 121 tests, none touch the network
+.venv/bin/pytest                       # 125 tests, none touch the network
 .venv/bin/python -m pop_hunt.main      # a real run, ~2.5 minutes
 ```
 
