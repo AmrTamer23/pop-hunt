@@ -1,7 +1,34 @@
 # pop-hunt — Cinema Booking-Day Monitor & Dashboard
 
 **Date:** 2026-07-29
-**Status:** Approved design, ready for implementation planning
+**Status:** Implemented. Both phases shipped; see the amendments below.
+
+## Amendments after implementation
+
+The body of this document is the design as approved, kept as the record of why
+each decision was made. Three things changed once it met reality — where the
+two disagree, this section wins.
+
+1. **The repo is public, not private** (§12). A private repo gets 2,000 free
+   Actions minutes/month; a 30-minute cadence needs far more. Public repos get
+   unlimited free Actions.
+
+2. **The dashboard is not deployed.** It was specified on Cloudflare Pages, and
+   the build and deploy steps were built and working — but the deploy was the
+   only failing part of every CI run while no Cloudflare account existed, so it
+   was removed. The dashboard is now run locally on demand:
+   `cp data/*.json site/public/data/ && npm run dev --prefix site`. Nothing
+   about the app changed; `npm run build` still produces a deployable
+   `site/dist`, so publishing it later is adding two workflow steps back.
+   Consequently there are no `CLOUDFLARE_*` secrets, and the workflow needs
+   only `contents: write`.
+
+3. **The 30-minute cron is not honoured.** GitHub throttles the `schedule`
+   event under load and drops runs rather than queueing them. Measured over the
+   first 9 runs: gaps of 71–189 minutes, median 159 — about 11 runs a day
+   against the 48 a 30-minute cron implies. Since a new booking day opens
+   roughly once a day this is serviceable, but the number in the cron
+   expression is aspirational, not a guarantee.
 
 ## 1. Purpose
 
@@ -282,8 +309,7 @@ location on pages that require selection. These four are the seed set.
 | `TELEGRAM_BOT_TOKEN` | Telegram bot auth (GitHub Actions secret) | yes, for alerts |
 | `TELEGRAM_CHAT_ID` | Telegram destination chat (GitHub Actions secret) | yes, for alerts |
 | `CHECK_TZ` | Timezone for date logic and timestamps (default `Africa/Cairo`) | no |
-| `CLOUDFLARE_API_TOKEN` | Cloudflare Pages deploy auth (GitHub Actions secret) | yes, for dashboard |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account (GitHub Actions secret) | yes, for dashboard |
+No Cloudflare secrets: the dashboard is no longer deployed (see §12).
 
 ### 8.3 Persisted data
 

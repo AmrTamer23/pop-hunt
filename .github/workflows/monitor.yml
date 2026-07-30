@@ -11,7 +11,6 @@ concurrency:
 
 permissions:
   contents: write
-  deployments: write
 
 jobs:
   check:
@@ -47,27 +46,10 @@ jobs:
             git push
           fi
 
-      - name: Stage dashboard data
-        run: |
-          mkdir -p site/public/data
-          cp data/snapshot.json site/public/data/ 2>/dev/null || true
-          cp data/events.json  site/public/data/ 2>/dev/null || true
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-          cache-dependency-path: site/package-lock.json
-
-      - name: Build dashboard
-        working-directory: site
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy dashboard
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site/dist --project-name=pop-hunt
+# The dashboard is not built or deployed here. It is a static page over the
+# data files this job commits, so it is run locally on demand:
+#
+#     cp data/*.json site/public/data/ && npm run dev --prefix site
+#
+# Building it in CI only made sense while it was being deployed. To publish it
+# again, add a build step plus a deploy step for whichever host you choose.

@@ -59,24 +59,15 @@ they are hours apart, and showing only the second one looks like a broken site.
 
 ### Where it lives
 
-Cloudflare Pages. The same workflow that runs the monitor builds `site/` and
-uploads it, on **every** run — including the runs that find no change and so
-commit nothing. That is what keeps "last checked" honest.
+Nowhere — it runs locally, on demand. The dashboard is a static page over the
+data files CI commits, so there is nothing to host: pull the repo and start it
+when you want to look. CI does not build or deploy it, which keeps the workflow
+to five steps and its run under two minutes.
 
-### Cloudflare setup
+To publish it later, add a build step and a deploy step for whichever host you
+pick; `npm run build` already produces a self-contained `site/dist`.
 
-1. Create a free [Cloudflare](https://dash.cloudflare.com/sign-up) account.
-2. Create a Pages project named `pop-hunt` (Workers & Pages -> Create -> Pages)
-   using **Direct Upload**, *not* a Git connection. The workflow uploads the
-   built `site/dist` itself; a Git connection would build the repo a second
-   time, on every data commit.
-3. Create an API token (My Profile -> API Tokens -> Create Custom Token) with
-   the **Cloudflare Pages: Edit** permission.
-4. Add that token as `CLOUDFLARE_API_TOKEN` and your account ID as
-   `CLOUDFLARE_ACCOUNT_ID` under Settings -> Secrets and variables -> Actions,
-   alongside the Telegram secrets.
-
-### Running the dashboard locally
+### Running the dashboard
 
 ```bash
 mkdir -p site/public/data
@@ -90,8 +81,11 @@ Skip it and the site loads with no cinemas on it and no error: a missing data
 file is a legitimate state here (see the last note below), so the page falls
 back to empty rather than failing.
 
+Run `git pull` first if you want the latest data — CI commits it, and your
+local copy is only as fresh as your last pull.
+
 Dashboard tests are `cd site && npx vitest run`; `npm run build` type-checks
-and builds what CI deploys.
+and produces a deployable `site/dist`.
 
 ### What it will and won't tell you
 
