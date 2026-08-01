@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T21:30:13+03:00",
+  "generated_at": "2026-08-01T22:47:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -18,7 +18,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -26,12 +26,6 @@
               {
                 "time": "11:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": false
               },
@@ -54,28 +48,18 @@
                 "available": false
               },
               {
-                "time": "9:45pm",
+                "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": false
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
               }
             ]
           }
@@ -103,7 +87,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -111,12 +95,6 @@
               {
                 "time": "11:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": false
               },
@@ -139,28 +117,18 @@
                 "available": false
               },
               {
-                "time": "9:45pm",
+                "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": false
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
               }
             ]
           }
@@ -168,29 +136,11 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
             "2026-08-01": [
-              {
-                "time": "9:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:00pm",
                 "experience": "Standard",
@@ -203,7 +153,7 @@
         {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
@@ -226,7 +176,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -243,7 +193,7 @@
         {
           "title": "Shamshoun w Dalila",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 95,
           "language": "Arabic",
           "showtimes": {
@@ -260,7 +210,7 @@
         {
           "title": "7 Dogs",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 120,
           "language": "Arabic",
           "showtimes": {
@@ -269,7 +219,7 @@
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -292,23 +242,6 @@
           }
         },
         {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "18TC",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-01": [
-              {
-                "time": "10:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
           "title": "Visa",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013535_1785306699974.jpg",
           "rating": "G",
@@ -316,12 +249,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-01": [
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:15am",
                 "experience": "Standard",
@@ -359,12 +286,6 @@
               {
                 "time": "12:00 AM",
                 "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "09:30 PM",
-                "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": false
               },
@@ -606,7 +527,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:15 PM",
@@ -698,7 +619,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "06:30 PM",
@@ -716,7 +637,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
