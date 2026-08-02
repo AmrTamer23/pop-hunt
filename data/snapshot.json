@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T07:55:54+03:00",
+  "generated_at": "2026-08-02T10:33:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -26,7 +26,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "2:00pm",
@@ -38,7 +38,7 @@
                 "time": "5:15pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:30pm",
@@ -104,7 +104,7 @@
                 "time": "1:00pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "4:15pm",
@@ -123,14 +123,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "12:00pm",
@@ -200,15 +192,13 @@
                 "time": "7:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:00pm",
                 "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
+                "attributes": [],
+                "available": false
               },
               {
                 "time": "9:45pm",
@@ -270,7 +260,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "2:00pm",
@@ -282,7 +272,7 @@
                 "time": "5:15pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:30pm",
@@ -348,7 +338,7 @@
                 "time": "1:00pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "4:15pm",
@@ -367,14 +357,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "12:00pm",
@@ -444,15 +426,13 @@
                 "time": "7:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:00pm",
                 "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
+                "attributes": [],
+                "available": false
               },
               {
                 "time": "9:45pm",
@@ -614,13 +594,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:30pm",
