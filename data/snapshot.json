@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T21:20:00+03:00",
+  "generated_at": "2026-08-03T23:13:06+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -35,28 +35,10 @@
                 "available": false
               },
               {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
@@ -104,28 +86,10 @@
                 "available": false
               },
               {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
@@ -145,16 +109,10 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -167,12 +125,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-03": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "12:00am",
                 "experience": "Standard",
@@ -191,30 +143,7 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "7 Dogs",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-03": [
-              {
-                "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -234,83 +163,7 @@
                 "time": "11:00pm",
                 "experience": "Kids",
                 "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-03": [
-              {
-                "time": "10:00pm",
-                "experience": "Kids",
-                "attributes": [],
                 "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1784647238434.jpg",
-          "rating": "G",
-          "runtime_min": 110,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-03": [
-              {
-                "time": "10:00pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
               }
             ]
           }
@@ -339,25 +192,19 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
               },
               {
-                "time": "09:30 PM",
+                "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "12:00 AM",
+                "time": "12:30 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -398,7 +245,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
@@ -478,7 +325,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "06:30 PM",
