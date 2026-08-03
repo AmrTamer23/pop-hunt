@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T01:31:15+03:00",
+  "generated_at": "2026-08-03T03:00:41+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -163,7 +163,7 @@
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:30pm",
@@ -354,7 +354,7 @@
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:30pm",
@@ -395,7 +395,7 @@
                 "time": "4:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:00am",
@@ -876,7 +876,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "06:30 PM",
@@ -894,7 +894,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
@@ -998,7 +998,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
@@ -1078,7 +1078,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "06:30 PM",
