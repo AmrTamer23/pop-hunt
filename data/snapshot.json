@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T06:47:48+03:00",
+  "generated_at": "2026-08-03T10:33:57+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -25,7 +25,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "2:00pm",
@@ -104,14 +104,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:45am",
@@ -216,7 +208,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "2:00pm",
@@ -295,14 +287,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:45am",
@@ -395,13 +379,7 @@
                 "time": "4:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:15am",
@@ -489,12 +467,6 @@
               {
                 "time": "6:15pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
