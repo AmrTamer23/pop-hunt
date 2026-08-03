@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T16:44:39+03:00",
+  "generated_at": "2026-08-03T19:28:32+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -10,7 +10,14 @@
       "dates": [
         "2026-08-03",
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12"
       ],
       "movies": [
         {
@@ -21,24 +28,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-03": [
-              {
-                "time": "5:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "5:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "5:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "8:15pm",
                 "experience": "GOLD",
@@ -64,26 +53,6 @@
                 "available": false
               },
               {
-                "time": "4:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "5:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "7:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -105,13 +74,19 @@
                 "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
+              },
+              {
+                "time": "11:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": false
               },
               {
                 "time": "11:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -147,24 +122,6 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "5:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "5:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "5:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -185,26 +142,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "4:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "5:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -230,13 +167,19 @@
                 "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
+              },
+              {
+                "time": "11:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": false
               },
               {
                 "time": "11:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -250,22 +193,10 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "5:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30pm",
@@ -283,35 +214,6 @@
           }
         },
         {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-03": [
-              {
-                "time": "6:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
           "rating": "16+",
@@ -320,16 +222,10 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:00pm",
@@ -355,25 +251,13 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:45pm",
+                "time": "12:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -389,12 +273,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-03": [
-              {
-                "time": "4:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "7:30pm",
                 "experience": "Standard",
@@ -419,12 +297,6 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "6:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -433,12 +305,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -454,12 +320,6 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "4:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -468,23 +328,6 @@
               {
                 "time": "10:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Visa",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013535_1785306699974.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-03": [
-              {
-                "time": "4:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -574,12 +417,6 @@
           "showtimes": {
             "2026-08-03": [
               {
-                "time": "06:30 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -592,18 +429,6 @@
                 "available": false
               },
               {
-                "time": "05:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "06:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "08:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
@@ -611,6 +436,12 @@
               },
               {
                 "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:30 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -657,7 +488,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:30 AM",
