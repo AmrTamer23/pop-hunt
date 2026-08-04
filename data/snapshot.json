@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T01:15:23+03:00",
+  "generated_at": "2026-08-05T02:34:01+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -30,7 +30,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "2:00pm",
@@ -48,7 +48,7 @@
                 "time": "8:30pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
@@ -60,7 +60,7 @@
                 "time": "12:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "1:45pm",
@@ -102,7 +102,7 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "1:00pm",
@@ -263,7 +263,7 @@
                 "time": "10:45am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "2:00pm",
@@ -281,7 +281,7 @@
                 "time": "8:30pm",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
@@ -293,7 +293,7 @@
                 "time": "12:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "1:45pm",
@@ -335,7 +335,7 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "1:00pm",
@@ -991,7 +991,7 @@
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "06:30 PM",
@@ -1101,7 +1101,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
