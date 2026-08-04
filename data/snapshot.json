@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T22:08:54+03:00",
+  "generated_at": "2026-08-04T23:51:41+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -30,42 +30,6 @@
               {
                 "time": "11:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               }
@@ -108,69 +72,10 @@
                 "available": false
               },
               {
-                "time": "10:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-04": [
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -184,12 +89,6 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "11:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -197,29 +96,6 @@
               },
               {
                 "time": "12:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sakr w Canaria",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
-          "runtime_min": 125,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-04": [
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -243,40 +119,6 @@
               }
             ]
           }
-        },
-        {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-04": [
-              {
-                "time": "11:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-04": [
-              {
-                "time": "10:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
         }
       ],
       "status": "ok"
@@ -289,7 +131,14 @@
       "scope": "movie",
       "dates": [
         "2026-08-04",
-        "2026-08-05"
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12"
       ],
       "movies": [
         {
@@ -301,37 +150,69 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
               },
               {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "09:30 PM",
+                "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "12:00 AM",
+                "time": "12:15 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               }
             ],
             "2026-08-05": [
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-06": [
               {
                 "time": "10:30 AM",
                 "experience": "Premiere",
@@ -342,31 +223,31 @@
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:30 AM",
@@ -405,7 +286,493 @@
                 "available": true
               },
               {
-                "time": "04:00 PM",
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-07": [
+              {
+                "time": "10:30 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:00 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:45 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:30 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:15 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:15 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "02:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-08": [
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-09": [
+              {
+                "time": "10:30 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:00 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:45 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:30 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:15 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:15 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "02:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-10": [
+              {
+                "time": "10:30 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:00 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:45 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:30 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:15 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:15 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "02:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-11": [
+              {
+                "time": "10:30 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:00 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:45 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:30 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:15 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:15 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "02:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-08-12": [
+              {
+                "time": "10:30 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:00 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:45 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:30 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:15 PM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Premiere",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "01:15 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "02:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -432,8 +799,7 @@
           }
         }
       ],
-      "status": "stale",
-      "stale_since": "2026-08-04T22:08:54+03:00"
+      "status": "ok"
     },
     {
       "id": "premiere-cima-arkan-spiderman",
