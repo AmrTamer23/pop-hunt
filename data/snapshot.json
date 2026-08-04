@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T20:13:42+03:00",
+  "generated_at": "2026-08-04T22:08:54+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -28,20 +28,8 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "8:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": false
               },
@@ -60,18 +48,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -126,20 +102,8 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "8:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": false
               },
@@ -158,18 +122,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -203,12 +155,6 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "9:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -241,19 +187,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -279,12 +213,6 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -308,36 +236,7 @@
           "showtimes": {
             "2026-08-04": [
               {
-                "time": "8:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "7 Dogs",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-04": [
-              {
-                "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -353,12 +252,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-04": [
-              {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:00pm",
                 "experience": "Kids",
@@ -539,7 +432,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-08-04T22:08:54+03:00"
     },
     {
       "id": "premiere-cima-arkan-spiderman",
