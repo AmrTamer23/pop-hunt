@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T06:50:30+03:00",
+  "generated_at": "2026-08-06T09:33:51+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -77,7 +77,7 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:30pm",
@@ -309,7 +309,7 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:30pm",
@@ -464,7 +464,7 @@
         },
         {
           "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1784647238434.jpg",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
           "rating": "G",
           "runtime_min": 110,
           "language": "Arabic",
