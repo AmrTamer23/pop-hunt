@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T17:33:06+03:00",
+  "generated_at": "2026-08-07T18:58:34+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -25,12 +25,6 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "5:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -47,12 +41,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "5:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "7:15pm",
@@ -172,12 +160,6 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "5:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -194,12 +176,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "5:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "7:15pm",
@@ -313,12 +289,6 @@
                 "available": false
               },
               {
-                "time": "6:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -354,22 +324,10 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "6:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:00pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "7:00pm",
@@ -409,18 +367,6 @@
               {
                 "time": "11:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -483,12 +429,6 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -505,12 +445,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-07": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:45pm",
                 "experience": "Standard",
@@ -552,12 +486,6 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "6:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -594,23 +522,6 @@
               }
             ]
           }
-        },
-        {
-          "title": "The Get Out",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013360_1784878730553.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-07": [
-              {
-                "time": "5:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
         }
       ],
       "status": "ok"
@@ -639,12 +550,6 @@
           "showtimes": {
             "2026-08-07": [
               {
-                "time": "06:30 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -657,16 +562,16 @@
                 "available": false
               },
               {
-                "time": "06:00 PM",
+                "time": "08:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
