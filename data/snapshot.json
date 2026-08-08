@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T20:33:01+03:00",
+  "generated_at": "2026-08-08T21:40:53+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -23,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-08": [
-              {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "12:00am",
                 "experience": "MAX",
@@ -108,12 +102,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -181,12 +169,6 @@
                 "available": true
               },
               {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -231,7 +213,7 @@
                 "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -244,12 +226,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-08": [
-              {
-                "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "11:30pm",
                 "experience": "GOLD",
@@ -289,40 +265,6 @@
           }
         },
         {
-          "title": "Panda Plan: The Magical Tribe",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-08": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Shamshoun w Dalila",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-08": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "7 Dogs",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
           "rating": "16+",
@@ -347,12 +289,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-08": [
-              {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "11:00pm",
                 "experience": "Kids",
@@ -405,25 +341,19 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
               },
               {
-                "time": "09:00 PM",
+                "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
-                "time": "12:00 AM",
+                "time": "12:15 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -458,7 +388,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
