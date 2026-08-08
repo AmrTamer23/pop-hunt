@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T13:36:38+03:00",
+  "generated_at": "2026-08-08T14:31:49+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -24,12 +24,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:30pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -48,12 +42,6 @@
                 "available": true
               },
               {
-                "time": "2:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -63,7 +51,7 @@
                 "time": "5:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "7:15pm",
@@ -78,14 +66,6 @@
                 "available": false
               },
               {
-                "time": "1:30pm",
-                "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [
@@ -96,24 +76,14 @@
               {
                 "time": "8:00pm",
                 "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
+                "attributes": [],
+                "available": false
               },
               {
                 "time": "11:15pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "3:30pm",
@@ -216,12 +186,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:30pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -238,12 +202,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "4:00pm",
@@ -270,16 +228,12 @@
                 "available": false
               },
               {
-                "time": "1:30pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "4:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
               },
               {
                 "time": "8:00pm",
@@ -292,20 +246,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "3:30pm",
@@ -391,12 +331,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -412,13 +346,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "3:15pm",
@@ -434,6 +362,12 @@
               },
               {
                 "time": "6:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -557,12 +491,6 @@
                 "available": true
               },
               {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "2:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -603,12 +531,6 @@
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "1:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -621,12 +543,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-08": [
-              {
-                "time": "2:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:15pm",
                 "experience": "Standard",
@@ -657,12 +573,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -692,19 +602,7 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "2:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -884,12 +782,6 @@
                 "available": false
               },
               {
-                "time": "02:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
@@ -897,6 +789,12 @@
               },
               {
                 "time": "04:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "05:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -1219,7 +1117,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
