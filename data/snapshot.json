@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T21:40:53+03:00",
+  "generated_at": "2026-08-08T22:32:28+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -40,12 +40,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:00pm",
@@ -120,12 +114,6 @@
                 "available": false
               },
               {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -166,7 +154,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:15pm",
@@ -198,12 +186,6 @@
           "showtimes": {
             "2026-08-08": [
               {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -233,16 +215,10 @@
                 "available": false
               },
               {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -259,7 +235,7 @@
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -345,6 +321,12 @@
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
+              },
+              {
+                "time": "11:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
               },
               {
                 "time": "12:00 AM",
@@ -480,7 +462,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
