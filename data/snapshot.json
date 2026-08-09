@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T23:35:32+03:00",
+  "generated_at": "2026-08-10T00:35:01+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -8,7 +8,6 @@
       "site": "vox",
       "scope": "movie",
       "dates": [
-        "2026-08-09",
         "2026-08-10",
         "2026-08-11",
         "2026-08-12"
@@ -21,10 +20,184 @@
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
-            "2026-08-09": [
+            "2026-08-10": [
+              {
+                "time": "11:00am",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:15pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:30pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:45pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
               {
                 "time": "12:00am",
                 "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "2:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "4:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "5:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "10:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "1:30pm",
+                "experience": "4DX",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "4:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "8:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "11:15pm",
+                "experience": "4DX",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "10:30am",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "12:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:45pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "3:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "6:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:15pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "10:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:15pm",
+                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -56,43 +229,6 @@
       ],
       "movies": [
         {
-          "title": "Spider-Man: Brand New Day",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
-          "runtime_min": 145,
-          "language": "English",
-          "showtimes": {
-            "2026-08-09": [
-              {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
           "rating": "G",
@@ -101,53 +237,7 @@
           "showtimes": {
             "2026-08-09": [
               {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-09": [
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
-          "title": "Panda Plan: The Magical Tribe",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-09": [
-              {
-                "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -180,24 +270,6 @@
           "showtimes": {
             "2026-08-09": [
               {
-                "time": "12:00 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:15 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:30 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
@@ -227,7 +299,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
