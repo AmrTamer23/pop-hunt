@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T21:44:01+03:00",
+  "generated_at": "2026-08-09T22:35:08+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -37,12 +37,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -108,12 +102,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": false
               },
@@ -184,12 +172,6 @@
           "showtimes": {
             "2026-08-09": [
               {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -217,12 +199,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:15pm",
@@ -362,6 +338,12 @@
               },
               {
                 "time": "12:15 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
