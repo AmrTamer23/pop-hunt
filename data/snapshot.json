@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T02:31:33+03:00",
+  "generated_at": "2026-08-09T04:54:04+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -68,7 +68,7 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:30pm",
@@ -279,7 +279,7 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "5:30pm",
