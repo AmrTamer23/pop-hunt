@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T20:26:57+03:00",
+  "generated_at": "2026-08-10T21:25:16+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -22,12 +22,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -42,14 +36,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
                 "attributes": [
                   "3D"
                 ],
@@ -108,12 +94,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -128,14 +108,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
                 "attributes": [
                   "3D"
                 ],
@@ -183,12 +155,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "10:15pm",
@@ -243,22 +209,10 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "9:45pm",
@@ -290,12 +244,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -313,30 +261,7 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Shamshoun w Dalila",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "8:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -370,12 +295,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -395,23 +314,6 @@
               {
                 "time": "10:45pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Get Out",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013360_1784878730553.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -442,22 +344,10 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:15 PM",
@@ -473,6 +363,12 @@
               },
               {
                 "time": "12:15 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
