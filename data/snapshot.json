@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T21:25:16+03:00",
+  "generated_at": "2026-08-10T22:32:16+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -39,12 +39,6 @@
                 "attributes": [
                   "3D"
                 ],
-                "available": true
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
                 "available": true
               },
               {
@@ -114,12 +108,6 @@
                 "available": true
               },
               {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -180,12 +168,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -213,12 +195,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:15pm",
@@ -298,7 +274,7 @@
                 "time": "11:00pm",
                 "experience": "Kids",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
