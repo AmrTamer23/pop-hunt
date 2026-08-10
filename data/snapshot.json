@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T07:03:57+03:00",
+  "generated_at": "2026-08-10T10:49:37+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -73,7 +73,7 @@
                 "time": "5:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "7:15pm",
@@ -110,14 +110,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
                 "attributes": [
                   "3D"
                 ],
@@ -287,7 +279,7 @@
                 "time": "5:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "7:15pm",
@@ -324,14 +316,6 @@
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
                 "attributes": [
                   "3D"
                 ],
@@ -860,12 +844,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "10:30am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:00pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -980,12 +958,6 @@
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "10:30 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "01:00 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -1014,12 +986,6 @@
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:30 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:00 AM",
