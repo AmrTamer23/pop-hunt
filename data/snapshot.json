@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T22:32:16+03:00",
+  "generated_at": "2026-08-10T23:45:08+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -16,7 +16,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -25,40 +25,6 @@
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               }
             ]
@@ -82,7 +48,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -92,92 +58,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "10:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
-          "runtime_min": 110,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "11:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "10:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -185,111 +65,14 @@
         {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
             "2026-08-10": [
               {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:30am",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sakr w Canaria",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
-          "runtime_min": 125,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Panda Plan: The Magical Tribe",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "7 Dogs",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "11:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-10": [
-              {
-                "time": "10:45pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -324,12 +107,6 @@
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "11:15 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "12:00 AM",
@@ -373,7 +150,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:15 PM",
