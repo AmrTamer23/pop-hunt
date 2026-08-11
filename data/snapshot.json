@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T19:07:55+03:00",
+  "generated_at": "2026-08-11T20:29:04+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -21,12 +21,6 @@
           "showtimes": {
             "2026-08-11": [
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -36,7 +30,7 @@
                 "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:00pm",
@@ -76,28 +70,16 @@
           "showtimes": {
             "2026-08-11": [
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
               },
               {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:00pm",
@@ -122,12 +104,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-11": [
-              {
-                "time": "7:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:45pm",
                 "experience": "Standard",
@@ -158,12 +134,6 @@
           "showtimes": {
             "2026-08-11": [
               {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -186,18 +156,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-11": [
-              {
-                "time": "7:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:15pm",
                 "experience": "Standard",
@@ -288,7 +246,7 @@
                 "time": "8:15pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:00pm",
@@ -330,12 +288,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-11": [
-              {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "10:45pm",
                 "experience": "Kids",
@@ -439,7 +391,19 @@
                 "available": true
               },
               {
+                "time": "09:30 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
                 "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
