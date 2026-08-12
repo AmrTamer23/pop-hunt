@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T16:15:05+03:00",
+  "generated_at": "2026-08-12T17:36:50+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -10,6 +10,9 @@
       "dates": [
         "2026-08-12",
         "2026-08-13",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -42,12 +45,6 @@
                 "available": true
               },
               {
-                "time": "4:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "5:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -66,12 +63,6 @@
                 "available": false
               },
               {
-                "time": "4:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "8:00pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -82,26 +73,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:00pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "6:45pm",
@@ -147,8 +118,7 @@
           }
         }
       ],
-      "status": "stale",
-      "stale_since": "2026-08-12T16:15:05+03:00"
+      "status": "ok"
     },
     {
       "id": "vox-moe-all",
@@ -170,7 +140,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -212,12 +182,6 @@
                 "available": false
               },
               {
-                "time": "4:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "8:00pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -228,20 +192,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "4:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:00pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "6:45pm",
@@ -336,17 +286,11 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "4:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "7:45pm",
                 "experience": "GOLD",
@@ -356,12 +300,6 @@
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -477,7 +415,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -512,12 +450,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "4:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -541,7 +473,7 @@
         {
           "title": "Moana",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "18TC",
+          "rating": "PG",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
@@ -593,7 +525,7 @@
         {
           "title": "7 Dogs",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 120,
           "language": "Arabic",
           "showtimes": {
@@ -616,7 +548,7 @@
         {
           "title": "Toy Story 5",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "18TC",
+          "rating": "PG",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
@@ -713,6 +645,12 @@
               },
               {
                 "time": "06:45 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "08:15 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
