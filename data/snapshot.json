@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T14:49:11+03:00",
+  "generated_at": "2026-08-12T16:15:05+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -147,7 +147,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-08-12T16:15:05+03:00"
     },
     {
       "id": "vox-moe-all",
@@ -158,6 +159,9 @@
       "dates": [
         "2026-08-12",
         "2026-08-13",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -166,7 +170,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -188,12 +192,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "4:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "5:30pm",
@@ -230,12 +228,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "4:30pm",
@@ -303,12 +295,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "2:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "6:15pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -319,18 +305,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "6:30pm",
@@ -362,7 +336,7 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
@@ -445,18 +419,6 @@
                 "available": true
               },
               {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -492,12 +454,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "4:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -521,7 +477,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -585,17 +541,11 @@
         {
           "title": "Moana",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
+          "rating": "18TC",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "2:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:15pm",
                 "experience": "Kids",
@@ -626,12 +576,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "4:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -649,17 +593,11 @@
         {
           "title": "7 Dogs",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 120,
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "Standard",
@@ -678,17 +616,11 @@
         {
           "title": "Toy Story 5",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:00pm",
                 "experience": "Kids",
@@ -756,12 +688,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "03:45 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -780,19 +706,13 @@
                 "available": true
               },
               {
-                "time": "03:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "04:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:45 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
@@ -833,7 +753,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:15 PM",
