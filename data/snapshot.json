@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T20:07:12+03:00",
+  "generated_at": "2026-08-12T21:27:14+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -27,12 +27,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -45,24 +39,10 @@
                 "available": false
               },
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:00pm",
@@ -116,12 +96,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -134,24 +108,10 @@
                 "available": false
               },
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:00pm",
@@ -249,28 +209,10 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -293,13 +235,13 @@
                 "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
@@ -312,12 +254,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:15pm",
                 "experience": "Standard",
@@ -336,12 +272,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -359,31 +289,8 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Panda Plan: The Magical Tribe",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-12": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -416,31 +323,8 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Get Out",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013360_1784878730553.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-12": [
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -476,31 +360,19 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
               },
               {
-                "time": "08:15 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
