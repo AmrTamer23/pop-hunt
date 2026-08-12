@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T13:35:28+03:00",
+  "generated_at": "2026-08-12T14:49:11+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -10,9 +10,6 @@
       "dates": [
         "2026-08-12",
         "2026-08-13",
-        "2026-08-14",
-        "2026-08-15",
-        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -26,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -49,12 +40,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "4:00pm",
@@ -81,14 +66,6 @@
                 "available": false
               },
               {
-                "time": "1:30pm",
-                "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -105,14 +82,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "3:30pm",
@@ -189,9 +158,6 @@
       "dates": [
         "2026-08-12",
         "2026-08-13",
-        "2026-08-14",
-        "2026-08-15",
-        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -205,12 +171,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -228,12 +188,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "4:00pm",
@@ -260,14 +214,6 @@
                 "available": false
               },
               {
-                "time": "1:30pm",
-                "experience": "4DX",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -284,20 +230,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "3:30pm",
@@ -436,12 +368,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -456,12 +382,6 @@
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -566,17 +486,11 @@
         {
           "title": "Mahmoud El Tany",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:00pm",
                 "experience": "Standard",
@@ -613,12 +527,6 @@
           "showtimes": {
             "2026-08-12": [
               {
-                "time": "2:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -647,12 +555,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:15pm",
                 "experience": "Standard",
@@ -723,12 +625,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-12": [
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:00pm",
                 "experience": "Standard",
@@ -884,12 +780,6 @@
                 "available": true
               },
               {
-                "time": "02:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
@@ -943,7 +833,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
