@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T23:46:16+03:00",
+  "generated_at": "2026-08-14T00:49:17+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -25,12 +25,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-13": [
-              {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "3:15am",
                 "experience": "MAX",
@@ -80,12 +74,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:15am",
                 "experience": "MAX",
                 "attributes": [],
@@ -102,23 +90,6 @@
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
-          "runtime_min": 110,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "12:00am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               }
             ]
           }
@@ -152,12 +123,6 @@
                 "time": "12:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
-              },
-              {
-                "time": "12:00am",
-                "experience": "Standard",
-                "attributes": [],
                 "available": true
               }
             ]
@@ -172,65 +137,8 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:00am",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "11:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sakr w Canaria",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
-          "runtime_min": 125,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "11:45pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -247,7 +155,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-08-13",
         "2026-08-14",
         "2026-08-15",
         "2026-08-16",
@@ -263,20 +170,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "12:00 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": false
-              }
-            ],
             "2026-08-14": [
               {
                 "time": "10:30 AM",
