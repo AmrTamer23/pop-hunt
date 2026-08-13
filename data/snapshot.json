@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T00:49:17+03:00",
+  "generated_at": "2026-08-14T01:44:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -28,12 +28,6 @@
               {
                 "time": "3:15am",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:00am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -80,64 +74,7 @@
                 "available": true
               },
               {
-                "time": "1:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "2:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "12:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "12:30am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mahmoud El Tany",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "1:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
