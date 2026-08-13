@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T12:15:58+03:00",
+  "generated_at": "2026-08-13T13:37:35+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -83,7 +83,7 @@
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:45pm",
@@ -241,7 +241,7 @@
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:45pm",
@@ -338,7 +338,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "3:00pm",
@@ -397,13 +397,13 @@
                 "time": "5:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00am",
@@ -459,7 +459,7 @@
         {
           "title": "The End of Oak Street",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -517,12 +517,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-13": [
-              {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:45pm",
                 "experience": "GOLD",
@@ -586,19 +580,13 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:45pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "4:00pm",
@@ -613,6 +601,12 @@
                 "available": true
               },
               {
+                "time": "8:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
                 "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -620,6 +614,12 @@
               },
               {
                 "time": "12:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -741,12 +741,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "1:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -856,20 +850,8 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "12:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -950,12 +932,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "01:00 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -978,12 +954,6 @@
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "01:15 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "03:00 PM",
@@ -1045,7 +1015,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
