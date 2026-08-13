@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T21:30:14+03:00",
+  "generated_at": "2026-08-13T22:38:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -20,7 +20,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -48,12 +48,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:30pm",
@@ -130,12 +124,6 @@
                 "available": false
               },
               {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [
@@ -202,12 +190,6 @@
                 "available": false
               },
               {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -224,12 +206,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-13": [
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:30am",
                 "experience": "Standard",
@@ -252,12 +228,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "10:30pm",
@@ -283,18 +253,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "9:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:15am",
                 "experience": "Standard",
                 "attributes": [],
@@ -318,12 +276,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "9:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:45pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -335,7 +287,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -352,7 +304,7 @@
         {
           "title": "Moana",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "18TC",
+          "rating": "PG",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
@@ -463,7 +415,7 @@
                 "time": "06:30 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:15 PM",
