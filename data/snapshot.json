@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T20:29:49+03:00",
+  "generated_at": "2026-08-13T21:30:14+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -20,17 +20,11 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-08-13": [
-              {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:00am",
                 "experience": "MAX",
@@ -44,30 +38,16 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "9:45pm",
@@ -126,12 +106,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -144,30 +118,16 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "9:45pm",
@@ -236,12 +196,6 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00am",
                 "experience": "GOLD",
                 "attributes": [],
@@ -297,7 +251,7 @@
                 "time": "12:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:30pm",
@@ -332,7 +286,7 @@
                 "time": "9:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:30pm",
@@ -374,12 +328,6 @@
                 "experience": "Kids",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -387,7 +335,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -402,26 +350,9 @@
           }
         },
         {
-          "title": "Shamshoun w Dalila",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Moana",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
+          "rating": "18TC",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
@@ -453,23 +384,6 @@
           }
         },
         {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "9:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
           "title": "Above and Below",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013544_1785912750220.jpg",
           "rating": "12+",
@@ -479,40 +393,6 @@
             "2026-08-13": [
               {
                 "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Pinocchio: Unstrung",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013341_1784268329436.jpg",
-          "rating": "18+",
-          "runtime_min": 85,
-          "language": "English",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Rivals of Amziah King",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013547_1786079997183.jpg",
-          "rating": "12+",
-          "runtime_min": 130,
-          "language": "English",
-          "showtimes": {
-            "2026-08-13": [
-              {
-                "time": "8:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -548,22 +428,10 @@
           "showtimes": {
             "2026-08-13": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "12:00 AM",
