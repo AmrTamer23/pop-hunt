@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T22:51:42+03:00",
+  "generated_at": "2026-08-14T23:34:02+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -39,12 +39,6 @@
               {
                 "time": "11:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
                 "attributes": [],
                 "available": false
               },
@@ -116,12 +110,6 @@
                 "available": false
               },
               {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [
@@ -145,29 +133,6 @@
           }
         },
         {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-14": [
-              {
-                "time": "11:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
-        },
-        {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
           "rating": "G",
@@ -182,13 +147,13 @@
                 "available": false
               },
               {
-                "time": "10:45pm",
+                "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:30pm",
+                "time": "3:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -245,16 +210,10 @@
                 "available": false
               },
               {
-                "time": "10:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:15am",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:45am",
@@ -264,40 +223,6 @@
               },
               {
                 "time": "2:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-08-14": [
-              {
-                "time": "11:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Shamshoun w Dalila",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-14": [
-              {
-                "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -375,7 +300,7 @@
                 "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
@@ -419,7 +344,7 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30 AM",
