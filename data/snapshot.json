@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T01:25:48+03:00",
+  "generated_at": "2026-08-15T02:49:44+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -90,23 +90,6 @@
             "2026-08-14": [
               {
                 "time": "3:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mahmoud El Tany",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-14": [
-              {
-                "time": "2:30am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
