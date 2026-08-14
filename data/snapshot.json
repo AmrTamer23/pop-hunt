@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:52:33+03:00",
+  "generated_at": "2026-08-15T01:25:48+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -27,12 +27,6 @@
               {
                 "time": "3:15am",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:00am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -78,12 +72,6 @@
                 "available": true
               },
               {
-                "time": "1:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "2:45am",
                 "experience": "Standard",
                 "attributes": [],
@@ -110,23 +98,6 @@
           }
         },
         {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-14": [
-              {
-                "time": "12:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Mahmoud El Tany",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
           "rating": "12+",
@@ -134,18 +105,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-14": [
-              {
-                "time": "12:30am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "12:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:30am",
                 "experience": "Standard",
@@ -208,7 +167,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
