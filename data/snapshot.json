@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T14:22:11+03:00",
+  "generated_at": "2026-08-15T14:46:12+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -23,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -57,7 +51,7 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -147,12 +141,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -258,7 +246,7 @@
                 "time": "3:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "7:15pm",
@@ -323,7 +311,7 @@
                 "time": "3:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "6:15pm",
@@ -397,12 +385,6 @@
           "showtimes": {
             "2026-08-15": [
               {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -458,12 +440,6 @@
               {
                 "time": "12:30am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -561,12 +537,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "2:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:45pm",
                 "experience": "Kids",
@@ -786,12 +756,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:00pm",
                 "experience": "Standard",
