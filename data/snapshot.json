@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T20:47:32+03:00",
+  "generated_at": "2026-08-15T21:32:49+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -23,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:00am",
                 "experience": "MAX",
@@ -90,12 +84,6 @@
           "showtimes": {
             "2026-08-15": [
               {
-                "time": "8:45pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
@@ -142,7 +130,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30pm",
@@ -168,16 +156,10 @@
           "showtimes": {
             "2026-08-15": [
               {
-                "time": "9:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:30pm",
@@ -267,16 +249,10 @@
                 "available": false
               },
               {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:45pm",
@@ -295,12 +271,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-15": [
-              {
-                "time": "9:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:15pm",
                 "experience": "Kids",
@@ -362,23 +332,6 @@
           }
         },
         {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "8:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Above and Below",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013544_1785912750220.jpg",
           "rating": "12+",
@@ -388,40 +341,6 @@
             "2026-08-15": [
               {
                 "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Pinocchio: Unstrung",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013341_1784268329436.jpg",
-          "rating": "18+",
-          "runtime_min": 85,
-          "language": "English",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Rivals of Amziah King",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013547_1786079997183.jpg",
-          "rating": "12+",
-          "runtime_min": 130,
-          "language": "English",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "8:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -455,20 +374,8 @@
           "showtimes": {
             "2026-08-15": [
               {
-                "time": "09:15 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00 AM",
                 "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               },
