@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T23:25:31+03:00",
+  "generated_at": "2026-08-15T23:49:25+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -27,20 +27,6 @@
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               }
             ]
@@ -76,37 +62,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -123,7 +78,7 @@
                 "time": "11:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:15am",
@@ -192,23 +147,6 @@
           }
         },
         {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "11:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
           "rating": "16+",
@@ -218,23 +156,6 @@
             "2026-08-15": [
               {
                 "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Above and Below",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013544_1785912750220.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-15": [
-              {
-                "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -277,7 +198,7 @@
                 "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
