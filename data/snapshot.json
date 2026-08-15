@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T19:27:03+03:00",
+  "generated_at": "2026-08-15T19:52:36+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -18,7 +18,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -39,7 +39,7 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -179,12 +179,6 @@
           "showtimes": {
             "2026-08-15": [
               {
-                "time": "7:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -308,12 +302,6 @@
                 "available": true
               },
               {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -339,12 +327,6 @@
               {
                 "time": "9:45pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
