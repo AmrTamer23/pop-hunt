@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:49:22+03:00",
+  "generated_at": "2026-08-15T14:22:11+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -48,12 +48,6 @@
                 "available": true
               },
               {
-                "time": "1:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -82,14 +76,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "4:30pm",
@@ -186,12 +172,6 @@
                 "available": true
               },
               {
-                "time": "1:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -201,7 +181,7 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -220,14 +200,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "4:30pm",
@@ -357,7 +329,7 @@
                 "time": "6:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "9:00pm",
@@ -534,7 +506,7 @@
                 "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:45pm",
@@ -610,12 +582,6 @@
               {
                 "time": "11:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -899,7 +865,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
