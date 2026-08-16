@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T20:21:43+03:00",
+  "generated_at": "2026-08-16T20:46:47+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -35,12 +35,6 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -50,14 +44,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -114,12 +100,6 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -129,14 +109,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -290,13 +262,13 @@
                 "time": "12:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30pm",
@@ -330,12 +302,6 @@
               {
                 "time": "11:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -387,23 +353,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "7 Dogs",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-16": [
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -512,13 +461,13 @@
                 "time": "12:00 AM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "09:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "09:30 PM",
