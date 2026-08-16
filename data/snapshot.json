@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T00:22:33+03:00",
+  "generated_at": "2026-08-17T00:46:26+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -8,7 +8,6 @@
       "site": "vox",
       "scope": "movie",
       "dates": [
-        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -21,11 +20,135 @@
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
-            "2026-08-16": [
+            "2026-08-17": [
+              {
+                "time": "11:00am",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:15pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:30pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:45pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
               {
                 "time": "12:00am",
                 "experience": "MAX",
                 "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "10:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30am",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:45pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "4:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:15pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
+                "available": true
+              },
+              {
+                "time": "11:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30pm",
+                "experience": "Standard",
+                "attributes": [
+                  "3D"
+                ],
                 "available": true
               }
             ]
@@ -47,23 +170,6 @@
         "2026-08-19"
       ],
       "movies": [
-        {
-          "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
-          "runtime_min": 110,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-16": [
-              {
-                "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
         {
           "title": "The End of Oak Street",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
@@ -108,7 +214,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-08-16",
         "2026-08-17",
         "2026-08-18",
         "2026-08-19"
@@ -121,14 +226,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-08-16": [
-              {
-                "time": "12:15 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-08-17": [
               {
                 "time": "10:30 AM",
