@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T18:24:29+03:00",
+  "generated_at": "2026-08-16T18:48:18+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -350,13 +350,7 @@
                 "time": "12:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:00pm",
@@ -459,23 +453,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Panda Plan: The Magical Tribe",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-16": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -608,12 +585,6 @@
           "language": null,
           "showtimes": {
             "2026-08-16": [
-              {
-                "time": "06:30 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "09:15 PM",
                 "experience": "Premiere",
