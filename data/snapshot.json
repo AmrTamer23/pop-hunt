@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T08:36:54+03:00",
+  "generated_at": "2026-08-17T10:00:10+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -16,7 +16,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -85,7 +85,7 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:30am",
@@ -172,7 +172,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -241,7 +241,7 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:30am",
@@ -313,7 +313,7 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
@@ -396,7 +396,7 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
@@ -491,7 +491,7 @@
         {
           "title": "The End of Oak Street",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -550,7 +550,7 @@
         {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
@@ -615,7 +615,7 @@
         {
           "title": "Mahmoud El Tany",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
@@ -674,7 +674,7 @@
         {
           "title": "Paw Patrol: The Dino Movie",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 90,
           "language": "English",
           "showtimes": {
@@ -751,7 +751,7 @@
         {
           "title": "Sakr w Canaria",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 125,
           "language": "Arabic",
           "showtimes": {
@@ -780,7 +780,7 @@
         {
           "title": "Shamshoun w Dalila",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 95,
           "language": "Arabic",
           "showtimes": {
@@ -803,7 +803,7 @@
         {
           "title": "Moana",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
+          "rating": "18TC",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
@@ -826,7 +826,7 @@
         {
           "title": "Panda Plan: The Magical Tribe",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013516_1784647281820.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -849,7 +849,7 @@
         {
           "title": "7 Dogs",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 120,
           "language": "Arabic",
           "showtimes": {
@@ -872,7 +872,7 @@
         {
           "title": "Toy Story 5",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
@@ -893,9 +893,32 @@
           }
         },
         {
+          "title": "Pinocchio: Unstrung",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013341_1784268329436.jpg",
+          "rating": "18TC",
+          "runtime_min": 85,
+          "language": "English",
+          "showtimes": {
+            "2026-08-17": [
+              {
+                "time": "2:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
           "title": "Above and Below",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013544_1785912750220.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -918,7 +941,7 @@
         {
           "title": "Paw Patrol: The Dino Movie",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013532_1785913259666.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 90,
           "language": "Arabic",
           "showtimes": {
@@ -945,32 +968,9 @@
           }
         },
         {
-          "title": "Pinocchio: Unstrung",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013341_1784268329436.jpg",
-          "rating": "18+",
-          "runtime_min": 85,
-          "language": "English",
-          "showtimes": {
-            "2026-08-17": [
-              {
-                "time": "2:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "The Rivals of Amziah King",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013547_1786079997183.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 130,
           "language": "English",
           "showtimes": {
@@ -1041,7 +1041,7 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "12:00 AM",
