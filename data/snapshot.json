@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T22:54:51+03:00",
+  "generated_at": "2026-08-17T23:29:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -30,18 +30,6 @@
               {
                 "time": "11:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -89,18 +77,6 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
                 "available": true
               },
               {
@@ -123,12 +99,6 @@
           "showtimes": {
             "2026-08-17": [
               {
-                "time": "11:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -148,12 +118,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -250,40 +214,6 @@
             "2026-08-17": [
               {
                 "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-17": [
-              {
-                "time": "11:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "7 Dogs",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013128_1778076075892.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-17": [
-              {
-                "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
