@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T10:57:39+03:00",
+  "generated_at": "2026-08-17T11:53:58+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -21,12 +21,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-17": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -85,7 +79,7 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "1:15pm",
@@ -169,12 +163,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-17": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -323,12 +311,6 @@
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -684,18 +666,6 @@
               {
                 "time": "11:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
