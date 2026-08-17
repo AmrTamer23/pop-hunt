@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T19:58:50+03:00",
+  "generated_at": "2026-08-17T20:35:48+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -34,12 +34,6 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -50,20 +44,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "11:00pm",
@@ -118,12 +98,6 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -134,20 +108,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "11:00pm",
@@ -216,12 +176,6 @@
                 "available": true
               },
               {
-                "time": "8:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -250,12 +204,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-17": [
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "10:00pm",
                 "experience": "Standard",
@@ -318,7 +266,7 @@
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30pm",
@@ -354,12 +302,6 @@
                 "experience": "Kids",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -374,23 +316,6 @@
             "2026-08-17": [
               {
                 "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Shamshoun w Dalila",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013485_1783667519889.jpg",
-          "rating": "12+",
-          "runtime_min": 95,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-17": [
-              {
-                "time": "8:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
