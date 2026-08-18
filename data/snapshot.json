@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T14:53:22+03:00",
+  "generated_at": "2026-08-18T15:51:22+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -30,13 +30,13 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -117,13 +117,13 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -181,12 +181,6 @@
           "showtimes": {
             "2026-08-18": [
               {
-                "time": "3:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -197,12 +191,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "3:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "3:45pm",
@@ -417,12 +405,6 @@
                 "available": true
               },
               {
-                "time": "3:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -505,12 +487,6 @@
           "showtimes": {
             "2026-08-18": [
               {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -591,12 +567,6 @@
           "showtimes": {
             "2026-08-18": [
               {
-                "time": "3:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -613,12 +583,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-18": [
-              {
-                "time": "3:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:30pm",
                 "experience": "Kids",
@@ -707,6 +671,29 @@
               }
             ]
           }
+        },
+        {
+          "title": "El Set Lamma",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
+          "rating": "16+",
+          "runtime_min": 100,
+          "language": "Arabic",
+          "showtimes": {
+            "2026-08-18": [
+              {
+                "time": "10:00pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "10:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": false
+              }
+            ]
+          }
         }
       ],
       "status": "ok"
@@ -751,12 +738,6 @@
               {
                 "time": "12:00 AM",
                 "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "03:00 PM",
-                "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               },
