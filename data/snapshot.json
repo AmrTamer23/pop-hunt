@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T12:36:19+03:00",
+  "generated_at": "2026-08-18T13:30:55+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -36,7 +36,7 @@
                 "time": "1:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "5:00pm",
@@ -149,7 +149,7 @@
                 "time": "1:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "5:00pm",
@@ -242,7 +242,7 @@
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:00pm",
@@ -318,12 +318,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -493,12 +487,6 @@
           "showtimes": {
             "2026-08-18": [
               {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:45pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -507,12 +495,6 @@
               {
                 "time": "12:30am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -572,12 +554,6 @@
               {
                 "time": "11:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -662,12 +638,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-18": [
-              {
-                "time": "12:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:45pm",
                 "experience": "Kids",
@@ -861,12 +831,6 @@
           "showtimes": {
             "2026-08-18": [
               {
-                "time": "01:00 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -891,12 +855,6 @@
                 "available": true
               },
               {
-                "time": "01:15 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
@@ -910,6 +868,12 @@
               },
               {
                 "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:45 PM",
                 "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
