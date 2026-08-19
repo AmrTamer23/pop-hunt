@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T05:45:58+03:00",
+  "generated_at": "2026-08-19T13:39:57+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -26,12 +26,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-19": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -66,7 +60,7 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
@@ -89,20 +83,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -188,12 +168,6 @@
           "showtimes": {
             "2026-08-19": [
               {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "2:15pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -227,7 +201,7 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
@@ -250,20 +224,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -321,6 +281,59 @@
           }
         },
         {
+          "title": "Mahmoud El Tany",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
+          "rating": "12+",
+          "runtime_min": 105,
+          "language": "Arabic",
+          "showtimes": {
+            "2026-08-19": [
+              {
+                "time": "4:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:45pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
           "rating": "16+",
@@ -328,12 +341,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-19": [
-              {
-                "time": "11:30am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "3:30pm",
                 "experience": "GOLD",
@@ -344,23 +351,11 @@
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -424,12 +419,6 @@
                 "available": true
               },
               {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -457,65 +446,6 @@
           }
         },
         {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-19": [
-              {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
           "rating": "12+",
@@ -523,12 +453,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-19": [
-              {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:45pm",
                 "experience": "GOLD",
@@ -538,12 +462,6 @@
               {
                 "time": "12:30am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -581,39 +499,39 @@
           }
         },
         {
-          "title": "Mahmoud El Tany",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
+          "title": "El Set Lamma",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
+          "rating": "16+",
+          "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
             "2026-08-19": [
               {
-                "time": "4:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "12:00am",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -625,13 +543,60 @@
                 "available": true
               },
               {
-                "time": "10:45pm",
+                "time": "11:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "The End of Oak Street",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
+          "rating": "16+",
+          "runtime_min": 100,
+          "language": "English",
+          "showtimes": {
+            "2026-08-19": [
+              {
+                "time": "2:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:45pm",
+                "time": "5:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -672,37 +637,7 @@
                 "available": true
               },
               {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -718,12 +653,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-19": [
-              {
-                "time": "11:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:45pm",
                 "experience": "Standard",
@@ -771,12 +700,6 @@
           "showtimes": {
             "2026-08-19": [
               {
-                "time": "12:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:45pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -799,12 +722,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-19": [
-              {
-                "time": "11:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:30pm",
                 "experience": "Standard",
@@ -884,35 +801,6 @@
           }
         },
         {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013532_1785913259666.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-19": [
-              {
-                "time": "12:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Pinocchio: Unstrung",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013341_1784268329436.jpg",
           "rating": "18+",
@@ -957,71 +845,6 @@
               }
             ]
           }
-        },
-        {
-          "title": "El Set Lamma",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-19": [
-              {
-                "time": "12:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
         }
       ],
       "status": "ok"
@@ -1052,18 +875,6 @@
           "showtimes": {
             "2026-08-19": [
               {
-                "time": "10:30 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "01:00 PM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "03:45 PM",
                 "experience": "Premiere",
                 "attributes": [],
@@ -1079,29 +890,11 @@
                 "time": "09:15 PM",
                 "experience": "Premiere",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "12:00 AM",
                 "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "01:15 PM",
-                "experience": "Standard & Deluxe",
                 "attributes": [],
                 "available": true
               },
