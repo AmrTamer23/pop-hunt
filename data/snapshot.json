@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:27:38+03:00",
+  "generated_at": "2026-08-20T01:53:28+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -77,7 +77,7 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -95,7 +95,7 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:00am",
@@ -249,7 +249,7 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -267,7 +267,7 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:00am",
