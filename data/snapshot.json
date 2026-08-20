@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T21:42:20+03:00",
+  "generated_at": "2026-08-20T22:33:26+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -41,19 +41,13 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:00pm",
@@ -115,19 +109,13 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "10:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:00pm",
@@ -159,12 +147,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "11:15pm",
@@ -228,7 +210,7 @@
                 "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:00pm",
@@ -263,7 +245,7 @@
                 "time": "1:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -283,12 +265,6 @@
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "9:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -305,12 +281,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-20": [
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:15am",
                 "experience": "Standard",
@@ -348,23 +318,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "10:15pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
