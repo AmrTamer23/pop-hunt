@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T17:38:48+03:00",
+  "generated_at": "2026-08-20T18:36:14+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -25,12 +25,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-20": [
-              {
-                "time": "5:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:45pm",
                 "experience": "MAX",
@@ -132,12 +126,6 @@
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "5:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -219,12 +207,6 @@
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "6:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "9:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -234,13 +216,7 @@
                 "time": "12:00am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "7:15pm",
@@ -337,18 +313,6 @@
                 "available": true
               },
               {
-                "time": "5:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -387,7 +351,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "1:30am",
@@ -553,12 +517,6 @@
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "5:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -596,23 +554,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "6:15pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -669,12 +610,6 @@
           "language": null,
           "showtimes": {
             "2026-08-20": [
-              {
-                "time": "06:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "09:00 PM",
                 "experience": "Standard & Deluxe",
