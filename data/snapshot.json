@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T23:31:06+03:00",
+  "generated_at": "2026-08-21T00:30:21+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -26,22 +26,10 @@
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:15am",
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "2:30am",
@@ -74,28 +62,16 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-08-20": [
               {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:15am",
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "2:30am",
@@ -109,23 +85,11 @@
         {
           "title": "Mahmoud El Tany",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
             "2026-08-20": [
-              {
-                "time": "12:00am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "3:00am",
                 "experience": "Standard",
@@ -138,7 +102,7 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
@@ -155,17 +119,11 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
             "2026-08-20": [
-              {
-                "time": "12:15am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "2:15am",
                 "experience": "Standard",
@@ -178,7 +136,7 @@
         {
           "title": "Insidious: Out Of The Further",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
@@ -188,97 +146,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Set Lamma",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mutiny",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sakr w Canaria",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
-          "runtime_min": 125,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -293,7 +160,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-08-20",
         "2026-08-21",
         "2026-08-22",
         "2026-08-23",
@@ -309,14 +175,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-08-20": [
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-08-21": [
               {
                 "time": "12:00 PM",
