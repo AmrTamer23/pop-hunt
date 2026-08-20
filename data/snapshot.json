@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T00:30:21+03:00",
+  "generated_at": "2026-08-21T00:56:49+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -62,7 +62,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -85,7 +85,7 @@
         {
           "title": "Mahmoud El Tany",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
@@ -102,7 +102,7 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
@@ -119,7 +119,7 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
@@ -136,7 +136,7 @@
         {
           "title": "Insidious: Out Of The Further",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
