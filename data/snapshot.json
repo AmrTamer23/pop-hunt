@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T12:39:46+03:00",
+  "generated_at": "2026-08-21T13:33:18+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -89,14 +89,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "3:30pm",
@@ -242,14 +234,6 @@
                 "available": false
               },
               {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
-              },
-              {
                 "time": "3:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -318,7 +302,7 @@
                 "time": "6:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:00pm",
@@ -329,12 +313,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -410,12 +388,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "12:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -456,12 +428,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:45pm",
                 "experience": "GOLD",
@@ -787,12 +753,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "1:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -819,12 +779,6 @@
               {
                 "time": "10:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
