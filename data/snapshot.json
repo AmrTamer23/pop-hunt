@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T00:27:20+03:00",
+  "generated_at": "2026-08-22T00:51:54+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -89,12 +89,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:45am",
                 "experience": "Standard",
                 "attributes": [],
@@ -129,12 +123,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "12:15am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "3:00am",
                 "experience": "Standard",
                 "attributes": [],
@@ -155,7 +143,7 @@
                 "time": "1:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               }
             ]
           }
@@ -170,23 +158,6 @@
             "2026-08-21": [
               {
                 "time": "2:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "El Set Lamma",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "12:15am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
