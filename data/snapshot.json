@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T13:33:18+03:00",
+  "generated_at": "2026-08-21T14:28:56+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -53,12 +53,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "5:00pm",
@@ -196,12 +190,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "5:00pm",
@@ -515,23 +503,11 @@
                 "time": "1:30am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:00pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -579,12 +555,6 @@
               {
                 "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -671,12 +641,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -711,12 +675,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:15pm",
                 "experience": "Standard",
