@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:53:24+03:00",
+  "generated_at": "2026-08-22T02:26:52+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -81,40 +81,6 @@
           }
         },
         {
-          "title": "Mahmoud El Tany",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013538_1785912630155.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "1:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "2:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
           "rating": "G",
@@ -124,23 +90,6 @@
             "2026-08-21": [
               {
                 "time": "3:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "2:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
