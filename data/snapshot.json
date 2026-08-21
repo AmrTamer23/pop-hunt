@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T23:53:19+03:00",
+  "generated_at": "2026-08-22T00:27:20+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -24,12 +24,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "3:15am",
                 "experience": "MAX",
@@ -72,12 +66,6 @@
           "showtimes": {
             "2026-08-21": [
               {
-                "time": "12:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:15am",
                 "experience": "MAX",
                 "attributes": [],
@@ -100,12 +88,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "12:00am",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:15am",
                 "experience": "Standard",
@@ -211,40 +193,6 @@
               }
             ]
           }
-        },
-        {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sakr w Canaria",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013172_1779722709301.jpg",
-          "rating": "16+",
-          "runtime_min": 125,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              }
-            ]
-          }
         }
       ],
       "status": "ok"
@@ -256,7 +204,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-08-21",
         "2026-08-22",
         "2026-08-23",
         "2026-08-24",
@@ -271,14 +218,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-08-22": [
               {
                 "time": "12:00 PM",
