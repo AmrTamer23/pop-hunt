@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T00:51:54+03:00",
+  "generated_at": "2026-08-22T01:53:24+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -125,23 +125,6 @@
               {
                 "time": "3:00am",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Insidious: Out Of The Further",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "16+",
-          "runtime_min": 105,
-          "language": "English",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "1:30am",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               }
