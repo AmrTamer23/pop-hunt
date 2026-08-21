@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T23:28:10+03:00",
+  "generated_at": "2026-08-21T23:53:19+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -35,12 +35,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "2:30am",
@@ -90,12 +84,6 @@
                 "available": true
               },
               {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "2:30am",
                 "experience": "Standard",
                 "attributes": [],
@@ -115,12 +103,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -147,12 +129,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:00am",
                 "experience": "Standard",
@@ -198,12 +174,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -216,12 +186,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-21": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:00am",
                 "experience": "Standard",
@@ -241,23 +205,6 @@
             "2026-08-21": [
               {
                 "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mutiny",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-21": [
-              {
-                "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
