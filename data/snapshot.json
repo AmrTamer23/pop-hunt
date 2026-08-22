@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T19:53:14+03:00",
+  "generated_at": "2026-08-22T20:23:12+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -52,14 +52,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:00pm",
@@ -132,14 +124,6 @@
                 "experience": "4DX",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
-                "available": true
               },
               {
                 "time": "10:00pm",
@@ -272,12 +256,6 @@
                 "available": true
               },
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -399,12 +377,6 @@
           "showtimes": {
             "2026-08-22": [
               {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:45pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -455,12 +427,6 @@
                 "experience": "Kids",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
               }
             ]
           }
