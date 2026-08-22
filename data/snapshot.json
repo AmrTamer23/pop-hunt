@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T22:24:07+03:00",
+  "generated_at": "2026-08-22T22:47:16+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -164,7 +164,7 @@
                 "time": "12:15am",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:30pm",
@@ -193,7 +193,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -266,23 +266,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-08-22": [
-              {
-                "time": "10:15pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
