@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:25:39+03:00",
+  "generated_at": "2026-08-22T23:50:24+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -28,12 +28,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               }
             ]
           }
@@ -93,30 +87,7 @@
                 "available": true
               },
               {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-22": [
-              {
-                "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
