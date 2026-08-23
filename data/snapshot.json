@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T14:23:32+03:00",
+  "generated_at": "2026-08-23T14:47:30+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -22,12 +22,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -145,12 +139,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -273,12 +261,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -542,12 +524,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "2:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -753,12 +729,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
