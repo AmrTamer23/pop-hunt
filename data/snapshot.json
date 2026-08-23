@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:52:39+03:00",
+  "generated_at": "2026-08-23T14:23:32+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -454,12 +454,6 @@
                 "available": true
               },
               {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "4DX",
                 "attributes": [],
@@ -623,12 +617,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:15pm",
                 "experience": "Standard",
