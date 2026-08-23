@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T15:43:51+03:00",
+  "generated_at": "2026-08-23T16:34:01+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -44,7 +44,7 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
@@ -67,12 +67,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -161,7 +155,7 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:15pm",
@@ -184,12 +178,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -259,12 +247,6 @@
                 "available": true
               },
               {
-                "time": "3:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -321,13 +303,7 @@
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "7:30pm",
@@ -409,23 +385,17 @@
                 "time": "4:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "8:00pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -459,20 +429,8 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "4:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -541,12 +499,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "4:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -576,12 +528,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "4:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -610,12 +556,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:45pm",
                 "experience": "Kids",
@@ -676,23 +616,6 @@
             "2026-08-23": [
               {
                 "time": "6:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "3:30pm",
                 "experience": "Kids",
                 "attributes": [],
                 "available": true
