@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T17:51:14+03:00",
+  "generated_at": "2026-08-23T18:25:22+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -177,12 +177,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "6:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -279,12 +273,6 @@
               {
                 "time": "12:15am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:00pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -481,12 +469,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "5:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -524,23 +506,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "6:00pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -594,12 +559,6 @@
           "language": null,
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "06:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "09:00 PM",
                 "experience": "Standard & Deluxe",
