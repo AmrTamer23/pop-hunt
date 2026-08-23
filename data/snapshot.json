@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T10:35:12+03:00",
+  "generated_at": "2026-08-23T11:32:41+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -22,12 +22,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -171,12 +165,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -560,12 +548,6 @@
                 "available": true
               },
               {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -615,12 +597,6 @@
               {
                 "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -713,12 +689,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -759,12 +729,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:45pm",
                 "experience": "Standard",
@@ -807,12 +771,6 @@
           "showtimes": {
             "2026-08-23": [
               {
-                "time": "11:00am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:15pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -845,12 +803,6 @@
               {
                 "time": "10:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
