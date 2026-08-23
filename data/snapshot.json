@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T23:25:44+03:00",
+  "generated_at": "2026-08-23T23:50:56+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -25,12 +25,6 @@
               {
                 "time": "12:00am",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               }
@@ -66,12 +60,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               }
             ]
           }
@@ -91,30 +79,7 @@
                 "available": false
               },
               {
-                "time": "11:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Odyssey",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
-          "runtime_min": 175,
-          "language": "English",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -140,40 +105,6 @@
           }
         },
         {
-          "title": "Insidious: Out Of The Further",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "16+",
-          "runtime_min": 105,
-          "language": "English",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "El Set Lamma",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013514_1784268120785.jpg",
           "rating": "16+",
@@ -183,23 +114,6 @@
             "2026-08-23": [
               {
                 "time": "12:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mutiny",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-23": [
-              {
-                "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
