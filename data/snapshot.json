@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T18:25:22+03:00",
+  "generated_at": "2026-08-23T18:49:11+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -38,13 +38,13 @@
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "10:45pm",
@@ -189,12 +189,6 @@
                 "available": true
               },
               {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -318,12 +312,6 @@
                 "available": true
               },
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "9:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -349,12 +337,6 @@
               {
                 "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -410,12 +392,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-23": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:00pm",
                 "experience": "Standard",
@@ -530,7 +506,7 @@
                 "time": "7:45pm",
                 "experience": "Standard",
                 "attributes": [],
-                "available": true
+                "available": false
               }
             ]
           }
