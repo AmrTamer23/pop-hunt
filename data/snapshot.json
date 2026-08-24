@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T14:55:52+03:00",
+  "generated_at": "2026-08-24T15:55:10+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -43,13 +43,13 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -61,17 +61,11 @@
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -159,13 +153,13 @@
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "8:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "11:30pm",
@@ -177,17 +171,11 @@
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -238,12 +226,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-24": [
-              {
-                "time": "3:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:00pm",
                 "experience": "GOLD",
@@ -325,7 +307,7 @@
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "3:45pm",
@@ -365,18 +347,6 @@
               {
                 "time": "12:15am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -627,12 +597,6 @@
           "showtimes": {
             "2026-08-24": [
               {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:45pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -676,23 +640,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-24": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -768,12 +715,6 @@
           "language": null,
           "showtimes": {
             "2026-08-24": [
-              {
-                "time": "03:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "06:00 PM",
                 "experience": "Standard & Deluxe",
