@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T22:31:53+03:00",
+  "generated_at": "2026-08-24T23:32:57+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -31,20 +31,6 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               }
             ]
@@ -83,20 +69,6 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               }
             ]
@@ -161,18 +133,6 @@
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -185,12 +145,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-24": [
-              {
-                "time": "11:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "11:30pm",
                 "experience": "Standard",
@@ -279,23 +233,6 @@
               {
                 "time": "11:45pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Detective Conan 29",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013505_1783599663404.jpg",
-          "rating": "12+",
-          "runtime_min": 110,
-          "language": "Japanese",
-          "showtimes": {
-            "2026-08-24": [
-              {
-                "time": "11:00pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
