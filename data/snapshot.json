@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:35:27+03:00",
+  "generated_at": "2026-08-25T14:30:26+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -9,7 +9,11 @@
       "scope": "movie",
       "dates": [
         "2026-08-25",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30"
       ],
       "movies": [
         {
@@ -20,12 +24,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -41,12 +39,6 @@
               {
                 "time": "12:00am",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
@@ -136,7 +128,11 @@
       "scope": "cinema",
       "dates": [
         "2026-08-25",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30"
       ],
       "movies": [
         {
@@ -172,12 +168,6 @@
                 "available": true
               },
               {
-                "time": "1:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -199,7 +189,7 @@
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
@@ -281,12 +271,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -468,20 +452,8 @@
                 "available": true
               },
               {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "8:00pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -529,12 +501,6 @@
               {
                 "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -615,12 +581,6 @@
           "showtimes": {
             "2026-08-25": [
               {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -655,12 +615,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:15pm",
                 "experience": "Standard",
