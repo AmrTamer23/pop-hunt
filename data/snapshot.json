@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T14:58:21+03:00",
+  "generated_at": "2026-08-25T16:03:57+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -9,11 +9,7 @@
       "scope": "movie",
       "dates": [
         "2026-08-25",
-        "2026-08-26",
-        "2026-08-27",
-        "2026-08-28",
-        "2026-08-29",
-        "2026-08-30"
+        "2026-08-26"
       ],
       "movies": [
         {
@@ -58,23 +54,17 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "4:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -192,12 +182,6 @@
                 "available": true
               },
               {
-                "time": "3:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:30pm",
                 "experience": "Standard",
                 "attributes": [
@@ -244,12 +228,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "3:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:00pm",
                 "experience": "GOLD",
@@ -371,18 +349,6 @@
               {
                 "time": "12:15am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -633,12 +599,6 @@
           "showtimes": {
             "2026-08-25": [
               {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:45pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -706,23 +666,6 @@
           }
         },
         {
-          "title": "Toy Story 5",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
-          "rating": "PG",
-          "runtime_min": 100,
-          "language": "Arabic",
-          "showtimes": {
-            "2026-08-25": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Detective Conan 29",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013505_1783599663404.jpg",
           "rating": "12+",
@@ -780,12 +723,6 @@
           "language": null,
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "03:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "06:00 PM",
                 "experience": "Standard & Deluxe",
