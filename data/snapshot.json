@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T12:37:46+03:00",
+  "generated_at": "2026-08-25T13:35:27+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -78,14 +78,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -213,14 +205,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:15pm",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -372,12 +356,6 @@
           "showtimes": {
             "2026-08-25": [
               {
-                "time": "12:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "7:15pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -412,12 +390,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "1:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:45pm",
                 "experience": "GOLD",
@@ -725,12 +697,6 @@
           "showtimes": {
             "2026-08-25": [
               {
-                "time": "1:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -757,12 +723,6 @@
               {
                 "time": "10:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -800,12 +760,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "12:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "6:00pm",
                 "experience": "Kids",
