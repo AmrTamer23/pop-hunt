@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T20:06:28+03:00",
+  "generated_at": "2026-08-25T20:57:09+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -35,12 +35,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "11:30pm",
@@ -108,12 +102,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
               },
               {
                 "time": "11:30pm",
@@ -223,12 +211,6 @@
                 "available": true
               },
               {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -255,13 +237,7 @@
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:00pm",
@@ -290,7 +266,7 @@
                 "time": "9:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:00pm",
@@ -384,12 +360,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-25": [
-              {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "8:45pm",
                 "experience": "Kids",
