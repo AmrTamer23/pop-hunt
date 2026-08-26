@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T10:50:46+03:00",
+  "generated_at": "2026-08-26T11:47:23+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -23,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -173,12 +167,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "11:00am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "2:15pm",
                 "experience": "MAX",
@@ -453,6 +441,71 @@
           }
         },
         {
+          "title": "Insidious: Out Of The Further",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
+          "rating": "16+",
+          "runtime_min": 105,
+          "language": "English",
+          "showtimes": {
+            "2026-08-26": [
+              {
+                "time": "4:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
           "rating": "G",
@@ -530,40 +583,22 @@
           }
         },
         {
-          "title": "Insidious: Out Of The Further",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "16+",
+          "title": "Khali Balak Min Nafsik",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
+          "rating": "12+",
           "runtime_min": 105,
-          "language": "English",
+          "language": "Arabic",
           "showtimes": {
             "2026-08-26": [
               {
-                "time": "4:30pm",
+                "time": "4:00pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:00pm",
+                "time": "9:30pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -601,31 +636,13 @@
           }
         },
         {
-          "title": "Khali Balak Min Nafsik",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
-          "runtime_min": 105,
-          "language": "Arabic",
+          "title": "Mutiny",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
+          "rating": "16+",
+          "runtime_min": 95,
+          "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "4:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:30pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:30pm",
                 "experience": "Standard",
@@ -652,6 +669,47 @@
               },
               {
                 "time": "11:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "The End of Oak Street",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
+          "rating": "16+",
+          "runtime_min": 100,
+          "language": "English",
+          "showtimes": {
+            "2026-08-26": [
+              {
+                "time": "1:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -707,100 +765,6 @@
           }
         },
         {
-          "title": "Mutiny",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-08-26": [
-              {
-                "time": "11:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-08-26": [
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "1:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "4:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Paw Patrol: The Dino Movie",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
           "rating": "G",
@@ -808,12 +772,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "11:00am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:15pm",
                 "experience": "Kids",
@@ -847,12 +805,6 @@
               {
                 "time": "10:15pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -939,12 +891,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
