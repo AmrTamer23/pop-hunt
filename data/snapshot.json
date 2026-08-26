@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:53:43+03:00",
+  "generated_at": "2026-08-26T10:50:46+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -87,14 +87,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:00am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -245,14 +237,6 @@
                 "time": "10:45pm",
                 "experience": "4DX",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:00am",
-                "experience": "Standard",
-                "attributes": [
-                  "3D"
-                ],
                 "available": true
               },
               {
@@ -913,12 +897,6 @@
           "showtimes": {
             "2026-08-26": [
               {
-                "time": "10:15am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:30pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -992,8 +970,7 @@
           }
         }
       ],
-      "status": "stale",
-      "stale_since": "2026-08-26T09:53:43+03:00"
+      "status": "ok"
     },
     {
       "id": "scene-district5-spiderman",
