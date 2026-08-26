@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T14:32:35+03:00",
+  "generated_at": "2026-08-26T15:56:48+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -23,12 +23,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:30pm",
                 "experience": "MAX",
@@ -74,12 +68,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -148,12 +136,6 @@
           "showtimes": {
             "2026-08-26": [
               {
-                "time": "2:15pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:30pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -198,12 +180,6 @@
               {
                 "time": "10:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -255,12 +231,6 @@
           "showtimes": {
             "2026-08-26": [
               {
-                "time": "3:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "6:00pm",
                 "experience": "GOLD",
                 "attributes": [],
@@ -275,12 +245,6 @@
               {
                 "time": "12:00am",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -444,18 +408,6 @@
                 "available": true
               },
               {
-                "time": "2:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "5:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -614,12 +566,6 @@
           "showtimes": {
             "2026-08-26": [
               {
-                "time": "2:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -654,12 +600,6 @@
           "language": "English",
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "5:45pm",
                 "experience": "Kids",
@@ -711,23 +651,6 @@
           }
         },
         {
-          "title": "Moana",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013063_1775409682179.jpg",
-          "rating": "PG",
-          "runtime_min": 115,
-          "language": "English",
-          "showtimes": {
-            "2026-08-26": [
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Toy Story 5",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013301_1783436285145.jpg",
           "rating": "PG",
@@ -755,12 +678,6 @@
               {
                 "time": "11:00pm",
                 "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:15pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -807,12 +724,6 @@
           "language": null,
           "showtimes": {
             "2026-08-26": [
-              {
-                "time": "03:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "06:00 PM",
                 "experience": "Standard & Deluxe",
