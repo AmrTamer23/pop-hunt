@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:25:45+03:00",
+  "generated_at": "2026-08-26T05:49:00+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -157,7 +157,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-08-26T05:49:00+03:00"
     },
     {
       "id": "vox-moe-all",
@@ -992,7 +993,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-08-26T05:49:00+03:00"
     },
     {
       "id": "scene-district5-spiderman",
