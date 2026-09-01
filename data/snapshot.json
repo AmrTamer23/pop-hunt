@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T22:29:26+03:00",
+  "generated_at": "2026-09-02T00:58:14+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -50,7 +50,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-09-02T00:58:14+03:00"
     },
     {
       "id": "vox-moe-all",
@@ -346,7 +347,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-09-02T00:58:14+03:00"
     },
     {
       "id": "scene-district5-spiderman",
@@ -355,8 +357,14 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-09-01",
-        "2026-09-02"
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09"
       ],
       "movies": [
         {
@@ -366,20 +374,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-09-01": [
-              {
-                "time": "12:00 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-09-02": [
               {
                 "time": "10:30 AM",
@@ -417,6 +411,230 @@
                 "attributes": [],
                 "available": true
               },
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-03": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-04": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-05": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-06": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-07": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-08": [
+              {
+                "time": "12:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "03:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "06:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "09:00 PM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00 AM",
+                "experience": "Standard & Deluxe",
+                "attributes": [],
+                "available": true
+              }
+            ],
+            "2026-09-09": [
               {
                 "time": "12:00 PM",
                 "experience": "Standard & Deluxe",
