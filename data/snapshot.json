@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:58:14+03:00",
+  "generated_at": "2026-09-02T11:58:19+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -375,12 +375,6 @@
           "language": null,
           "showtimes": {
             "2026-09-02": [
-              {
-                "time": "10:30 AM",
-                "experience": "Premiere",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "01:00 PM",
                 "experience": "Premiere",
