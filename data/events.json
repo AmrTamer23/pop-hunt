@@ -1,5 +1,22 @@
 [
   {
+    "at": "2026-09-03T14:33:44+03:00",
+    "target_id": "vox-moe-all",
+    "label": "VOX Mall of Egypt — all movies",
+    "previous": "2026-09-09",
+    "new_max": "2026-09-16",
+    "added": [
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16"
+    ],
+    "url": "https://egy.voxcinemas.com/showtimes?c=mall-of-egypt"
+  },
+  {
     "at": "2026-09-02T16:32:26+03:00",
     "target_id": "vox-moe-spiderman",
     "label": "VOX Mall of Egypt — Spider-Man: Brand New Day",
