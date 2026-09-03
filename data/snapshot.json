@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:00:32+03:00",
+  "generated_at": "2026-09-03T22:16:19+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -26,20 +26,8 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "7:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
@@ -47,23 +35,11 @@
                 "time": "10:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -105,28 +81,10 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "8:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:00pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": false
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               },
               {
                 "time": "10:15pm",
@@ -152,20 +110,8 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "7:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
@@ -173,23 +119,11 @@
                 "time": "10:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               }
@@ -204,12 +138,6 @@
           "language": "English",
           "showtimes": {
             "2026-09-03": [
-              {
-                "time": "10:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
               {
                 "time": "10:30pm",
                 "experience": "Standard",
@@ -228,24 +156,6 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "9:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
                 "experience": "Standard",
                 "attributes": [],
@@ -263,12 +173,6 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "8:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -285,12 +189,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-09-03": [
-              {
-                "time": "8:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:00pm",
                 "experience": "Standard",
@@ -312,13 +210,7 @@
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:15pm",
@@ -338,12 +230,6 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -361,30 +247,7 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "7:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "12:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "16+",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-09-03": [
-              {
-                "time": "9:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -400,12 +263,6 @@
           "language": "English",
           "showtimes": {
             "2026-09-03": [
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:00pm",
                 "experience": "Standard",
@@ -424,30 +281,7 @@
           "showtimes": {
             "2026-09-03": [
               {
-                "time": "8:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:40pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-09-03": [
-              {
-                "time": "9:00pm",
                 "experience": "Kids",
                 "attributes": [],
                 "available": true
@@ -502,35 +336,6 @@
                 "experience": "MAX",
                 "attributes": [],
                 "available": true
-              },
-              {
-                "time": "7:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Neglected",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013563_1786693077753.jpg",
-          "rating": "18+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-09-03": [
-              {
-                "time": "9:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
               }
             ]
           }
@@ -562,12 +367,6 @@
           "language": null,
           "showtimes": {
             "2026-09-03": [
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
