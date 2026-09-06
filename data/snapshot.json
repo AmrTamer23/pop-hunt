@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T00:33:22+03:00",
+  "generated_at": "2026-09-06T11:27:39+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -89,12 +89,6 @@
                 "available": true
               },
               {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -173,12 +167,6 @@
               {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -320,12 +308,6 @@
                 "available": true
               },
               {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "12:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -440,12 +422,6 @@
               {
                 "time": "11:30pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:00am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -581,12 +557,6 @@
               {
                 "time": "9:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:45am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -831,12 +801,6 @@
           "showtimes": {
             "2026-09-06": [
               {
-                "time": "11:00am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:15pm",
                 "experience": "Kids",
                 "attributes": [],
@@ -888,12 +852,6 @@
           "language": "English",
           "showtimes": {
             "2026-09-06": [
-              {
-                "time": "10:30am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "3:45pm",
                 "experience": "Standard",
