@@ -1,5 +1,40 @@
 [
   {
+    "at": "2026-09-09T01:26:59+03:00",
+    "target_id": "scene-district5-spiderman",
+    "label": "Scene District 5 — Spider-Man: Brand New Day",
+    "previous": "2026-09-09",
+    "new_max": "2026-09-16",
+    "added": [
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16"
+    ],
+    "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
+  },
+  {
+    "at": "2026-09-09T01:26:59+03:00",
+    "target_id": "premiere-cima-arkan-spiderman",
+    "label": "Premiere Cima Arkan — Spider-Man: Brand New Day",
+    "previous": "2026-08-05",
+    "new_max": "2026-09-15",
+    "added": [
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15"
+    ],
+    "url": "https://www.premiere-cinemas.com/en/movie-details/9961.764/1"
+  },
+  {
     "at": "2026-09-03T14:33:44+03:00",
     "target_id": "vox-moe-all",
     "label": "VOX Mall of Egypt — all movies",
