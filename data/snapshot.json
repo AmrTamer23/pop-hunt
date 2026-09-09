@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:45:13+03:00",
+  "generated_at": "2026-09-09T21:23:01+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -21,26 +21,14 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "7:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
@@ -51,20 +39,8 @@
                 "available": true
               },
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -100,40 +76,16 @@
         {
           "title": "Red Flag",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013575_1787745001739.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "5:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
                 "time": "11:30pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "11:30pm",
@@ -153,32 +105,8 @@
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "8:00pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -200,26 +128,14 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "7:30pm",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:15pm",
-                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
@@ -230,20 +146,8 @@
                 "available": true
               },
               {
-                "time": "8:00pm",
-                "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:15pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -265,20 +169,8 @@
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "6:15pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:00pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": false
-              },
-              {
-                "time": "6:45pm",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -294,17 +186,11 @@
         {
           "title": "Insidious: Out Of The Further",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "6:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:15pm",
                 "experience": "Standard",
@@ -323,17 +209,11 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "10:45pm",
                 "experience": "Standard",
@@ -352,18 +232,6 @@
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "5:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -380,18 +248,6 @@
           "language": "English",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "6:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:15pm",
                 "experience": "Standard",
@@ -410,18 +266,6 @@
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "5:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:15pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -433,17 +277,11 @@
         {
           "title": "Mutiny",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:30pm",
                 "experience": "Standard",
@@ -454,53 +292,13 @@
           }
         },
         {
-          "title": "The End of Oak Street",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013156_1786530990399.jpg",
-          "rating": "18TC",
-          "runtime_min": 100,
-          "language": "English",
-          "showtimes": {
-            "2026-09-09": [
-              {
-                "time": "9:00pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Dog Stars",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013113_1777017473543.jpg",
-          "rating": "16+",
-          "runtime_min": 120,
-          "language": "English",
-          "showtimes": {
-            "2026-09-09": [
-              {
-                "time": "8:45pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Coyote VS Acme",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013137_1786079841144.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "7:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "9:45pm",
                 "experience": "Kids",
@@ -511,32 +309,9 @@
           }
         },
         {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "18TC",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-09-09": [
-              {
-                "time": "5:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Detective Conan 29",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013505_1783599663404.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 110,
           "language": "Japanese",
           "showtimes": {
@@ -553,17 +328,11 @@
         {
           "title": "By Any Means",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013501_1783655978629.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 110,
           "language": "English",
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "11:45pm",
                 "experience": "Standard",
@@ -582,12 +351,6 @@
           "showtimes": {
             "2026-09-09": [
               {
-                "time": "6:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -599,7 +362,7 @@
         {
           "title": "Neglected",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013563_1786693077753.jpg",
-          "rating": "18+",
+          "rating": "18TC",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -641,18 +404,6 @@
           "language": null,
           "showtimes": {
             "2026-09-09": [
-              {
-                "time": "06:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "12:00 AM",
                 "experience": "Standard & Deluxe",
