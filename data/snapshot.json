@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T00:05:54+03:00",
+  "generated_at": "2026-09-10T02:27:30+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -963,7 +963,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-09-09",
         "2026-09-10",
         "2026-09-11",
         "2026-09-12",
@@ -980,14 +979,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-09-09": [
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-09-10": [
               {
                 "time": "12:00 PM",
