@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T00:46:54+03:00",
+  "generated_at": "2026-09-11T11:44:07+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -45,12 +45,6 @@
               {
                 "time": "6:45pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -108,12 +102,6 @@
           "showtimes": {
             "2026-09-11": [
               {
-                "time": "11:15am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:45pm",
                 "experience": "MAX",
                 "attributes": [],
@@ -170,12 +158,6 @@
               {
                 "time": "11:15pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -241,12 +223,6 @@
               {
                 "time": "10:45pm",
                 "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -346,12 +322,6 @@
                 "available": true
               },
               {
-                "time": "10:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:30pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -401,12 +371,6 @@
               {
                 "time": "10:00pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -558,12 +522,6 @@
           "showtimes": {
             "2026-09-11": [
               {
-                "time": "10:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:15pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -675,12 +633,6 @@
           "showtimes": {
             "2026-09-11": [
               {
-                "time": "10:00am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -768,12 +720,6 @@
           "showtimes": {
             "2026-09-11": [
               {
-                "time": "10:45am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "3:45pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -809,12 +755,6 @@
                 "available": true
               },
               {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "4:00pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -831,12 +771,6 @@
           "language": "English",
           "showtimes": {
             "2026-09-11": [
-              {
-                "time": "11:15am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:35pm",
                 "experience": "Kids",
