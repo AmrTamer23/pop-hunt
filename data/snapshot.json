@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T23:59:14+03:00",
+  "generated_at": "2026-09-16T02:30:32+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -102,7 +102,8 @@
           }
         }
       ],
-      "status": "ok"
+      "status": "stale",
+      "stale_since": "2026-09-16T02:30:32+03:00"
     },
     {
       "id": "scene-district5-spiderman",
@@ -111,7 +112,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-09-15",
         "2026-09-16",
         "2026-09-17",
         "2026-09-18",
@@ -129,14 +129,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-09-15": [
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-09-16": [
               {
                 "time": "12:00 PM",
