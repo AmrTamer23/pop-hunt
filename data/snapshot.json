@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:40:01+03:00",
+  "generated_at": "2026-09-18T07:30:00+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -421,7 +421,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -474,7 +474,7 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
@@ -521,7 +521,7 @@
         {
           "title": "Insidious: Out Of The Further",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
@@ -568,7 +568,7 @@
         {
           "title": "Fall 2: Deadpoint",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013357_1786079730976.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -597,7 +597,7 @@
         {
           "title": "Practical Magic 2",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013352_1786338065535.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 130,
           "language": "English",
           "showtimes": {
@@ -626,7 +626,7 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
@@ -655,7 +655,7 @@
         {
           "title": "Tad and the Magic Lamp",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013383_1783078183756.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -696,7 +696,7 @@
         {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
@@ -748,7 +748,7 @@
         {
           "title": "Mutiny",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
+          "rating": "18TC",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -771,7 +771,7 @@
         {
           "title": "Coyote VS Acme",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013137_1786079841144.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -806,7 +806,7 @@
         {
           "title": "Paw Patrol: The Dino Movie",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
+          "rating": "18TC",
           "runtime_min": 90,
           "language": "English",
           "showtimes": {
@@ -905,7 +905,7 @@
         {
           "title": "The Weight",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013503_1783655697645.jpg",
-          "rating": "12+",
+          "rating": "18TC",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
