@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T07:30:00+03:00",
+  "generated_at": "2026-09-18T12:10:01+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -99,12 +99,6 @@
           "language": "Arabic",
           "showtimes": {
             "2026-09-18": [
-              {
-                "time": "11:15am",
-                "experience": "MAX",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:45pm",
                 "experience": "MAX",
@@ -240,7 +234,7 @@
                 "time": "6:45pm",
                 "experience": "GOLD",
                 "attributes": [],
-                "available": true
+                "available": false
               },
               {
                 "time": "9:15pm",
@@ -263,12 +257,6 @@
               {
                 "time": "11:30pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:45am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -421,7 +409,7 @@
         {
           "title": "Spider-Man: Brand New Day",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
@@ -474,7 +462,7 @@
         {
           "title": "The Odyssey",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
@@ -488,12 +476,6 @@
               {
                 "time": "4:30pm",
                 "experience": "4DX",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:30am",
-                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -521,17 +503,11 @@
         {
           "title": "Insidious: Out Of The Further",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013153_1786692803951.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
             "2026-09-18": [
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:45pm",
                 "experience": "Standard",
@@ -568,7 +544,7 @@
         {
           "title": "Fall 2: Deadpoint",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013357_1786079730976.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -597,7 +573,7 @@
         {
           "title": "Practical Magic 2",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013352_1786338065535.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 130,
           "language": "English",
           "showtimes": {
@@ -626,7 +602,7 @@
         {
           "title": "El Gawahergy",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
@@ -655,7 +631,7 @@
         {
           "title": "Tad and the Magic Lamp",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013383_1783078183756.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -696,17 +672,11 @@
         {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
             "2026-09-18": [
-              {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "4:15pm",
                 "experience": "Standard",
@@ -748,7 +718,7 @@
         {
           "title": "Mutiny",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "18TC",
+          "rating": "16+",
           "runtime_min": 95,
           "language": "English",
           "showtimes": {
@@ -771,7 +741,7 @@
         {
           "title": "Coyote VS Acme",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013137_1786079841144.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
@@ -789,12 +759,6 @@
                 "available": true
               },
               {
-                "time": "11:15am",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:35pm",
                 "experience": "Standard",
                 "attributes": [],
@@ -806,17 +770,11 @@
         {
           "title": "Paw Patrol: The Dino Movie",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "18TC",
+          "rating": "G",
           "runtime_min": 90,
           "language": "English",
           "showtimes": {
             "2026-09-18": [
-              {
-                "time": "11:00am",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "1:15pm",
                 "experience": "Kids",
@@ -905,7 +863,7 @@
         {
           "title": "The Weight",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013503_1783655697645.jpg",
-          "rating": "18TC",
+          "rating": "12+",
           "runtime_min": 115,
           "language": "English",
           "showtimes": {
@@ -951,12 +909,6 @@
           "language": null,
           "showtimes": {
             "2026-09-18": [
-              {
-                "time": "12:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
               {
                 "time": "03:00 PM",
                 "experience": "Standard & Deluxe",
