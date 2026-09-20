@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T03:17:28+03:00",
+  "generated_at": "2026-09-20T08:14:38+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -1075,8 +1075,7 @@
           }
         }
       ],
-      "status": "stale",
-      "stale_since": "2026-09-20T03:17:28+03:00"
+      "status": "ok"
     },
     {
       "id": "premiere-cima-arkan-spiderman",
