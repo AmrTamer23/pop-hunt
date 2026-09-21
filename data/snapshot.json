@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T01:40:31+03:00",
+  "generated_at": "2026-09-21T03:54:56+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -629,47 +629,6 @@
           }
         },
         {
-          "title": "Tad and the Magic Lamp",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013383_1783078183756.jpg",
-          "rating": "G",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-09-21": [
-              {
-                "time": "12:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "2:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "7:45pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
           "title": "Khali Balak Min Nafsik",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013487_1784268092099.jpg",
           "rating": "12+",
@@ -753,49 +712,8 @@
           "showtimes": {
             "2026-09-21": [
               {
-                "time": "8:00pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "10:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
                 "time": "1:35pm",
                 "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Paw Patrol: The Dino Movie",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
-          "rating": "G",
-          "runtime_min": 90,
-          "language": "English",
-          "showtimes": {
-            "2026-09-21": [
-              {
-                "time": "1:15pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "3:30pm",
-                "experience": "Kids",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "5:45pm",
-                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
