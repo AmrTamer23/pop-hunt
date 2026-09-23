@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T20:49:09+03:00",
+  "generated_at": "2026-09-24T00:15:29+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -8,7 +8,6 @@
       "site": "vox",
       "scope": "movie",
       "dates": [
-        "2026-09-23",
         "2026-09-24",
         "2026-09-25",
         "2026-09-26",
@@ -25,15 +24,45 @@
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:15pm",
+                "time": "1:15pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:30pm",
+                "time": "6:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -51,7 +80,6 @@
       "site": "vox",
       "scope": "cinema",
       "dates": [
-        "2026-09-23",
         "2026-09-24",
         "2026-09-25",
         "2026-09-26",
@@ -62,34 +90,135 @@
       ],
       "movies": [
         {
+          "title": "Avengers Endgame: Encore (Infinity Vision)",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013622_1789359776095.jpg",
+          "rating": "12+",
+          "runtime_min": 185,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "10:30am",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:30pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30pm",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
           "title": "Red Flag",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013575_1787745001739.jpg",
           "rating": "12+",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "9:15pm",
-                "experience": "MAX",
+                "time": "12:30pm",
+                "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:45pm",
-                "experience": "MAX",
+                "time": "3:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:45pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:45am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
+                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
                 "time": "8:45pm",
-                "experience": "GOLD",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "11:15pm",
-                "experience": "GOLD",
+                "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
@@ -100,7 +229,7 @@
                 "available": true
               },
               {
-                "time": "10:45pm",
+                "time": "11:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -115,33 +244,116 @@
           "runtime_min": 90,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "9:15pm",
+                "time": "6:45pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:45pm",
+                "time": "11:15pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:30pm",
+                "time": "11:00pm",
                 "experience": "4DX",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "8:45pm",
+                "time": "12:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "9:45pm",
+                "time": "2:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Heart of the Beast",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013349_1782370177798.jpg",
+          "rating": "12+",
+          "runtime_min": 100,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "12:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "10:30am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -151,9 +363,56 @@
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Shish Dou",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013626_1789360670149.jpg",
+          "rating": "12+",
+          "runtime_min": 95,
+          "language": "Arabic",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "4:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
               },
               {
-                "time": "12:00am",
+                "time": "9:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -168,15 +427,51 @@
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:45pm",
+                "time": "2:30pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:30pm",
+                "time": "7:30pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -191,15 +486,45 @@
           "runtime_min": 145,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:15pm",
+                "time": "1:15pm",
                 "experience": "GOLD",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "10:30pm",
+                "time": "6:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -214,9 +539,33 @@
           "runtime_min": 175,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:45pm",
+                "time": "12:00pm",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -231,15 +580,139 @@
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "9:15pm",
+                "time": "11:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
               },
               {
-                "time": "11:45pm",
+                "time": "1:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Smurfs Timeless Adventure Volume 2",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013574_1787745038443.jpg",
+          "rating": "G",
+          "runtime_min": 80,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "10:15am",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:30pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:45pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:00pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:15pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Avengers Endgame: Encore",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013621_1790148451359.jpg",
+          "rating": "12+",
+          "runtime_min": 185,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "2:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:45pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": false
+              },
+              {
+                "time": "10:00am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "2:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -254,9 +727,15 @@
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "11:30pm",
+                "time": "2:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -271,9 +750,21 @@
           "runtime_min": 130,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "8:30pm",
+                "time": "11:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "4:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -288,10 +779,51 @@
           "runtime_min": 110,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "11:45pm",
+                "time": "3:30pm",
                 "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "8:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Tad and the Magic Lamp",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013383_1783078183756.jpg",
+          "rating": "G",
+          "runtime_min": 95,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "10:45am",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "3:45pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "6:15pm",
+                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -305,43 +837,15 @@
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "9:15pm",
+                "time": "6:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "The Uprising",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013617_1788937765469.jpg",
-          "rating": "16+",
-          "runtime_min": 130,
-          "language": "English",
-          "showtimes": {
-            "2026-09-23": [
+              },
               {
-                "time": "11:30pm",
-                "experience": "Standard",
-                "attributes": [],
-                "available": true
-              }
-            ]
-          }
-        },
-        {
-          "title": "Mutiny",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013088_1776406045000.jpg",
-          "rating": "16+",
-          "runtime_min": 95,
-          "language": "English",
-          "showtimes": {
-            "2026-09-23": [
-              {
-                "time": "9:15pm",
+                "time": "11:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -356,9 +860,55 @@
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:30pm",
+                "time": "9:30pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Paw Patrol: The Dino Movie",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013061_1775409782941.jpg",
+          "rating": "G",
+          "runtime_min": 90,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "8:45pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Crawlers",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013614_1788937508382.png",
+          "rating": "18+",
+          "runtime_min": 80,
+          "language": "English",
+          "showtimes": {
+            "2026-09-24": [
+              {
+                "time": "3:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "7:30pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -367,15 +917,27 @@
           }
         },
         {
-          "title": "Pressure",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013559_1786693108157.jpg",
-          "rating": "PG12",
-          "runtime_min": 100,
+          "title": "Spider Island",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013618_1788874108401.jpg",
+          "rating": "16+",
+          "runtime_min": 95,
           "language": "English",
           "showtimes": {
-            "2026-09-23": [
+            "2026-09-24": [
               {
-                "time": "10:45pm",
+                "time": "12:40pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "5:10pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "9:40pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -393,7 +955,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-09-23",
         "2026-09-24",
         "2026-09-25",
         "2026-09-26",
@@ -410,20 +971,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-09-23": [
-              {
-                "time": "09:00 PM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              },
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-09-24": [
               {
                 "time": "12:00 PM",
