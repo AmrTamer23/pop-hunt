@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T23:19:12+03:00",
+  "generated_at": "2026-09-26T02:25:41+03:00",
   "targets": [
     {
       "id": "vox-moe-spiderman",
@@ -42,7 +42,6 @@
       "site": "vox",
       "scope": "cinema",
       "dates": [
-        "2026-09-25",
         "2026-09-26",
         "2026-09-27",
         "2026-09-28",
@@ -53,15 +52,50 @@
       ],
       "movies": [
         {
+          "title": "Avengers Endgame: Encore (Infinity Vision)",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013622_1789359776095.jpg",
+          "rating": "12+",
+          "runtime_min": 185,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "10:30am",
+                "experience": "MAX",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:30am",
+                "experience": "4DX",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
           "title": "Red Flag",
           "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013575_1787745001739.jpg",
           "rating": "12+",
           "runtime_min": 100,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:15pm",
+                "time": "12:15pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:30am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:15pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -76,15 +110,15 @@
           "runtime_min": 90,
           "language": "English",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:15pm",
-                "experience": "GOLD",
+                "time": "10:00am",
+                "experience": "Standard",
                 "attributes": [],
-                "available": false
+                "available": true
               },
               {
-                "time": "11:45pm",
+                "time": "12:30pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -99,9 +133,44 @@
           "runtime_min": 100,
           "language": "English",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:00pm",
+                "time": "12:00pm",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Shish Dou",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013626_1789360670149.jpg",
+          "rating": "12+",
+          "runtime_min": 95,
+          "language": "Arabic",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "10:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:00pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -116,9 +185,49 @@
           "runtime_min": 105,
           "language": "Arabic",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:30pm",
+                "time": "10:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "12:45pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Spider-Man: Brand New Day",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013065_1782227678372.jpg",
+          "rating": "12+",
+          "runtime_min": 145,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "12:00pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "The Odyssey",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013488_1783655920314.jpg",
+          "rating": "16+",
+          "runtime_min": 175,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "11:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -133,9 +242,9 @@
           "runtime_min": 105,
           "language": "English",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:30pm",
+                "time": "11:00am",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -144,16 +253,91 @@
           }
         },
         {
-          "title": "El Gawahergy",
-          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00012991_1785992269739.jpg",
+          "title": "The Smurfs Timeless Adventure Volume 2",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013574_1787745038443.jpg",
           "rating": "G",
-          "runtime_min": 110,
-          "language": "Arabic",
+          "runtime_min": 80,
+          "language": "English",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "11:00pm",
+                "time": "11:00am",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Kids",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "11:00am",
                 "experience": "Standard",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "1:15pm",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Avengers Endgame: Encore",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013621_1790148451359.jpg",
+          "rating": "12+",
+          "runtime_min": 185,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "11:00am",
+                "experience": "GOLD",
+                "attributes": [],
+                "available": true
+              },
+              {
+                "time": "10:00am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Practical Magic 2",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013352_1786338065535.jpg",
+          "rating": "16+",
+          "runtime_min": 130,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "11:15am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Tad and the Magic Lamp",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013383_1783078183756.jpg",
+          "rating": "G",
+          "runtime_min": 95,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "11:35am",
+                "experience": "Kids",
                 "attributes": [],
                 "available": true
               }
@@ -167,9 +351,26 @@
           "runtime_min": 80,
           "language": "English",
           "showtimes": {
-            "2026-09-25": [
+            "2026-09-26": [
               {
-                "time": "12:00am",
+                "time": "10:30am",
+                "experience": "Standard",
+                "attributes": [],
+                "available": true
+              }
+            ]
+          }
+        },
+        {
+          "title": "Spider Island",
+          "poster_url": "https://assets.voxcinemas.com/heroes/B_HO00013618_1788874108401.jpg",
+          "rating": "16+",
+          "runtime_min": 95,
+          "language": "English",
+          "showtimes": {
+            "2026-09-26": [
+              {
+                "time": "12:45pm",
                 "experience": "Standard",
                 "attributes": [],
                 "available": true
@@ -187,7 +388,6 @@
       "site": "scene",
       "scope": "movie",
       "dates": [
-        "2026-09-25",
         "2026-09-26",
         "2026-09-27",
         "2026-09-28",
@@ -202,14 +402,6 @@
           "runtime_min": null,
           "language": null,
           "showtimes": {
-            "2026-09-25": [
-              {
-                "time": "12:00 AM",
-                "experience": "Standard & Deluxe",
-                "attributes": [],
-                "available": true
-              }
-            ],
             "2026-09-26": [
               {
                 "time": "12:00 PM",
